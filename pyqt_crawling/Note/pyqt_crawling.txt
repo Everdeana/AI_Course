@@ -1,0 +1,24 @@
+<Version>
+Python = 3.10
+
+<Library>
+ 1. pyqt5
+ 2. beautifulsoup4
+ 3. selenium
+ 4. requests
+
+<Naver Kin URL>
+ - https://kin.naver.com/search/list.naver?query=AC%EB%B0%80%EB%9E%80
+ - https://kin.naver.com/search/list.naver?query=AC밀란
+ - https://kin.naver.com/search/list.naver?query=AC밀란&page=2
+ - ? --> 조건 / & --> 구분자 
+
+<Python>
+ 1. 라이브러리 
+
+<구조설계>
+함수
+def naverKin('검색어', '페이지')
+
+for i in range(100):
+	naverKin('고양이', i)

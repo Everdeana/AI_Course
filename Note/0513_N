@@ -1,0 +1,40 @@
+<백업>
+1. 리눅스 서버에 프로젝트파일 다운로드
+	- ssh(터미널) - 파일 전송(sftp)
+		sftp --> google --> filezilla
+
+2. filezilla client install
+3. Shell Extension 제외하고 설치
+4. 파일 --> 사이트 관리자 --> sftp/host/id, pw 설정
+5. $RECYCLE.BIN --> 휴지통 --> 삭제 X / (C9DX^R --> 랜섬웨어 방지 --> 삭제 X
+6. __pycache__ 파이썬 실행에 필요한 파일들 cache --> 필수 X
+
+<RAIDS 방식>
+하드1(1T) + 하드1(1T) + 하드1(1T) = 3개
+하나의 하드인것처럼 = RAID 스트라이퍼
+<RAIDS 방식>
+하드1(1T) + 하드1(1T) + 하드1(1T) + 하드1(1T) = 3개
+하드 1개가 가지고 있어서 하드 1개가 깨지면 
+
+--> RAID 계산기
+
+<synology nas>
+
+<PJ>
+1. 리눅스 가동
+2. vscode 직접 설치
+
+<리눅스용 vscode>
+https://junorionblog.co.kr/ubuntu22-04%EC%97%90-visual-studio-code-%EC%84%A4%EC%B9%98/
+
+Realmate
+
+<Project>
+1. 폴더 생성
+2. 가상환경 설정(venv)
+3. pip install pyqt5
+4. apt install python3-pyqt5 / apt install pyqt5-dev-tools / apt install qttools5-dev-tools
+5. 한글 설치
+
+
+
