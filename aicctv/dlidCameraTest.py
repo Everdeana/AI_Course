@@ -107,7 +107,7 @@ while True:
                 print("Driver is sleeping!!!!!!")  # 운전자가 졸고 있는 상태로 판단
         print(EAR)  # EAR 값을 출력
 
-    cv2.imshow("Are you Sleepy", frame)  # 비디오 프레임 출력
+    cv2.imshow("dlib Camera Test", frame)  # 비디오 프레임 출력
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
