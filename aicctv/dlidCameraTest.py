@@ -26,7 +26,7 @@ def calculate_EAR(eye):  # 눈 거리를 계산하는 함수 정의
 
 # dlib 인식 모델 정의
 hog_face_detector = dlib.get_frontal_face_detector()  # dlib 얼굴 탐지 모델 로드
-dlib_facelandmark = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")  # dlib 얼굴 특징점 예측 모델 로드
+dlib_facelandmark = dlib.shape_predictor("./trained/shape_predictor_68_face_landmarks.dat")  # dlib 얼굴 특징점 예측 모델 로드
 
 def counter(func):  # 함수 실행 횟수를 계산하는 데코레이터 정의
     @wraps(func)  # 데코레이터를 사용하여 함수의 메타데이터 보존
@@ -101,10 +101,10 @@ while True:
             close()  # 눈을 감지한 횟수 증가 및 DROWSY 텍스트 표시
             print(f'close count : {close.count}')  # 눈을 감지한 횟수 출력
             if close.count == 1:  # 눈을 감지한 횟수가 1번이면
-                print("Driver is sleeping")  # 운전자가 졸고 있는 상태로 판단
+                print("Eyes Closed!")  # 운전자가 졸고 있는 상태로 판단
                 
             elif close.count >= 4:  # 눈을 감지한 횟수가 4번이면
-                print("Driver is sleeping!!!!!!")  # 운전자가 졸고 있는 상태로 판단
+                print("Eyes Closed!!!!!!")  # 운전자가 졸고 있는 상태로 판단
         print(EAR)  # EAR 값을 출력
 
     cv2.imshow("dlib Camera Test", frame)  # 비디오 프레임 출력
