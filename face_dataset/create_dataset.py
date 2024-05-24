@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import shutil
 
+
 # 데이터 불러오기
 def createFolder(dir):
     try:
@@ -12,15 +13,19 @@ def createFolder(dir):
 
 #원본 디렉토리에 파일 불러오기
 orgPath = "./org_data"
-file_list = os.listdir(orgPath)
-print(file_list)
+fileList = os.listdir(orgPath)
+print(fileList)
 
 # Dataset Directory 만들기
 createFolder("./dataset")
 
+dataset_labels = {}  # Initialize an empty dictionary
+
+# 파일 생성
+saveFile = open('./dataset/labels.txt', 'w', encoding='utf8')
 
 # 디렉토리 생성
-for file in file_list:
+for file in fileList:
     # print(file)
     # 문장 분리
 	spFile = file.split('_')
@@ -30,3 +35,14 @@ for file in file_list:
 	
 	# 폴더 생성
 	createFolder(f"./dataset/{spFile[2]}")
+    
+	# 라벨만들기
+	dataset_labels[spFile[2]] = spFile[1]
+    # 파일 저장
+
+	print(f'{spFile[2]}, {spFile[1]}', file=saveFile)
+
+# 데이터셋 딕셔너리
+print(dataset_labels)
+saveFile.close()
+
