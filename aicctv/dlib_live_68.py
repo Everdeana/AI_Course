@@ -3,6 +3,8 @@ import dlib
 from functools import wraps  
 from scipy.spatial import distance  
 import time  
+import os
+
 
 cap = cv2.VideoCapture(0) 
 
@@ -16,7 +18,16 @@ def calculate_EAR(eye):
     return ear_aspect_ratio
 
 hog_face_detector = dlib.get_frontal_face_detector()  
-dlib_facelandmark = dlib.shape_predictor("./trained/shape_predictor_68_face_landmarks.dat")  
+# dlib_facelandmark = dlib.shape_predictor("./trained/shape_predictor_68_face_landmarks.dat")  
+
+# 현재 스크립트 파일의 디렉토리 경로를 가져옵니다.
+current_dir = os.path.dirname(os.path.realpath(__file__))
+# shape_predictor_68_face_landmarks.dat 파일의 절대 경로를 만듭니다.
+model_path = os.path.join(current_dir, 'trained', 'shape_predictor_68_face_landmarks.dat')
+
+# 절대 경로를 사용하여 모델 파일을 엽니다.
+dlib_facelandmark = dlib.shape_predictor(model_path)
+
 
 def counter(func):
     @wraps(func)

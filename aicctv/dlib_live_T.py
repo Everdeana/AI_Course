@@ -1,11 +1,12 @@
 import dlib
 import cv2
-import matplotlib.patches as patches
-import numpy as np
+import os
 
 class FaceDetector:
     def __init__(self, detector_path, predictor_path):
         self.detector = dlib.get_frontal_face_detector()
+        if not os.path.exists(predictor_path):
+            raise FileNotFoundError(f"File '{predictor_path}' not found.")
         self.predictor = dlib.shape_predictor(predictor_path)
         self.image = None
         self.detections = None
@@ -27,7 +28,7 @@ class FaceDetector:
 
 # 실시간 영상에서 얼굴 검출 예시
 if __name__ == "__main__":
-    predictor_path = "./trained/shape_predictor_68_face_landmarks.dat"
+    predictor_path = os.path.abspath("./aicctv/trained/shape_predictor_68_face_landmarks.dat")
 
     face_detector = FaceDetector(detector_path="", predictor_path=predictor_path)
 
