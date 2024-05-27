@@ -124,4 +124,7 @@ label = [train_labels[i] for i in result[0]]
 print(label)
 
 ############################################################################################################################################
+
+# 벡터데이터 저장
+faiss.write_index(face_index, './train/face_20240527.bin') # 현재 값을 저장 / 확장자는 bin
 # 128bit vector encoding
