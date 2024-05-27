@@ -30,13 +30,35 @@ def read_file(path):
     return img_path
 
 # 전처리된 데이터 불러오기
-dataset_img = read_file('./dataset')
+dataset_imgs = read_file('./dataset')
 
 print('-' * 50)
 print('데이터셋 경로')
-for data in dataset_img:
+for data in dataset_imgs:
     print(data)
     
 print('-' * 50)
 
 # faiss에 얼굴 정보를 등록하고 벡터DB로 변환
+faceEncode = []
+img_paths = []
+
+for path in dataset_imgs:
+    
+	print(path)
+    # 얼굴 이미지 불러오기
+	img = face_recognition.load_image_file(path)
+    # print(img)
+	# Encode
+	face_encode = face_recognition.face_encodings(img)[0]
+    # print(face_encode)
+    # exit() # 테스트용(1번만 실행)
+	
+	# Encoding 된 정보를 변수에 저장
+	faceEncode.append(face_encode)
+	img_paths.append(path)
+    
+print("검출된 얼굴은 총 {}개 입니다.".format(len(faceEncode)))
+    
+
+# 128bit vector encoding
