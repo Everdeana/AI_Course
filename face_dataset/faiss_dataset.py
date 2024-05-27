@@ -19,10 +19,10 @@ def read_file(path):
     img_path = []
     # 데이터 가져오기
     for paths, subdirs, files in os.walk(path): # 디렉토리, 파일 탐색 -> 현재 디렉토리의 하부 파일을 전부 가져옴
-        print('paths = ', paths)
-        print('subdirs = ', subdirs)
-        print('files = ', files)
-        print('#'*70)
+        # print('paths = ', paths)
+        # print('subdirs = ', subdirs)
+        # print('files = ', files)
+        # print('#'*70)
 
         # 파일명을 변수에 넣기
         for name in files:
@@ -70,8 +70,8 @@ for path_img in train_images: # for문으로 감싸기 전에 테스트 1번 한
 
 	# <방법 3>
 	if len(img_face) != 1:
-			print("얼굴이 한 명만 검출되어야 합니다.")
-			exit()
+		print("얼굴이 한 명만 검출되어야 합니다.")
+		exit()
 
 	# 좌표
 	top, right, bottom, left = img_face[0]# 이미지의 좌표를 시계방향으로 가져옴
@@ -83,10 +83,10 @@ for path_img in train_images: # for문으로 감싸기 전에 테스트 1번 한
 	# line 52 -> 이미지 공백 포함해서 자르기
 	# top -> 빼야 공간이 생김 -> 좌표가 위로 올라감
 	# right -> 더해야 공간이 생김 -> 좌표가 오른쪽으로 감
-	top = top - 20
-	right = right + 20
-	bottom = bottom + 20
-	left = left - 20
+	top -= 20
+	right += 20
+	bottom += 20
+	left -= 20
 
 	# 자르기
 	# numpy slicing 할 때
@@ -95,7 +95,7 @@ for path_img in train_images: # for문으로 감싸기 전에 테스트 1번 한
 	# 얼굴 저장
 	# https://supermemi.tistory.com/entry/Python-PIL-PIL-%EC%9D%B4%EB%AF%B8%EC%A7%80-Numpy-%EB%B0%B0%EC%97%B4-%EB%B3%80%ED%99%98-%EB%B0%8F-%EC%A0%80%EC%9E%A5-Imagefromarray-nparray-npasarray
 	pil_img = Image.fromarray(face_img) # pillow 사용
-	pil_img.save('cut_img.jpg') # 메모리에 있는걸 저장할 때 -> .save
+	# pil_img.save('cut_img.jpg') # 메모리에 있는걸 저장할 때 -> .save
 
 	# 저장하기
 	# face_save = path_img
@@ -126,5 +126,3 @@ for path_img in train_images: # for문으로 감싸기 전에 테스트 1번 한
 	save_path = f'./dataset/{dir_path}/{file_name}'
 	print(save_path)
 	pil_img.save(save_path)
-
-
