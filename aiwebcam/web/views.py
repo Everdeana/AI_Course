@@ -1,11 +1,14 @@
 from django.shortcuts import render
-from django.http import StreamingHttpResponse
+from django.http import StreamingHttpResponse, HttpResponse
 import cv2
 import dlib
 from scipy.spatial import distance
 import time
 import os
 from functools import wraps
+
+# 사용할 테이블 설정
+from .models import WebUser # 현재 위치의 WebUser
 
 class BlinkDetector:
     def __init__(self):
@@ -82,3 +85,12 @@ def video_feed(request):
 
 def index(request):
     return render(request, 'webcam_main.html')
+
+def adduser(request):
+    # DB에 자료 저장
+    adduser=WebUser()
+    adduser.names = '장국진'
+    adduser.telnos = '010-1234-5678'
+    adduser.save()
+
+    return HttpResponse('adduser 링크')

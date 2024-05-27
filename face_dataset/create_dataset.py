@@ -8,7 +8,7 @@ nowDate = datetime.today().strftime("%Y%m%d_%H%M%S")
 
 print(nowDate)
 
-os.rename('./dataset', f'./dataset_{nowDate}')
+# os.rename('./dataset', f'./dataset_{nowDate}')
 
 # 데이터 불러오기
 def createFolder(dir):
