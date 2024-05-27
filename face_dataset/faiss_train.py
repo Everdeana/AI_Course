@@ -103,9 +103,12 @@ left -= 20
 
 # 얼굴 부붐만 추출
 face_cut = test_img[top:bottom, left:right]
+pil_img = Image.fromarray(face_cut)
+pil_img.save('./city.jpg')
+img = face_recognition.load_image_file('./city.jpg')
 
 # Encoding
-test_en = face_recognition.face_encodings(face_cut)[0]
+test_en = face_recognition.face_encodings(img)[0]
 print(type(test_en))
 
 # numpy로 변환
