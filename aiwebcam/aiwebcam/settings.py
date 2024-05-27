@@ -75,12 +75,19 @@ WSGI_APPLICATION = 'aiwebcam.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+	'default' : {
+		'ENGINE' : 'django.db.backends.mysql', # 벡엔드 엔진
+		'NAME' : 'sinatradb', # 'mysql'의 이름을 가진 데이터베이스
+		'USER' : 'sinatra', # 계정
+		'PASSWORD' : '@sinatra1234@', #rootpassword로 지정할 숫자(6번에 나와있음)
+		'HOST' : '211.216.177.2',
+		'PORT' : '3306'
+	}
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
