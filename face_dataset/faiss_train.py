@@ -44,21 +44,35 @@ faceEncode = []
 img_paths = []
 
 for path in dataset_imgs:
-    
-	print(path)
+    path = path.replace('\\', '/')
+    print(path)
     # 얼굴 이미지 불러오기
-	img = face_recognition.load_image_file(path)
+    img = face_recognition.load_image_file(path)
     # print(img)
 	# Encode
-	face_encode = face_recognition.face_encodings(img)[0]
+    face_encode = face_recognition.face_encodings(img)[0]
     # print(face_encode)
     # exit() # 테스트용(1번만 실행)
 	
-	# Encoding 된 정보를 변수에 저장
-	faceEncode.append(face_encode)
-	img_paths.append(path)
+	# Encoding 된 정보를 변수에 저장\
+    faceEncode.append(face_encode)
+    img_paths.append(path)
     
 print("검출된 얼굴은 총 {}개 입니다.".format(len(faceEncode)))
+
+# 인코딩 (벡터DB)로 생성
+# 인코딩(문제 : numpy형식, 답 : numpy형식 필요)
+# 람다함수로 처리
+train_labels = np.array(
+    [img.split('/')[-2] for img in img_paths] # 경로 출력
+)
+
+# print(train_labels)
+# 데이터 구조 확인
+print("faceEncode : ", type(faceEncode))
+print("train_labels : ", type(train_labels))
+
+
     
 
 # 128bit vector encoding
