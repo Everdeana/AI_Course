@@ -33,7 +33,7 @@ face_index = faiss.read_index('./train/face_20240527.bin')
 train_labels = np.load('./train/labels.npy')
 ################################################################################################
 
-def face_detect(img):
+def face_detect(imgData):
 
     ################################################################################################
     # 얼굴 검출 프로그램
@@ -41,7 +41,7 @@ def face_detect(img):
 
     # 예측하기
     # 얼굴인식
-    test_img = face_recognition.load_image_file('test_img/ujy.jpg')
+    test_img = face_recognition.load_image_file('./train/test_img.jpg')
     test_face = face_recognition.face_locations(test_img)
     if len(test_face) != 1:
         return "unknown"
