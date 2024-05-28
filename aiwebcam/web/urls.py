@@ -5,6 +5,10 @@ urlpatterns = [
 	path('', views.index, name='index'), # 비어있으면 실행(ex -> path('/list', ~) -> 리스트 페이지
 	path('video_feed', views.video_feed, name='video_feed'),
 	path('adduser/', views.adduser, name='adduser'),
-	path('face_test/', views.face_test, name='face_test'),
+	
+	
+	
+	# 테스트 경로
+	# path('face_test/', views.face_test, name='face_test'),
 	# 아무 것도 없으면 뒷부분 실행
 ]
