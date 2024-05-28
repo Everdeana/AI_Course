@@ -8,7 +8,6 @@ import face_recognition
 # labels
 ################################################
 
-
 ################################################################################################
 # 함수 리스트
 
@@ -32,8 +31,6 @@ face_index = faiss.read_index('./train/face_20240527.bin')
 # 학습 결과 정답
 train_labels = np.load('./train/labels.npy')
 ################################################################################################
-
-
 
 def face_detect(img):
 
@@ -88,7 +85,5 @@ def face_detect(img):
         print(f"중복값 개수 : {face_rst[1]}/5")
         print("중복값 : ", end="")
         return face_rst[0]
-        
-    
 
 print(face_detect('./test_img/ujy.jpg'))
