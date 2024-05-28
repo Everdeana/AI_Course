@@ -4,6 +4,9 @@ from PIL import Image
 import faiss
 import face_recognition
 
+# 전역 변수
+g_wait = False
+
 ################################################
 # labels
 ################################################
@@ -44,6 +47,7 @@ def face_detect(imgData):
     test_img = face_recognition.load_image_file('./train/test_img.jpg')
     test_face = face_recognition.face_locations(test_img)
     if len(test_face) != 1:
+        g_wait = False
         return "unknown"
 
     # 얼굴만 잘라내기(시계방향)
@@ -79,6 +83,8 @@ def face_detect(imgData):
     print(distance)
 
     face_rst = most_frequent(label)
+
+    g_wait = False # return 하기 전까지 waiting
 
     if face_rst[1] < 3:
         return "unknown"
