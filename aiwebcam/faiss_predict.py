@@ -60,8 +60,8 @@ def face_detect(img):
     face_cut = test_img[top:bottom, left:right]
 
     pil_img = Image.fromarray(face_cut)
-    pil_img.save('./train_res/test.jpg')
-    img = face_recognition.load_image_file('./train_res/test.jpg')
+    pil_img.save('./cut_img/test.jpg')
+    img = face_recognition.load_image_file('./cut_img/test.jpg')
 
     # 인코딩
     test_en = face_recognition.face_encodings(img)[0]
