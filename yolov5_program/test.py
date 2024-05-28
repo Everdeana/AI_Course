@@ -6,6 +6,8 @@ model = torch.hub.load("ultralytics/yolov5", "yolov5s")
 
 # 파라미터 미세조정
 model.conf = 0.6
+# 모델과 모델이 겹치는 %
+model.iou = 0.45
 
 # 이미지 검증(Predict)
 img = "https://www.sporf.com/wp-content/uploads/2023/04/afab2c7c-gettyimages-74058407.jpg"
