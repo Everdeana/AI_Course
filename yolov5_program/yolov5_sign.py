@@ -43,7 +43,7 @@ cap.set(4, 720)
 # 실시간으로 계속 영상 받기
 
 while True:
-
+    
     _, frame = cap.read()  # 비디오 프레임 읽기
     
     frame = cv2.flip(frame, 1)
@@ -59,6 +59,34 @@ while True:
         print("손인식: ", hand[6])
     # print(df_hand) 
     # print(hands)
+    
+    label = results.xyxy[0][:, -1].cpu().numpy()
+    bbox = results.xyxy[0][:, :-2].cpu().numpy()
+    score = results.xyxy[0][:, -2].cpu().numpy()
+
+    print("labels = ", label)
+    print("bbox = ", bbox)
+    print("score = ", score)
+
+    # 스코어 글씨 변경
+    if len(score) > 0:
+        conf_score = round(score[0] * 100, 2)
+        print_score = f'{conf_score} %'
+
+    # 바운딩 박스 처리
+    if len(label) > 0:
+        # 네모 박스 int 처리
+        x1 = int(bbox[0][0])
+        y1 = int(bbox[0][1])
+        x2 = int(bbox[0][2])
+        y2 = int(bbox[0][3])
+        
+        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 2) # BGR, Line
+        cv2.rectangle(frame, (x1, y1 - 30), (x1 + 200, y1), (0, 0, 255), -1) # BGR, Line
+
+        text = f'{labels[int(label[0])]} : {print_score}'
+
+        cv2.putText(frame, text, (x1 + 15, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2, cv2.LINE_AA)
 
     cv2.imshow('camera', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
