@@ -87,6 +87,7 @@ while True:
         text = f'{labels[int(label[0])]} : {print_score}'
 
         cv2.putText(frame, text, (x1 + 15, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2, cv2.LINE_AA)
+        # cv2.putText(frame, text, (x1 + 35, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2, cv2.LINE_AA)
 
     cv2.imshow('camera', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
