@@ -105,7 +105,7 @@ def makeup(src, ref, save): # (원본 이미지, 화장 이미지, 경로)
     now = datetime.now()
 
     today = now.strftime('%Y_%m_%d')
-    saveImg.save(f'./media/{today}/1_rst.jpg')
+    saveImg.save(f'./media/{today}/1_rst.')
 
 # 테스트
 src = './media/source/haaland4.jpg'
