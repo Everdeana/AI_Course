@@ -107,8 +107,8 @@ def makeup(src, ref, save): # (원본 이미지, 화장 이미지, 경로)
     today = now.strftime('%Y_%m_%d')
     saveImg.save(f'./media/{today}/1_rst.')
 
-# 테스트
-src = './media/source/haaland4.jpg'
-ref = './media/ref/jisoo1.jpg'
-save = './media/result'
-save_file = makeup(src, ref, save)
+# # 테스트
+# src = './media/source/haaland4.jpg'
+# ref = './media/ref/jisoo1.jpg'
+# save = './media/result'
+# save_file = makeup(src, ref, save)
