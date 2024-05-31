@@ -30,5 +30,4 @@ def api_getmodellist(request):
 			"doc" : data.doc,
 			"dates" : data.dates
 		})
-	return JsonResponse(sendData, safe = False, json_dumps_params = {'ensure_ascii':False}, status = 200)
-	
+	return JsonResponse(sendData, safe = False, json_dumps_params = {'ensure_ascii':False}, status = 200)\
