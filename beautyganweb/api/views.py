@@ -20,7 +20,7 @@ def api_getmodellist(request):
 	sendData = []
 
 	for data in datas:
-		print(data)
+		# print(data)
 
 		sendData.append({
 			"name" : data.names,
