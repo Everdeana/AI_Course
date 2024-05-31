@@ -1,7 +1,21 @@
+
+"use client"
+
 import Footer from "../components/inc_footer"
 import Header from "../components/inc_header"
+import Swal from "sweetalert2"
 
 export default function Home() {
+
+	const messageClick = (msg) => {
+		// alert('test')
+		Swal.fire({
+			title : "Error",
+			text : "Open In Monday",
+			icon : "error"
+		})
+	}
+
 	return (
 		<>
 			<Header />
@@ -14,7 +28,7 @@ export default function Home() {
 							</div>
 							<h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">내사진 업로드</h2>
 							<div className="relative mb-4"><input type="file" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" /></div>
-							<button href="image_result.html" className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">사진등록</button>
+							<button onClick={messageClick}className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">사진등록</button>
 						</div>
 						<div className="sm:w-1/2 mb-10 px-4">
 							<div className="rounded-lg h-[450px] overflow-hidden">
