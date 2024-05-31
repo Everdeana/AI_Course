@@ -20,7 +20,9 @@
 *.data
 *.json
 *.cfg
-*.txt
+eng_sign_file/
+yolov5_program/eng_sign/
+img_sign/
 !setup.cfg
 !cfg/yolov3*.cfg
 

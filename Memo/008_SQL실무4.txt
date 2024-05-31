@@ -1,0 +1,27 @@
+메모 : d:\ai_exam
+<SQL 실습 + MariaDB + PyQt5>
+- 리눅스용 관리 프로그램
+- 완성
+db에 기록
+
+6개
+id, mails, names, telnos, addrs, sns
+홍
+where
+(mails like '%홍%' or 
+ names like '%홍%' or
+ telnos like '%홍%' or
+ addrs like '%홍%' or
+ sns like '%홍%')
+
+table.setHorizontalHeaderLabels(["id", "mails", "names", "telnos","addrs","sns"])
+
+미국통계
+인공지능(100%) - 프로젝트
+빅데이터 처리 : 6 7
+인공지능 처리 : 4 3
+
+
+
+
+

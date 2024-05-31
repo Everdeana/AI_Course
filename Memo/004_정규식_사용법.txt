@@ -1,0 +1,224 @@
+9. 정규표현식
+# RE 사용법
+# 정규표현식
+# 다양한 텍스트를 하나의 문법 또는 규칙으로 정의
+import re
+
+#임의의 문자 1개(원점)
+r_1 = re.compile("a.c") # a와 c사이의 아무 문자 1개
+print("********* a.c *********")
+print("abc:", r_1.search("abc")) # a와 c사이의 문자가 1개 (b) => 0
+print("abbc:", r_1.search("abbc")) # a와 c사이에 문자가 2개 (bb) => x
+print("acd:", r_1.search("acd")) # a와 c사이에 문자가 0개 => x
+
+# 문자가 존재하거나 아닌 경우
+r_2 = re.compile("ab?c")
+print("********* ab?c *********")
+print("abc:", r_2.search("abc")) # a와 c사이에 b가 존재(b) => 0
+print("ac:", r_2.search("ac")) # a와 c사이에 b가 존재X => 0
+print("ab:", r_2.search("ab")) # a와 c사이에 패턴이 존재X => X
+
+# 문자가 0개 이상일 경우
+r_3 = re.compile("ab*c")
+print("ac:", r_3.search("ac")) # a와 c사이에 b가 존재X => 0
+print("abc:", r_3.search("abc")) # a와 c사이에 b가 1개 존재 => 0
+print("abbc:", r_3.search("abbc")) # a와 c사이에 b가 2개 존재 => 0
+print("abbdc:", r_3.search("abbdc")) # a와 c사이에 d 문자가 존재 => X
+
+# 문자가 1개 이상일 경우
+r_4 = re.compile("ab+c")
+print("********* ab+c *********")
+print("ab:", r_4.search("ac")) # a와 c사이에 b가 존재X => X
+print("abc:", r_4.search("abc")) # a와 c사이에 b가 1개존재 => 0
+print("abbc:", r_4.search("abbc")) # a와 c사이에 b가 2개 존재 => 0
+print("abbdc:", r_4.search("abbdc")) # a와 c사이에 d 문자가 존재 => x
+
+# 특정 문자열로 시작
+r_5 = re.compile("^a")
+print("********* ^a *********")
+print("a:", r_5.search("a")) # a로 시작 => 0
+print("abc:", r_5.search("abc")) # a로 시작 => 0
+print("ba:", r_5.search("ba")) # b로 시작 => x
+
+# 특정 숫자만큼 반복
+r_6 = re.compile("ab{2}c") # abbc
+print("********* ab{ 2 }c *********")
+print("abc:", r_6.search("abc")) # a와 c사이에 b가 1번 반복 => X
+print("abbc:", r_6.search("abbc")) # a와 c사이에 b가 2번 반복 => 0
+print("abbbc:", r_6.search("abbbc")) # a와 c사이에 b가 3번 반복 => X
+
+# 특정 범위만큼 반복
+r_7 = re.compile("ab{2,3}c")
+print("********* ab{2,3}c *********")
+print("abc:", r_7.search("abc")) # a와 c사이에 b가 1번 반복 => x
+print("abbc:", r_7.search("abbc")) # a와 c사이에 b가 2번 반복 => 0
+print("abbbc:", r_7.search("abbbc")) # a와 c사이에 b가 3번 반복 => 0
+print("abbbbc:", r_7.search("abbbbc")) # a와 c사이에 b가 4번 반복 => X
+
+r_7_a = re.compile("ab{2,}c")
+print("********* ab{2,}c *********")
+print("abc:", r_7_a.search("abc")) # a와 c사이에 b가 1번 반복 => x
+print("abbc:", r_7_a.search("abbc")) # a와 c사이에 b가 2번 반복 => 0
+print("abbbc:", r_7_a.search("abbbc")) # a와 c사이에 b가 3번 반복 => 0
+print("abbbbc:", r_7_a.search("abbbbc")) # a와 c사이에 b가 4번 반복 => 0
+
+r_7_b = re.compile("ab{,2}c")
+print("********* abb{,2}c *********")
+print("abc:", r_7_b.search("abc")) # a와 c사이에 b가 1번 반복 => 0
+print("abbc:", r_7_b.search("abbc")) # a와 c사이에 b가 2번 반복 => 0
+print("abbbc:", r_7_b.search("abbbc")) # a와 c사이에 b가 3번 반복 => x
+print("abbbbc:", r_7_b.search("abbbbc")) # a와 c사이에 b가 4번 반복 => x
+
+# 특정 문자열 중 하나
+r_8 = re.compile("[abc]") # abc중에서 하나
+print("********* [abc] *********")
+print("ade:", r_8.search("ade")) # a,b,c 중 a가 존재 => 0
+print("deb:", r_8.search("deb")) # a,b,c 중 b가 존재 => 0
+print("dce:", r_8.search("dce")) # a,b,c 중 c가 존재 => 0
+print("def:", r_8.search("def")) # a,b,c 중 존재X => X
+
+r_8_a = re.compile("[a-z]") # a부터 z까지
+print("********* [a-z] *********")
+print("a:", r_8_a.search("a")) # a~z 중 a가 존재 => 0
+print("y:", r_8_a.search("y")) # a~z 중 y가 존재 => 0
+print("#:", r_8_a.search("#")) # a~z 중 존재 => x
+
+# 특정문자열 제외
+r_9 = re.compile("[^abc]") # ^
+print("********* [^abc] *********")
+print("abc:", r_9.search("abc")) # a,b,c가 아닌 것들 중 존재X => X
+print("abd:", r_9.search("abd")) # a,b,c가 아닌 것들 D가 존재 => 0
+
+r_9_a = re.compile("[^a-z]") # ^
+print("********* [^a-z] *********")
+print("a:", r_9_a.search("a")) # a-z가 아닌 것들 중 존재X => x
+print("y:", r_9_a.search("y")) # a-z가 아닌 것들 중 존재X => x
+print("#:", r_9_a.search("y")) # a-z가 아닌 것들 중 # 존재X => 0
+
+# 특정 문자열 중 하나 조건문 || 조건문
+r_10 = re.compile("a|bc")
+print("********* a|bc *********")
+print("ab:", r_10.search("ab")) # a 또는 bc 중 a 존재 => 0
+print("bcd:", r_10.search("bcd")) # a 또는 bc 중 bc 존재 => 0
+print("cc:", r_10.search("cc")) # a 또는 bc 중 존재X => X
+<결과>
+********* a.c *********
+abc: <re.Match object; span=(0, 3), match='abc'>
+abbc: None
+acd: None
+********* ab?c *********
+abc: <re.Match object; span=(0, 3), match='abc'>
+ac: <re.Match object; span=(0, 2), match='ac'>
+ab: None
+ac: <re.Match object; span=(0, 2), match='ac'>
+abc: <re.Match object; span=(0, 3), match='abc'>
+abbc: <re.Match object; span=(0, 4), match='abbc'>
+abbdc: None
+********* ab+c *********
+ab: None
+abc: <re.Match object; span=(0, 3), match='abc'>
+abbc: <re.Match object; span=(0, 4), match='abbc'>
+abbdc: None
+********* ^a *********
+a: <re.Match object; span=(0, 1), match='a'>
+abc: <re.Match object; span=(0, 1), match='a'>
+ba: None
+********* ab{ 2 }c *********
+abc: None
+abbc: <re.Match object; span=(0, 4), match='abbc'>
+abbbc: None
+********* ab{2,3}c *********
+abc: None
+abbc: <re.Match object; span=(0, 4), match='abbc'>
+abbbc: <re.Match object; span=(0, 5), match='abbbc'>
+abbbbc: None
+********* ab{2,}c *********
+abc: None
+abbc: <re.Match object; span=(0, 4), match='abbc'>
+abbbc: <re.Match object; span=(0, 5), match='abbbc'>
+abbbbc: <re.Match object; span=(0, 6), match='abbbbc'>
+********* abb{,2}c *********
+abc: <re.Match object; span=(0, 3), match='abc'>
+abbc: <re.Match object; span=(0, 4), match='abbc'>
+abbbc: None
+abbbbc: None
+********* [abc] *********
+ade: <re.Match object; span=(0, 1), match='a'>
+deb: <re.Match object; span=(2, 3), match='b'>
+dce: <re.Match object; span=(1, 2), match='c'>
+def: None
+********* [a-z] *********
+a: <re.Match object; span=(0, 1), match='a'>
+y: <re.Match object; span=(0, 1), match='y'>
+#: None
+********* [^abc] *********
+abc: None
+abd: <re.Match object; span=(2, 3), match='d'>
+********* [^a-z] *********
+a: None
+y: None
+#: None
+********* a|bc *********
+ab: <re.Match object; span=(0, 1), match='a'>
+bcd: <re.Match object; span=(0, 2), match='bc'>
+cc: None
+10. 응용하기
+# 사용법
+print("********* 실제 사용 *********")
+r = re.compile("ab")
+text1 = "abaab abb acb abab"
+text2 = "babaab abb acb abab"
+print("text1:", text1)
+print("text2:", text2)
+print()
+
+# 문자열 전체에 대해서 정규표현식과 매치되는지 검사
+print("********* search *********")
+print("search(text1):", r.search(text1))
+print("search(text2):", r.search(text2))
+
+# 문자열의 처음이 정규표현식과 매치되는지 검사
+print("********* match *********")
+print("match(text1):", r.match(text1))
+print("match(text2):", r.match(text2))
+
+# 정규표현식을 기준으로 문자열 분리 후 리스트로 변환
+print("********* split *********")
+print("split(text1):", re.split(" ", text1))
+
+# 문자열에 정규표현식과 매치되는 모든 문자열을 찾아서 리스트로 변환
+print("********* findall *********")
+print("findall(text1):", re.findall(r, text1))
+print("findall(text2):", re.findall(r, text2))
+
+# sub
+# 문자열에서 정규표현식과 일치하는 부분을 다른 문자열로 대체
+print("********* sub *********")
+print("sub(text1):", re.sub(r, "z", text1))
+
+# 자주쓰는 패턴
+# \ : \문자
+# \d : 모든 숫자, [0-9]와 동일
+# \D : 숫자를 제외한 모든 문자, [^0-9]와 동일
+# \s : 공백, [\t\n\r\f\v]와 동일
+# \S : 공백을 제외한 문자, [^\t\n\r\f\v]와 동일
+# \w : 문자 또는 숫자, [a-zA-Z0-9]와 동일
+# \W : 문자 또는 숫자가 아닌 문자, [^a-zA-Z0-9]와 동일
+<적용>
+********* 실제 사용 *********
+text1: abaab abb acb abab
+text2: babaab abb acb abab
+
+********* search *********
+search(text1): <re.Match object; span=(0, 2), match='ab'>
+search(text2): <re.Match object; span=(1, 3), match='ab'>
+********* match *********
+match(text1): <re.Match object; span=(0, 2), match='ab'>
+match(text2): None
+********* split *********
+split(text1): ['abaab', 'abb', 'acb', 'abab']
+********* findall *********
+findall(text1): ['ab', 'ab', 'ab', 'ab', 'ab']
+findall(text2): ['ab', 'ab', 'ab', 'ab', 'ab']
+********* sub *********
+sub(text1): zaz zb acb zz

@@ -1,0 +1,145 @@
+메모 : d:\ai_exam
+<SQL 실습 + MariaDB + PyQt5>
+- 리눅스용 관리 프로그램
+
+<순서>
+0. 리눅스 서버에 프로젝트파일 다운로드
+    ssh(터미널) - 파일전송(sftp)
+    sftp -> google -> 파일질라
+1. 리눅스를 가동
+2. vscode를 직접 설치
+3. erdcloud DB설계
+4. PyQt5 디자인 설계
+5. python 프로그램 개발
+
+--------------------------------------------------------------------
+0. 리눅스 서버에 프로젝트파일 다운로드
+google -> 파일질라
+
+내 디렉토리
+d:
+
+하드3 개
+하드1(1T)+하드1(1T)+하드1(1T) = 3T
+하나의 하드인것처럼 = RAID 스트라이퍼
+
+RAID5 방식
+하드1(1T)+하드1(1T)+하드1(1T)+하드1(1T) = 3T
+하드1개가 가지고 있어서 하드가 1개가 깨지면 
+
+--------------------------------------------------------------------
+1. 리눅스용 vscode
+google -> "운영체제 버젼 설치파일"
+"ubuntu 22.04 vscode 설치"
+
+su -
+apt update
+apt upgrade -y
+
+apt install software-properties-common apt-transport-https wget -y
+
+wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
+
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
+
+apt update
+apt install code
+--------------------------------------------------------------------
+
+
+
+바둑판 -> 
+
+cmd -> ipconfig
+
+Member
+firstdates
+firstips
+updatedates
+updateips
+deldates
+delips
+
+ERD 설계
+
+** 설계 잘하신분 카톡 공유해주세요
+
+데이터베이스 생성
+mysql -u root -p
+
+use mysql;
+# 데이터베이스 생성
+create database memdb;
+# 사용자
+create user 'mem'@'localhost' identified by '@ai1234@';
+create user 'mem'@'%' identified by '@ai1234@';
+# 권한
+grant all privileges on memdb.* to 'mem'@'localhost';
+grant all privileges on memdb.* to 'mem'@'%';
+# 권한적용
+flush privileges;
+
+<MYSQLWORKBANCH>
+Connection Name: 회원관리
+Connection Method : 
+Standard TCP/IP over SSH
+SSH Hostname : 192.168.56.1:22
+SSH Username : ai
+MySQL Hostname : 127.0.0.1
+MySQL Server Port : 3306
+Username : mem
+Default Schema : memdb
+ai -> @ai1234@
+mem -> @ai1234@
+
+테이블생성
+Table Name : member
+Charset : utf8 / utf8_unicode_ci
+
+~$ cd ai
+~/ai$ mkdir member
+~/ai$ cd member
+~/ai/member$
+
+<프로젝트 만들때>
+1. 폴더(프로젝트 폴더)
+2. 가상환경 생성
+    ~/ai/member$ python3 -m venv venv
+
+나머지 vscode
+
+3. 개발 환경 셋팅
+venv를 설정
+pip install pyqt5
+designer
+su -
+apt install qtchooser
+exit
+
+pip install pyqt5
+su -
+apt install python3-pyqt5
+apt install pyqt5-dev-tools
+apt install qttools5-dev-tools
+exit
+designer
+
+<라이브러리 설치>
+pip install pymysql
+pip install requests
+
+dbadd.py -> 
+
+ctrl+a clrl+c -> ctrl+v
+
+
+
+
+
+
+
+
+
+
+
+

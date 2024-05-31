@@ -1,0 +1,73 @@
+CNN 알고리즘 설계, 트레닝, 실행
+
+<어떤 설정 ? : 환경설정>
+project ? : cnn_exam
+d:\ai_exam\cnn_exam
+conda ? : p310_cnn
+python ? : p3.10
+tensorflow ? : 
+
+1. 가상환경 생성
+conda create -n p310_cnn python=3.10
+<활성화>
+?
+=> vscode
+
+2. vscode 프로젝트 경로 설정
+test.py
+
+3. 라이브러리 설치
+tensorflow
+jupyter
+
+<빠르게 웹사이트를 제작>
+gradio
+streamlit
+
+4. 주피터 실행
+jupter notebook
+
+x = [1,2,3,4,5]
+y = [10,20,30,40,50]
+
+x = 6
+y = ?
+
+------------------------------------------------------------------
+
+5. CNN 알고리즘 구현
+
+파일명 : tensorflow_cnn
+
+!pip install tensorflow
+
+모든 인공지능 데이터의 구조
+(단, 생성형 제외)
+데이터 구조 = 질문과 답(Dataset)
+
+!pip install tensorflow_datasets
+
+model = models.Sequential()
+model.add(layers.Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)))
+model.add(layers.MaxPooling2D((2,2)))
+model.add(layers.Conv2D(64, (3,3), activation='relu'))
+model.add(layers.MaxPooling2D((2,2)))
+model.add(layers.Conv2D(64, (3,3), activation='relu'))
+model.add(layers.MaxPooling2D((2,2)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

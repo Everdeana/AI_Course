@@ -1,0 +1,151 @@
+<WORDCLOUD>
+- WORDCLOUD
+- Jupyter
+- Pandas
+
+
+1. 크롤링 검색어 3개
+3,000개
+예)
+알리
+테무
+중국쇼핑
+
+<인공지능시 많이 사용하는 데이터확보SITE>
+ai-hub
+google dataset search
+https://datasetsearch.research.google.com/
+로보플로우
+
+라이브러리 설치
+- WORDCLOUD
+- Jupyter
+- Pandas
+pip install wordcloud
+pip install jupyter
+pip install pandas
+
+* 실행
+jupyter notebook
+
+http://localhost:8888/tree?token=16aba6973d3428cab12c2a4f7599a36e65b4bcec11028b06        
+
+!pip install matplotlib
+
+라이브러리
+import pandas as pd
+import numpy as np
+import re
+import matplotlib.pyplot as plt
+
+plt.plot([1, 2, 3, 4])
+plt.show()
+
+람다함수
+['test.py', '알리.csv', '중국쇼핑.csv', '테무.csv']
+나는 확장자 csv인 파일만 가져오고싶다.
+['알리.csv', '중국쇼핑.csv', '테무.csv']
+=> 명령어 1줄로
+1. 결과물
+[]
+2. 반복처리
+
+fileList = []
+for file in file_list:
+    if file.endswith('.csv'):
+       fileList.append(file)
+=> 1줄
+
+fileList = ''
+fileList = {}
+
+<PANDAS 기초 명령>
+- 인공지능에서 가장 중요한 부분
+shape
+=> 데이터의 구조를 확인
+head
+=> DataFrame의 첫부분
+tail
+
+<순서>
+1. 데이터를 수집
+2. 데이터를 사용할 수 있도록 하나의
+   변수로 처리
+   여러개 -> 1개의 변수
+3. 불필요한 데이터를 제거(*)
+    필요한 데이터를 추가
+   pandas 특정 컬럼을 삭제
+   drop
+4. pandas 데이터를 문자로 변환
+   tolist()
+   pandas 형식 -> list
+5. join
+   * 독특하게 python 사용
+
+<mac>
+brew pyqt5
+
+arr1 = ['a', 'b', 'c', 'd']
+print(' '.join(arr1))
+
+출력 결과: a, b, c, d
+
+<정규화>
+. : 문자 1개
+? : 문자가 하나 있을수도 있고 없을수도 있음
+* : 문자가 여러개가 있을수 있음.
++ : 앞에 있는 단어가 존재
+^ : 특정문자로 시작
+{} : 앞단어가 {}안에 있는 숫자 만큼 반복
+{시작,끝} : 범위
+{시작,} : 시작범위만 있으면됨
+{,끝} : 끝범위만 지정
+[] : 범위중 하나
+소문자만 인식
+[a-z]
+[^abc]
+
+naver.py -> word.py
+
+435 x 320
+
+KoNlpy
+홍길동에
+
+
+NLP(Natural Language Process)
+자연어처리
+NLU(Natural Language Understand)
+자연어처리
+
+------------------------------------------------------------
+
+<리눅스>
+- Linux, Cloud
+Linux : SentOS(7,8), Debian, Ubuntu
+Cloud : AWS(프리티어)
+
+Linux - Docker ?
+
+VirtualBox(가상서버)
+
+google - ubuntu
+ubuntu 22.04 download
+https://releases.ubuntu.com/jammy/
+
+해킨토시
+
+SQL베이스 DB
+Mysql
+Mariadb
+
+NoSQL
+MongoDB
+
+Ubuntu22.04
+ai
+@ai1234@
+
+
+
+

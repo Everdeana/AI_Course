@@ -1,0 +1,44 @@
+Tensorflow 주요기능
+
+1. VSCODE 실행
+(p310_cnn) D:\ai_exam\cnn_exam>jupyter notebook
+
+2. 파일 생성
+tenserflow_module
+
+# Overfitting 처리
+# DropOut
+# BatchNormalization
+# Regularization
+
+sklearn
+!pip install scikit-learn
+
+<콜백함수>
+Callback <= 인공지능이 학습을 하는동안 백그라운드에서
+명령을 수행할때 사용하는 함수
+
+<코랩>
+jupyter = colab(생략)
+
+- 무료버젼
+- GPU : 하루에 4시간
+- 유료버젼
+  GPU, TPU 사용 하루 12시간 풀 가동
+
+google -> "colab", "구글드라이브"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

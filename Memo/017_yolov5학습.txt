@@ -1,0 +1,114 @@
+<yolov5 학습>
+- 커스텀모델(CustomModel)
+=> 데이터수집 -> 데이터분류 -> dataset -> 전처리 -> 학습 -> Pre-Trained
+=> 서비스 구축
+
+- Pre-Trained 모델을 사용한다.
+=> Pre-Trained -> 서비스 구축
+인공지능구현하는 부분보다는 SOTA(Status-Of-The-Art) 서비스 구축
+
+--------------------------------------------------------------------------------------------
+
+커스텀 모델 구축
+- 알파벳 학습
+engsign.zip
+- 구글드라이브에 압축을 풀어서 업로드
+- 압축파일을 올려서 압축을 해제
+
+코렙 + 구글드라이브
+
+/datasets/sign
+
+노트명 : yolov5_sign
+%cd /content/drive/MyDrive/datasets/sign/
+!unzip ./eng_sign.zip
+%cd /content/
+
+MLOps
+
+google -> yolov5
+
+<깃에서 다운로드방법>
+!git clone https://github.com/ultralytics/yolov5.git
+yolov5 경로가 생성
+
+경로 이동
+%cd yolov5
+/content/yolov5
+라이브러리를 한꺼번에 설치하는 방법
+!pip install -r requirements.txt
+
+/drive/MyDrive/datasets/sign/data.yaml
+!python train.py 
+--img 415 
+--batch 16 
+--epochs 50 
+--data /content/drive/MyDrive/datasets/sign/data.yaml 
+--cfg ./models/yolov5s.yaml 
+--weights yolov5s.pt 
+--name /content/drive/MyDrive/datasets/sign/sign_results/
+--resume
+
+<학습결과 저장>
+/runs/train/학습폴더 <- 다운로드
+
+<학습이 끝난파일 구글드라이브로 복사하는 방법>
+!cp -r ./runs/train/sign_yolov5s_results2/ /content/drive/MyDrive/datasets/sign/
+
+2조 : 스노우볼
+3조 : AI테크3팀
+4조 : ChicBytes
+
+폴더
+weights
+           last.pt    14M
+           best.pt   14M
+
+/yolov5_test/runs/detect
+                        /train     <- 복사
+
+<Custom Model 동작>
+vs code -> d:/ai_exam/yolov5_test/
+
+python detect.py 
+--weights ./runs/train/sign_yolov5s_results/weights/best.pt
+--conf 0.5 --source https://previews.123rf.com/images/voktybre/voktybre2210/voktybre221000076/197008159-%EC%B2%AD%EA%B0%81-%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%9D%98-%EC%88%98%ED%99%94-%EC%98%81%EB%AC%B8%EC%9E%90-h-%EA%B3%A0%ED%92%88%EC%A7%88-%EC%82%AC%EC%A7%84.jpg
+
+<수정:버그>
+detect.py
+
+맨위에
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+
+10초 200번
+python detect.py --weights ./runs/train/sign_yolov5s_results/weights/last.pt --img 415 --source 0 --conf 0.7
+
+yolov5_program/train
+last.pt best.pt 복사
+yolov5_program/train
+data.yaml 복사              <- labels
+
+파일 : yolov5_sign.py
+
+pip install yolov5
+
+Exception: cannot instantiate 'PosixPath' on your system.
+
+[[878.4391479492188, 22.016815185546875, 1278.7938232421875, 717.295654296875, 0.6788060665130615, 15, 'P']]
+
+tensor([[8.84453e+01, 0.00000e+00, 8.67057e+02, 7.20000e+02, 4.96445e-01, 1.50000e+01]])
+
+손인식 :  B
+손인식 :  C
+손인식 :  O
+labels = [          1           2          14]
+bbox = [[     480.37      11.762      1077.5         720]
+ [     486.28      14.469      1055.7         720]
+ [     496.53      20.364      1061.4      712.16]]
+score = [    0.37192     0.31298     0.30426]
+손인식 :  B
+labels = [          1]
+bbox = [[     470.59      18.117      1104.7         720]]
+score = [    0.71257]

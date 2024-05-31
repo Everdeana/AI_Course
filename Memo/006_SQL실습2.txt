@@ -1,0 +1,142 @@
+<SQL 실습 + OpenAI연계 사용법>
+- SQL 실습
+- OpenAI 챗 -> SQL 서버 저장
+
+1. SOTA
+=> State-Of-The-Art
+openai.com
+
+서버 : ai/chatai
+
+2. VS원격으로 접속
+- 확장 : Remote Development
+ssh ai@192.168.56.1
+=> 원격으로 들어갈 정보를 등록
+
+python3 -m venv venv
+
+pip install openai
+
+me ####Key
+
+pip install openai==0.28.0
+
+<터미널>
+export OPENAI_API_KEY='####'
+
+import os
+api_key = os.environ.get('KeyKeyKeyKey')
+
+google ERDCLOUD
+
+채팅      chat
+키  순번 id NOT NULL AUTO_INCREMENT
+     질문 human_chat NOT NULL VARCHAR(200)
+     답변 ai_chat NOT NULL LONGTEXT
+     날짜 dates NOT NULL VARCHAR(20)
+     IP    ips NOT NULL VARCHAR(20)
+
+<데이터베이스를 생성>
+- IP : 192.168.56.1
+- ID : chat
+- DB : chatdb
+- PW : @ai1234@
+
+# 데이터베이스 접속
+su -
+mysql -u root -p
+
+# 데이터베이스가 무엇있는지 확인하는 명령
+show databases;
+
+# 데이터베이스를 선택 명령
+use mysql;
+
+# 데이터베이스 생성
+create database chatdb;
+
+# 사용자를 생성
+create user 'chat'@'localhost' identified by '@ai1234@';
+create user 'chat'@'%' identified by '@ai1234@';
+
+# 데이터베이스를 사용할 사용자 권한을 부여
+grant all privileges on chatdb.* to 'chat'@'localhost';
+grant all privileges on chatdb.* to 'chat'@'%';
+
+# 권한적용
+flush privileges;
+
+# 확인
+mysql -u chat -p chatdb
+
+# 사용자 권한 확인
+show grants for 'user'@'접속위치';
+
+MySQLWORKBENCH
+- IP : 192.168.56.1
+- ID : chat
+- DB : chatdb
+- PW : @ai1234@
+
+CREATE TABLE `chat` (
+	`id`	int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	`human_chat`	VARCHAR(200)	NULL,
+	`ai_chat`	LONGTEXT	NULL,
+	`dates`	VARCHAR(20)	NULL,
+	`ips`	VARCHAR(20)	NULL
+);
+
+---------------------------------------------------------------------------------
+python MYSQL 에 사용하기
+
+~$ pip install pymysql
+
+검색
+google "python 오늘날짜확인"
+
+from datetime import datetime
+datetime.today().strftime("%Y-%m-%d %H:%M:%S")
+
+google "python 내아이피주소확인"
+
+데이터베이스 SQL
+
+INSERT, SELECT, UPDATE, DELETE
+    C         R           U          D
+CRUD
+
+select * from chat;
+chat.objects.values()
+select * from chat where human_chat like '%날씨%';
+data = chat.objects.filter(human_='날씨')
+
+select * from Customer where LastName like '%lastName%'
+
+public interface CustomerRepository extends CrudRepository<Customer, Long> {
+
+  List<Customer> findByLastName(String lastName);
+
+  Customer findById(long id);
+}
+
+---------------------------------------------------------------------------------
+
+<업데이트>
+
+<삭제>
+
+다음주
+1. ChatGPT를 응용한 DATABASE(포함) 만들어보는것. ?
+2. PyQt5이용해서 CRUD 관리하는 프로그램
+
+=> 프로젝트
+PDF(200-300P) -> 학습 -> 
+ChatGPT + LangChain(RAG) + DB -> FAISS
+-> CustomChatBot(Django, FastAPI)
+
+
+
+
+
+
+

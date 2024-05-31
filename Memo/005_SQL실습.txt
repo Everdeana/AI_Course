@@ -1,0 +1,275 @@
+<SQL 사용법 및 관리>
+- 도서
+1안
+인공지능 2, 빅데이터 1
+
+2안
+인공지능 1, 프론트 1, 백엔드 1
+
+3안
+인공지능 3
+
+<실행파일 만들기>
+pip install pyinstaller
+python –m PyInstaller –w –F main.py
+
+/
+main.exe
+/ui
+ui파일들이 있어야함
+/search_file
+
+<리눅스 22.04.4 LTS>
+Ubuntu 24.04
+Ubuntu 22.04.x   <= 2년
+Ubuntu 20.04
+
+CTRL+ALT+F3 <= 터미널
+root
+@ai1234@
+root@Ubuntu22:~#
+ai@Ubuntu22:~$
+
+~# nano /etc/default/locale
+
+LANG="en_US"
+LANG="en_US.UTF-8"
+
+CTRL+X
+Y
+ENTER
+~# locale-gen --purge
+~# cat /etc/default/locale
+~# reboot
+
+id
+내 계정정보
+uname -a
+서버 정보 확인
+
+intel
+x86
+
+1. 업데이트
+$ 서버를 업데이트 ?
+sudo : 관리자로
+
+apt-get : 서버를 가장 최신버전으로 업데이트
+             확인
+$ sudo apt-get update
+
+root로 로그인
+$ su -
+
+업데이트할것이 있는지 확인
+# apt-get update
+업데이트 실행
+# apt-get upgrade
+
+서버 포트를 4개를 오픈
+ssh : 22
+web : 80, 8080, 8000
+DNS : 53
+MySQL, MariaDB : 3306
+
+포트 개방
+ufw 포트를 오픈/클로즈 할때 사용하는 명령어
+~# ufw allow 22
+~# ufw allow 80
+~# ufw allow 8080
+~# ufw allow 8000
+~# ufw allow 3306
+
+가상머신에서 포트
+NAT(포트와 포트를 연결)
+
+서버가 정상적으로 열려있는지 확인
+윈도우 - command명령어
+[시작] - 마우스 오른쪽 - 실행 - cmd
+> ssh
+> ipconfig
+> ssh 아이디@아이피주소
+> ssh ai@192.168.56.1
+
+ssh서비스 접속 프로그램 설치
+~# apt-get install openssh-server
+
+파일에 어떤 내용이 있는지 확인
+ls
+
+<서버 디렉토리 생성>
+~$ mkdir ai
+~$ ls
+- ai경로로 이동
+~$ cd ai
+~/ai$
+
+웹포트가 열렸는지 확인하기
+Django 프레임워크로 가동
+
+~/ai$ su -
+~# apt install python3-pip
+~# exit
+~/ai$
+
+Django 설치 웹포트 테스트
+~/ai$ pip install django==4.0
+~$ cd ai
+~/ai$
+~/ai$ su -
+~# apt install python3.10-venv
+~# exit
+~/ai$ python3 -m venv venv
+~/ai$ ls
+venv 가상환경 활성화
+~/ai$ source ./venv/bin/activate
+(venv)~/ai$ pip install django==4.0
+(venv)~/ai$ django-admin startproject helloweb
+(venv)~/ai$ ls
+helloweb
+(venv)~/ai$ cd helloweb
+(venv)~/ai/helloweb$ cd helloweb
+(venv)~/ai/helloweb/helloweb$ ls
+.... settings.py
+(venv)~/ai/helloweb/helloweb$ nano settings.py
+CTRL+X
+Y
+ENTER
+(venv)~/ai/helloweb/helloweb$ cd ..
+(venv)~/ai/helloweb$ python manage.py runserver 0.0.0.0:8000
+
+http://192.168.56.1:8000
+
+---------------------------------------------------------------------------
+<데이터베이스 설치 - MariaDB>
+- 서버에서 데이터를 관리하기 위해서 사용(서버에 설치하는 방법)
+- root
+~/ai/homeweb$ su -
+
+화면 클리어
+~/ai/homeweb$ clear
+
+# 최신버젼인지 확인
+~# apt update
+~# apt upgrade
+
+# mariadb 서버 설치
+~# apt install mariadb-server
+~# apt install mariadb-client
+
+ssh ai@192.168.0.47
+
+관리자만 가능
+~# mysql_secure_installation
+root password : @ai1234@
+
+# 시스템에서 mariadb가 잘 동작하는지 확인
+- 상태확인
+~# systemctl status mariadb     (mariadb)
+~# systemctl status mysql     (mysql)
+- 멈춤
+~# systemctl stop mariadb     (mariadb)
+~# systemctl status mariadb     (mariadb)
+- 시작
+~# systemctl start mariadb     (mariadb)
+
+# 데이터베이스 접속
+~# mysql -u root -p
+
+# 데이터베이스 생성(
+google -> kaggle
+
+미션:
+netflix의 데이터 8799개의 데이터를 데이터베이스에 저장
+id : netflix
+pw : @ai1234@
+database : netflixdb
+생성
+netflix_titles.csv 파일을 저장
+
+# 데이터베이스가 무엇있는지 확인하는 명령
+[Mariadb(none)]> show databases;
+
+# 데이터베이스를 선택 명령
+[Mariadb(none)]> use mysql;
+[Mariadb(mysql)]>
+
+# 데이터베이스 생성
+[Mariadb(mysql)]> create database netflixdb;
+
+# 사용자를 생성
+[Mariadb(mysql)]> 
+create user 'netflix'@'localhost' identified by '@ai1234@';
+create user 'netflix'@'%' identified by '@ai1234@';
+
+# 데이터베이스를 사용할 사용자 권한을 부여
+grant all privileges on netflixdb.* to 'netflix'@'localhost';
+grant all privileges on netflixdb.* to 'netflix'@'%';
+
+# 권한적용
+flush privileges;
+
+# 나가기
+exit
+
+<내가 만든 데이터베이스 로그인>
+mysql -u netflix -p netflixdb
+
+DATABASE 통합관리 프로그램
+google -> mysqlworkbench
+
+서버 : 192.168.56.1
+id : netflix
+pw : @ai1234@
+database : netflixdb
+
+<외부 접속을 위한 mariadb port 열기>
+nano /etc/mysql/mariadb.conf.d/50-server.cnf
+CTRL+X
+y
+ENTER
+# mariadb 서버 재가동
+systemctl restart mariadb
+
+google -> HeidiSQL
+192.168.56.1
+
+ipconfig
+
+공유기(아이피번호) NAT  포트포워딩 80 -> 컴퓨터 IP
+
+column 삭제
+ALTER TABLE `netflix` DROP `MyUnknownColumn`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[0]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[1]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[2]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[3]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[4]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[5]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[6]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[7]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[8]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[9]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[10]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[11]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[12]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[13]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[14]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[15]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[16]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[17]`;
+ALTER TABLE `netflix` DROP `MyUnknownColumn_[18]`;
+
+AUTO_INCREMENT
+
+idx  names
+1     test
+3     333
+4     444
+5     222
+
+
+
+
+
+ 

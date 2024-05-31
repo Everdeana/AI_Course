@@ -1,0 +1,231 @@
+<Django, FaceRecognition 개발>
+Python Web프레임워크 3개(백앤드)
+- (*)Django   = 웹프레임워크, API 개발 구축(무거운 콘텐츠 개발)
+                     거의 모든 웹기능이 내장
+- Flask      = 가벼운 서비스 개발
+- FASTAPI = API만 개발
+
+Restful API 구축 ?
+
+가상으로 서버를 구축
+json_server
+
+postman : API
+
+1. 프로젝트 경로 
+d:\ai_exam\aiwebcam
+
+2. 가상환경 생성
+anaconda Powershell Prompt -> p312_aiwebcam
+# 가상환경 생성
+> conda create -n p312_aiwebcam python=3.12
+
+3. vscode에서 프로젝트 경로 설정
+d:\ai_exam\aiwebcam
+* 가상환경 p312_aiwebcam 변경
+(p312_aiwebcam) D:\ai_exam\aiwebcam>
+=> 터미널 위와같이 나오면 정상
+=> test.py 파일 삭제
+
+4. 라이브러리 설치
+- Django (web프레임워크)
+pip install django==4.0
+
+5. 키를 잘못눌러서 IPython이 동작되는경우
+>>> exit()
+
+6. 장고가 잘설치되었는지 확인(버전확인)
+> django-admin --version
+4.0  <- 정상
+
+7. 프로젝트 생성
+프로젝트명 : aiwebcam
+
+   * 우리가 설치하는 방법
+   (1) 현재 프로젝트 경로가 있는 경우
+   > django-admin startproject aiwebcam .
+
+   참고 (2) 프로젝트 경로가 없어서 만들어야 하는 경우
+   참고 > django-admin startproject [프로젝트명]
+
+8. 장고(웹프레임워크) 가동 : 서버 가동하는 방법
+(프롬프트) > python manage.py runserver
+
+* 참고 : 포트를 변경하고자 하시는 경우
+(프롬프트) > python manage.py runserver 0.0.0.0:3000
+
+*참고 : 장고가 어떤 구조로 되어있는지 설명
+
+프로젝트
+AIWEBCAM       # 프로젝트 디렉토리
+++ aiwebcam    # 프로젝트 디렉토리에 설정정가 있는 폴더
+  + settings.py   # Django 운영을 위한 환경설정
+  + urls.py         # 홈페이지 경로 url 관리
+
+http://localhost:3000/web/
+++ web            # /web 경로의 서비스 관리 폴더
+  + urls.py         # /web 뒤에 경로 관리
+  + views.py      # 프로그램(데이터처리, html불러오고..., AI)
+  + moels.py      # Table 생성
+
+manage.py        # 서버실행, 디비생성, 관리
+
+* 부가적으로
++ media            # 웹에서 업로드한 파일 모두 이곳에
++ templates       # 디자인파일 html
++ static             # icon, image, js, ...
+
+9. 앱생성( /디렉토리를 하나 생성) : startapp
+http://127.0.0.1:3000/web
+> django-admin startapp web
+* 순서작업 방법
+<서버셋팅에서 작업할 내용>
+/aiwebcam/settings.py < 앱 등록
+
+28 ALLOWED_HOSTS = ['*']
+33 INSTALLED_APPS에 마지막에 앱 추가
+    'web',    <== 추가
+]
+# 언어 설정
+107 LANGUAGE_CODE = 'ko-kr'
+109 TIME_ZONE = 'Asia/Seoul'
+
+* 참고 : /web/을 추가해주기 위한 목적
+/aiwebcam/urls.py       < 경로 설정
+from django.urls import include, path
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('web/', include('web.urls')),
+]
+
+<web에서 작업할 내용>
+/web/urls.py               < 경로 설정 파일 생성
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+/web/views.py             < 경로에 맞는 함수 생성
+from django.http import HttpResponse
+def index(request):
+    return HttpResponse("web 메인페이지 입니다.")
+
+* 참고 : 정상적으로 되셨다면 서버 가동
+10. 서버가동
+(프롬프트) > python manage.py runserver 0.0.0.0:3000
+
+11. 잘동작하는지 확인
+http://localhost:3000/web/
+
+12. templates : HTML파일을 페이지에 보이도록
+/templates                   <- 디렉토리 생성
+/aiwebcam/settings.py   <- tempaltes 를 수정
+12  import os
+58  'DIRS': [os.path.join(BASE_DIR,'templates')],
+
+<html 만들기>
+webcam_main.html
+!  <- 시멘틱테그
+
+13. html파일 웹에서 보이도록 처리
+/web/views.py    <- index() 를 수정
+def index(request):
+    return render(request, 'webcam_main.html')
+
+14. 화면설계 : tailwindcss CDN방식을 이용해서 화면 설계
+http://www.tailwindcss.com
+https://tailwindcss.com/docs/installation/play-cdn
+
+15. 디자인 제작 ? => 고른다.!
+https://www.tailblocks.cc
+
+16. 디자인이 어떻게 구성이 되어있는지 확인하는 툴
+google -> 크롬확장프로그램 -> 크롬 웹스토어
+Pesticide for chrome
+
+17. 카메라 영상을 웹화면에 노출
+(1) 라이브러리 opencv 라이브러리를 설치
+> pip install opencv-python
+> pip install pillow
+
+* 생략...
+* 이미지 -> 웹으로 전송하려면 -> binary -> 서버에 전송
+
+18. 제어부 처리 경로 설정
+/web/urls.py 스트링 경로 추가
+
+http://localhost:3000/web/video_feed
+
+19. 얼굴인식 Detection 처리 구현
+(1) 라이브러리 설치
+conda install -c conda-forge dlib
+pip install matplotlib
+
+병합
+
+----------------------------------------------------------
+
+Face Recognition 인공지능 프레임워크 사용
+
+연예인 10명(모두 jpg)
+1. 정우성 10장(고화질) -> 정우성.zip
+2. 장원영 10장(고화질) -> 장원영.zip
+3. 안유진 10장(고화질) -> 안유진.zip
+4. 공명 10장(고화질) -> 공명.zip
+5. 
+
+오리지널 데이터 -> 인공지능 가공 데이터로 처리
+(데이터 전처리했던 과정과 비슷한데
+인공지능으로 데이터 분리)
+
+d:\ai_exam\face_dataset
+org_data 원본데이터
+dataset 얼굴을 추출한데이터
+
+(Docker) 리눅스 python 3.10 백엔드
+(Docker) 리눅스 python 3.12 인공지능
+(Docker) 리눅스 nextjs nodejs 18
+
+1개서버에서 => 
+
+<원본이미지>
+d:\ai_exam\face_dataset\org_data 압축 해제
+가상환경 : p310_cnn
+vscode 프로젝트 경로
+d:\ai_exam\face_dataset
+=> 자동화
+
+1. 디렉토리를 자동으로 생성하는 함수
+{'jungwoosung': '정우성', 'rohjeongeui': '노정의', 'haerin': '혜린', 'ningning': '닝닝', 'jangwonyoung': '장원영', 'eomjiyoon': '엄지윤', 'winter': '윈터', 'chuu': '츄', 'yoojaesuk': '유재석', 'kimsoohyun': '김수현', 'gongmyeong': '공명'}
+
+jungwoosung,정우성
+rohjeongeui,노정의
+
+------------------------------------------------------------------
+
+EC2(서버1대)        EC2(서버1대)               RDS(서버1대)
+프론트엔드           백엔드         <- port -> Mysql(Middle)
+NextJS                Django
+(json)                  ^
+                         EC2(서버1대)
+                   <-> API서버        <- port ->
+
+REST API = GET, PUT, POST, DELETE
+Restful API = GET, POST(PUT, DELETE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

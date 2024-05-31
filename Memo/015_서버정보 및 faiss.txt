@@ -1,0 +1,184 @@
+https://github.com/otamajakusi/opencv_video_with_audio
+
+접속 : ssh ai@211.216.177.2 -p 5500
+Id : ai, Pw : @ai1234@
+디비 : 3306
+Id : root, pw: @ai1234@
+웹 : 10000-20000
+Ubuntu, GPU, Python3.10, Mariadb
+Docker, Docker-composer
+/ai/ai_edu/
+
+<도커>
+sudo docker images
+
+<작업경로>
+$ ai
+ai -> test
+$ jtop
+
+-----------------------------------------------------------
+
+1. Django Mariadb 연동
+
+<서버접속>
+ssh ai@211.216.177.2 -p 5500
+https://mobaxterm.mobatek.net/
+
+<장고에 원격접속할 데이터 베이스>
+sudo mysql -u root -p
+[sudo] <- root 암호
+password: db 암호
+
+본인 스타일에 맞게 생성
+id: teacher
+db : teacherdb
+pw: 
+
+# 데이터베이스를 선택 명령
+[Mariadb(none)]> use mysql;
+[Mariadb(mysql)]>
+
+# 데이터베이스 생성
+[Mariadb(mysql)]> create database psjdb;
+
+# 사용자를 생성
+[Mariadb(mysql)]> 
+create user 'psj'@'localhost' identified by '@ai1234@';
+create user 'psj'@'%' identified by '@ai1234@';
+
+# 데이터베이스를 사용할 사용자 권한을 부여
+grant all privileges on psjdb.* to 'psj'@'localhost';
+grant all privileges on psjdb.* to 'psj'@'%';
+
+# 권한적용
+flush privileges;
+exit
+# 사용자 계정
+mysql -u psj -p psjdb
+
+<Django 서비스에 DB 연결하기>
+vscode -> 
+
+1. 프로젝트 경로 
+d:\ai_exam\aiwebcam
+
+2. 가상환경 생성
+anaconda Powershell Prompt -> p312_aiwebcam
+# 가상환경 생성
+> conda create -n p312_aiwebcam python=3.12
+
+vscode 연동
+
+4. 라이브러리 설치
+- Django (web프레임워크)
+pip install django==4.0
+pip install opencv-python
+pip install pillow
+conda install -c conda-forge dlib
+pip install matplotlib
+
+/aiwebcam/settings.py
+
+python manage.py runserver
+
+pip install mysqlclient
+
+<장고 데이터베이스 초기화(생성)>
+python manage.py migrate
+
+<테이블을 생성하는 방법>
+/web/models.py
+
+<테이블 생성 여부 확인>
+python manage.py makemigrations web
+python manage.py migrate
+
+app이름_table명
+web_webuser
+
+http://localhost/web/adduser/
+=> 데이터베이스에 저장
+
+/web/urls.py
+path('adduser/', views.adduser, name='adduser'),
+/web/views.py
+def adduser(request):
+    return HttpResponse('adduser 링크')
+
+python manage.py runserver
+http://localhost/web/adduser/
+=> 데이터베이스 자료 저장
+
+# 사용할 테이블 설정
+from .models import WebUser
+
+meta -llama 생성형챗봇 <- 인덱스 핵심기술 : faiss
+
+<Inception V3 KFood 관련>
+
+d:\ai_exam\inceptinn_v3_kfood 에서 받아가세요.
+용량 1.7G
+
+-----------------------------------------------------------
+
+FaceRecognition 과 Faiss를 이용한 얼굴 검출
+
+1. 얼굴의 특징(landmark)만 추출하여 파일로 저장
+
+faiss_dataset.py
+
+- face_recognition(dlib) <= 얼굴검출을 위해서 사용하는 lib
+- faiss <= 유사도 검출 엔진
+
+<라이브러리 설치>
+pip install face_recognition
+pip install faiss-cpu
+pip install faiss-gpu     <= CUDA, CuDNN 설치가 되어 있는경우
+
+PIL -> pip install pillow
+
+./org_data/001_정우성_jungwoosung/1.jpg
+./data/jungwoosung/1.jpg
+
+1. path 가져와서... 경로에서 분리
+2. ./org_data/001_정우성_jungwoosung/1.jpg 통째로 분석
+
+<작업순서>
+사진 10장 이내로 정확하게 예측
+데이터전처리 -> 데이터 훈련(Train):벡터DB -> 예측(Predict)
+=> 실제 프로그램에서는 "예측"만 사용합니다.
+
+(*)1. 데이터 전처리 : faiss_dataset.py -> dataset
+=> 수고하셨습니다., 중급
+2. 훈련 벡터DB : faiss_train.py -> fiass_idx(벡터)
+=> train/faiss.idx (벡터DB)
+=> 인코딩 : 문제, 답(경로)
+3. 벡터DB로 예측 : faiss_predict.py -> Django에 서비스에서 사용
+1.jpg, jungwonsung <- 라벨링
+
+       -3         -2        -1
+./dataset/yoojaesuk/9.jpg
+
+faiss_predict.py
+
+result = face_predict(예측하고싶은 opencv들어온값)
+총 3개이상 예측값이 일치하면 값을 result로 보내고
+아니면 unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

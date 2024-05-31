@@ -1,0 +1,145 @@
+<Django, FaceRecognition 개발>
+1. 프로젝트 생성
+경로
+d:\ai_exam\aicctv
+vscode -> 프로젝트경로 설정
+
+가상환경
+conda create -n p310_aicctv python=3.10
+vscode 가상환경 연결
+
+<라이브러리 설치>
+- 카메라 테스트(Opencv)
+
+(p310_aicctv) D:\ai_exam\aicctv>
+pip install opencv-python
+pip install opencv-contrib-python
+
+import cv2
+=> opencv를 설치해야함.
+cv2.__version__
+=> __version__ <= python 공식 라이브러리에 버젼 확인.
+
+pip install opencv-python==00000
+
+1. 이미지를 호출 -> 가공 -> 변경작업
+   Python -> RGB(정상)
+   matplotlib -> BGR(BGR2RGB로 변환을 해주면 정상)
+2. 실시간 영상 호출 -> 인공지능 구현 -> 실시간영상 출력   
+4. 영상을 처리할때
+
+# 이미지의 특징을 추출
+3. 이미지를 변형(이진화:흑백) -> 분석, 라인을 추출 용도
+
+# 비디오 만드는 법
+https://www.youtube.com/watch?v=07EzMbVH3QE
+https://www.ssyoutube.com/watch?v=07EzMbVH3QE
+
+opencv 사람 얼굴 인식
+
+---------------------------------------------------------------------
+
+5. dlib 라이브러리 설치
+(X) pip install dlib <- 설치상 에러는(x), 동작(X)
+
+pip install cmake
+conda install -c conda-forge dlib
+dlib <- 학습시키는 것은 아님.(인공지능 이미 학습이 된)
+=> Pre-Trained Model
+http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+http://dlib.net/files/
+shape_predictor_5_face_landmarks.dat.bz2
+shape_predictor_68_face_landmarks.dat.bz2 
+
+*.dat -> d:\ai_exam\aicctv\trained
+
+dlib_test.py
+
+pip install jupyter
+jupyter notebook
+!pip install matplotlib
+import matplotlib.patches as patches
+
+자동차 = 얼라인먼트 잡는다.
+align
+alignment
+
+-------------------------------------------------------------------------
+
+opencv로 dlib 처리 결과 실시간 처리
+
+dlib_live.py
+
+-------------------------------------------------------------------------
+
+python web 프레임워크 : django
+
+Django 프레임워크 설치
+pip install django==4.0
+
+# 테스트
+# 실제 할때
+
+<버전확인>
+django-admin --version
+4.0
+
+- 프로젝트 생성
+django-admin startproject testweb
+
+장고 프로젝트 생성
+d:\ai_exam
+(base) D:\ai_exam>conda activate p310_aicctv
+(p310_aicctv) D:\ai_exam>django-admin startproject testweb
+vscode -> D:\ai_exam\testweb
+
+<웹서비스 실행>
+python manage.py runserver
+http://127.0.0.1:8000/
+
+<영문상태 한글로 변환>
+환경설정 settings.py
+
+<우리가 원하는 페이지를 만들어서 서비스를 가동>
+회원관리(추가,수정,삭제,리스트,통계,데이터분석...) - app
+기업정보관리(기업정보,데이터관리,수정,삭제,리스트....) - app
+결재관리(결재내역, 매출통계, 결재자정보....) - app
+
+* 테스트홈페이지
+django-admin startapp web
+http://127.0.0.1:8000/
+python manage.py runserver
+
+web 서비스중
+web2 개발중
+
+<데이터베이스 초기화 및 생성>
+python manage.py migrate
+
+<Django 관리자 생성>
+python manage.py createsuperuser
+admin
+test@naver.com
+@ai1234@
+Superuser created successfully.
+python manage.py runserver
+
+<외부 html파일 연결>
+settings.py template 설정
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

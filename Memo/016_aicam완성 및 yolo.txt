@@ -1,0 +1,174 @@
+<AIWEBCAM 완성 및 yolo>
+
+* 라이브러리 설치
+pip install pillow
+pip install face_recognition
+pip install faiss-cpu
+
+1. 함수화 
+rst = face_detect(파일명)
+rst = 이름
+rst = unknown
+2. 5개 거리측정 중 3개를 일치한것을 사용할건지 4개 일치
+=> 100명 이내 4개정도 충분
+=> 100명 이상 3개정도 충분
+
+3. 결과값(label)을 저장
+넘파이 = npy로 저장이 가능
+np.save('파일명', 넘파이배열명)
+
+4개이상 안맞으면 UNKNOWN
+
+<구현>
+- 배열 중 가장 많은 값이 나온것을 찾아는 방법
+
+
+올란도
+['eomjiyoon', 'eomjiyoon', 'eomjiyoon', 'eomjiyoon', 'eomjiyoon']
+[[0.12891977 0.12931971 0.14311521 0.14595234 0.15360264]]
+['eomjiyoon', 'eomjiyoon', 'eomjiyoon', 'eomjiyoon', 'eomjiyoon']
+[[0.09750358 0.1213411  0.12645033 0.13529344 0.15772548]]
+
+정우성
+['jungwoosung', 'jungwoosung', 'jungwoosung', 'jungwoosung', 'jungwoosung']
+[[0.09600053 0.10376897 0.11259516 0.11821061 0.1265328 ]]
+
+장원영
+['jangwonyoung', 'jangwonyoung', 'jangwonyoung', 'jangwonyoung', 'jangwonyoung']
+[[0.04837712 0.05729084 0.06686141 0.0779815  0.08037971]]
+
+수지
+['winter', 'jangwonyoung', 'chuu', 'ningning', 'jangwonyoung']
+[[0.13697721 0.13960233 0.13964868 0.14256762 0.1472942 ]]
+
+장동건
+['jungwoosung', 'gongmyeong', 'gongmyeong', 'jungwoosung', 'gongmyeong']
+[[0.24936612 0.289993   0.29010075 0.294829   0.30711165]]
+
+안유진
+['ningning', 'jangwonyoung', 'haerin', 'ningning', 'jangwonyoung']
+[[0.1286445  0.14117293 0.14349434 0.14598683 0.14713421]]
+
+# 2. 이전작업(이사)
+
+ai_project \
+                  train    
+                  dataset  
+                  predict
+
+http://localhost:8000/web/face_test/
+
+urls.py -> views.py
+
+/web/urls.py
+path('face_test/', views.face_test, name='face_test'),
+
+/web/views.py
+face_test 함수 생성
+
+<프로젝트 실행>
+python manage.py runserver
+http://localhost:8000/web/face_test/
+
+파일 : 
+
+-----------------------------------------------------------------------------------
+
+<프로젝트 YOLO 테스트>
+https://github.com/ultralytics/yolov5
+https://www.ultralytics.com/ko
+
+https://github.com/ultralytics/yolov5?tab=readme-ov-file
+
+엔진 설치 후 사용
+
+d:\ai_exam\yolov5_test
+
+<가상환경 생성>
+conda create -n p312_yolov5 python=3.12
+
+vs로 프로젝트 열기
+
+라이브러리 설치(한번에)
+pip install -r requirements.txt
+
+객체 인식 잘되는 확인
+객체에 대한 클래스 정의된 부분(PyYaml)
+/data/coco.yaml
+
+동작시키는 방법
+python detect.py --weights yolov5s.pt --source 0
+
+동작시키는 방법(핸드폰만 인식하게 하고 싶다면)
+python detect.py --weights yolov5s.pt --source 0 --classes 67
+
+인터넷에 있는 이미지를 학습
+python detect.py --weights yolov5s.pt --source https://i.namu.wiki/i/ZYLCb6LByDT3j0mEJdG5yBYXpuJvl99Q1Z4c9GKZZQIcnnSRy2xGDqjwtJXeiAi3s0ChifAfgrnrItFkGJyvZg.webp
+
+Results saved to runs\detect\exp3
+
+유튜브 영상
+python detect.py --weights yolov5s.pt --source https://www.youtube.com/watch?v=07EzMbVH3QE
+
+확인 
+pip list
+
+torch              2.3.0
+torchvision        0.18.0
+ultralytics        8.2.23
+
+d:\ai_exam\yolov5_program
+vscode 변경 위에것으로(가상환경 동일)
+
+pip install yolov5
+
+Fusing layers... 
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients, 16.4 GFLOPs
+Adding AutoShape... 
+image 1/1: 900x1000 6 persons
+Speed: 212.0ms pre-process, 165.1ms inference, 2.0ms NMS per image at shape (1, 3, 576, 640)
+
+# 프로그램 할 경우 실제 정보를 확인
+results.pandas().xyxy[0]
+         xmin        ymin        xmax        ymax  confidence  class    name
+0  694.448853  119.729546  938.941956  811.007996    0.830235      0  person
+1  554.129700  155.565964  756.010254  816.624268    0.800385      0  person
+2   32.515110  154.314636  315.708130  816.086609    0.755296      0  person
+3  387.145996   44.260338  600.627930  518.227112    0.738207      0  person
+4  415.658234  420.063416  637.399536  846.527527    0.531388      0  person
+5   80.934410  262.833771  505.835266  846.158997    0.365770      0  person
+
+# 미세 조정 처리 하는 방법
+# 파라미터 제어
+model.conf = 0.6    <= 인식률
+model.iou = 0.45    <= 모델과 모델의 겹치는 %
+
+# 커스텀 모델 구현
+1. 원본데이터 -> 데이터셋 생성 (Yolov5용 데이터셋 별도로 존재)
+강아지, 고양이 3개 데이터만 데이터셋 Yolo 만들어보기
+google -> PyPi LabelImg
+pip install labelImg
+labelImg
+
+d:\ai_exam\yolov5_program\dataset
+강아지와 고양이가 같이 있는 사진 3개만 다운로드 받아서 넣어주세요.
+
+conda create -n p37_label python=3.7
+
+2. 학습
+3. 결과를 프로그램에 사용
+
+커스텀 학습 진행 해보도록 하겠습니다.
+데이터셋
+영어 수화 Dataset A-Z
+
+gogle -> roboflow 데이터셋
+
+
+
+
+
+
+
+
+

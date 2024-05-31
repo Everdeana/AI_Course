@@ -1,0 +1,150 @@
+open(‘파일명’,’모드‘,encoding=‘인코딩 형식‘)
+
+<파일처리 : 저장('w'), 불러오기('r')>
+1. 저장하기
+save_file = open('save.txt', 'w', encoding='utf8')
+print('테스트 1 : 테스트입니다.', file=save_file)
+print('테스트 2 : 테스트입니다.2', file=save_file)
+save_file.close()
+
+2. 불러오기
+fileload.py
+006_pickle_save.py(저장)
+007_pickle_load.py(불러오기)
+3. 예외처리
+- 할필요가없음
+- 책 맨 마지막에
+008_exception.py(예외처리)
+숫자를 / 0 => 에러
+숫자를 입력하세요:0
+Traceback (most recent call last):
+  File "d:\ai_exam\pythonexam\008_exception.py", line 3, in <module>
+    y = 10 / x
+        ~~~^~~
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+PS D:\ai_exam\pythonexam> 
+숫자를 입력하세요:0
+Traceback (most recent call last):
+  File "d:\ai_exam\pythonexam\008_exception.py", line 3, in <module>
+    y = 10 / int(x)
+        ~~~^~~~~~~~
+ZeroDivisionError: division by zero
+
+try:
+     정상소스
+exception:
+     에러 처리
+
+------------------------------------------------------
+책 맨마지막(class)
+cafe.py <- class
+010_class.py <- cafe를 호출
+
+starbucks = Cafe("스타벅스","카페라떼")
+
+스타벅스 -> 주문:카페라떼, 크기:톨
+투썸 -> 주문:아메리카노, 크기:레귤러
+이디야 -> 주문:바닐라라떼, 크기:빅
+
+------------------------------------------------------
+window 프로그램을 제작
+윈도우 프로그램 라이브러리 = PyQt5
+
+라이브러리가 python버전 몇과 호환하는지 확인
+PyPi PyQt5
+화면청소 : clear
+
+1. 설치
+pip install PyQt5
+google - pybithumb
+pip install pybithumb
+KRX: 090430
+NASDAQ: NVDA
+nvida.py
+pip install finance-datareader
+import FinanceDataReader as fdr
+df = fdr.DataReader('001250', '2018')
+df.head(10)
+
+<윈도우를 뛰우기>
+001_hellowin.py
+PyQt5.QtWidgets <- 윈도우 CORE
+윈도우 만드는명령 : QApplication
+002_winclass.py
+
+처음시작할때 윈도우 싸이즈를 고정
+윈도우 타이틀
+self.set
+
+아이콘 무료 사이트
+https://www.iconfinder.com/
+
+<버튼>
+버튼에 이벤트를 주는 방법
+https://build-system.fman.io/qt-designer-download
+main.ui
+003_pyqtui.py
+btn2
+버튼2클릭
+QMessageBox.about
+sweetalert2
+
+메시지박스에서 선택
+buttonReply = QMessageBox.information(
+        self, 'Information Title', "Information Message", 
+        QMessageBox.Yes | QMessageBox.Save | QMessageBox.Cancel | QMessageBox.Reset | QMessageBox.No, 
+        QMessageBox.No
+        )
+
+    if buttonReply == QMessageBox.Yes:
+        print('Yes clicked.')
+    elif buttonReply == QMessageBox.Save:
+        print('Save clicked.')
+    elif buttonReply == QMessageBox.Cancel:
+        print('Cancel clicked.')
+    elif buttonReply == QMessageBox.Close:
+        print('Close clicked.')
+    elif buttonReply == QMessageBox.Reset:
+        print('Reply clicked.')
+    else:
+        print('No clicked.')
+출처: https://mr-doosun.tistory.com/29 [고졸 입니다만..:티스토리]
+
+<와이어프레임설계>
+- 카카오 오븐
+
+다음주
+1. 크롤링, 데이터분석(WORDCLOUD)
+- EDR
+
+<클라우드>
+docker, docker-compose
+
+검색 : btnSearch
+라인에디터 : lbSearch
+
+철수가 (    )에 갔습니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

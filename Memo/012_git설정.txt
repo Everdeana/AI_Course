@@ -1,0 +1,72 @@
+<GIT 사용법>
+git clone 원격지 레파지토리 경로
+
+git config --global user.name “park”
+git config --global user.email “matalcross@naver.com”
+# 한글이 깨는경우
+git config --global core.quotepath off
+
+<CNN 주력>
+VGG16, Incepition V3, RESNET50
+- Incepition V3
+
+<git, kaggle, ai-hub 데이터 정보제공사이트>
+데이터를 우리가 원하는 엔진에 맞게 가공(데이터 전처리)
+https://www.kaggle.com/code/iambashar/food-250-inception-v3/data
+https://github.com/karansikka1/iFood_2019?tab=readme-ov-file
+=> 데이터 분류, 가공
+
+받으실파일
+train images
+
+** 성능 테스트
+- 학습 : GPU
+- 적용 : GPU(X), GPU(O) - 생성형AI
+RESNET -> 
+
+ObjectDetection 웹서비스 같이 개발 + 인공지능
+
+/test_img/ cat1.jpg - cat3.jpg
+
+<데이터를 인공지능이 학습 가능하도록 분리>
+데이터셋을 완성한 결과를 넣을 경로
+d:\ai_exam\cnn_exam\datasets\food
+다운로드 받은 원본
+d:\ai_exam\cnn_exam\datasets\food_org
+
+abc폴더
+coffee_001.jpg
+coffee_002.jpg
+cake_004.jpg
+cake_004.jpg
+
+coffee_001
+.jpg
+coffee
+001
+
+<음식10개만>
+0 bibimbap
+1 chiffon_cake
+2 donut
+3 egg_roll
+4 garlic_bread
+5 gyoza
+6 kabob
+7 omelette
+8 pizza
+9 sashimi
+
+5113
+4094(train)
+1019(valid)
+5113
+
+학습
+Callback -> epochs 이 동작할때마 자동저장
+EearyStopping ->
+
+0/256 
+
+
+

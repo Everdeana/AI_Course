@@ -1,0 +1,76 @@
+<visualstudio code>
+d:\ai_exam 폴더
+
+1. python 기초
+d:\ai_exam\pythonexam
+
+<확장프로그램>
+material thema(테마)
+indent-rainbow(코드의 색상구분)
+auto rename tag
+CSS Peek
+HTML CSS Support
+Live Server
+CodeSnap-K.O
+
+2. anaconda 설치
+=>인공지능 개발에 사용하는 툴
+google - "anaconda"
+anaconda -> windows
+virtalenv -> mac, linux
+
+<pc 정보확인>
+command -> Live 
+
+win -> 실행 -> cmd
+netstat | more
+http://192.168.0.47:5500/test.html
+
+
+<Ananconda 사용법>
+1. 가상환경 정보를 확인(list)
+conda env list
+2. 가상환경 만들기
+예) python3.8 tensorflow 2.4
+p38t24_yolov5
+
+conda create -n p38_python python=3.8
+- 가상환경 들어가기(python3.8)
+conda activate p38_python
+- 가상환경 나가기
+conda deactivate
+
+python3.11 가상환경 만들기
+conda create -n p311_python python=3.11
+conda activate p311_python
+
+vscode에 연결
+
+라이브러리 설치 내용확인
+pip list
+pip 버젼 가장 최신버전으로 업데이트
+python -m pip install --upgrade pip
+
+<언어>
+001_exam1.py
+주석처리하는 명령어 : ctrl + /
+
+주석
+print
+type
+변수 선언하고 사용하는법
+입력
+출력할때 문자열과 문자열은
+문자열 + 문자열
+
+
+             학습:평가
+10,000 = 8:2
+280a8a4d-a27f-4d01-b031-2a003cc4c039
+
+python abc.py 456 2345
+
+
+
+
+

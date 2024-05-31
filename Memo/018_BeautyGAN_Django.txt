@@ -1,0 +1,185 @@
+<BeautyGAN + Django + API + NextJS>
+오전 9시 - 10까지 팀별회의
+
+1. 데이터 크롤링 하라고 하는데...
+   * 정형화 되어있지 않다.
+   
+   - 데이터가 200개 이하인경우
+     크롤링(X)
+     관리자페이지를 하나 생성
+     => 데이터를 25개씩
+
+   - 데이터가 200개 이상이고 종류가 아주 다양하다면
+     관리자페이지를 하나 생성
+     가장 많은 데이터가 있는 부분만 크롤링
+     나머지는 수작업
+
+-----------------------------------------------------------------------
+
+앱을 추가해서 GAN(tensorflow 1.9)
+python 
+
+google -> beautygan
+
+https://github.com/Honlan/BeautyGAN
+
+- 언어 : python 3.6
+- 텐서플로우 : tensorflow 1.9
+
+d:\ai_exam\beautygan
+가상환경
+라이브러리로 구축 => 활용
+python 3.6 tensorflow 1.9
+
+conda create -n p36_beautygan python=3.6
+
+vscode d:\ai_exam\beautygan
+가상환경 셋팅
+
+dlib 설치
+conda install -c conda-forge dlib
+jupyter 설치
+pip install jupyter
+jupyter notebook
+!pip install matplotlib
+!pip install tensorflow==1.9
+
+dlib 얼굴 추출 알고리즘
+d:\ai_exam\aicctv\train
+shape_predictor_5,68 복사
+dlib_face.ipynb -> d:\ai_exam\beautygan
+
+2. 모델 파일 복사
+d:\ai_exam\beautygan\model
+인터넷에서 다운로드 받은 4개파일
+
+3. 이미지 파일(jpg) 2개를 다운
+1. 파일 : 화장을 안한 쌩얼 (정면) <- source
+d:\ai_exam\beautygan\source
+2. 파일 : 화장을 한 얼굴 (정면) <- reference
+d:\ai_exam\beautygan\ref
+
+전처리 preprocess
+복원 postprocess
+
+0-1 -> 인공지능(X) -> 0-1 -> 복원 0-255
+
+<서비스 프로그램으로 제작한다면>
+Django(백엔드)
+
+- 소스이미지
+/media/source/2024-05-30/1.jpg
+- 레퍼런스
+/media/ref/
+                1.jpg
+                2.jpg
+                3.jpg
+- 결과파일
+/media/result/2024-05-30/1.jpg
+
+http://localhost:8000/media/result/2024-05-30/1.jpg
+
+
+def makeup(원본이미지, 레퍼린스이미지, 결과파일저장경로)
+
+postman
+
+Backend API(Django)
+http://koraiaai.cafe24.com:20001/api/v1/main/getnewaiservices
+http://koraiaai.cafe24.com:8080/home
+
+{
+    "code": 1,
+    "newAi": [
+        {
+            "screen1": "http://koraiaai.cafe24.com:20001/media/aitools/69a0312a-8160-4cea-ac98-060c1ef9482d/01_20240429010637.png",
+            "s_names": "아이들을 위한 재미있는 AI 학습 플랫폼",
+            "comnames": "AI for kids",
+            "uuid": "69a0312a-8160-4cea-ac98-060c1ef9482d"
+        },
+        {
+            "screen1": "http://koraiaai.cafe24.com:20001/media/aitools/fe3a7b89-44cd-4f1f-b7df-c241dbc5dde9/01_20240429004601.webp",
+            "s_names": "스타트업 및 대행사를 위한 무제한 AI 강화 디자인",
+            "comnames": "PRISMAL",
+            "uuid": "fe3a7b89-44cd-4f1f-b7df-c241dbc5dde9"
+        },
+        {
+            "screen1": "http://koraiaai.cafe24.com:20001/media/aitools/6554e63a-ae24-4e43-8675-2783e015f285/01_20240428145256.webp",
+            "s_names": "정확한 텍스트 변환을 위한 OCR 도구",
+            "comnames": "https://pdftopdf.ai/",
+            "uuid": "6554e63a-ae24-4e43-8675-2783e015f285"
+        },
+        {
+            "screen1": "http://koraiaai.cafe24.com:20001/media/aitools/9e9f645e-dc38-48be-b4be-17957ab1b952/01_20240428144757.webp",
+            "s_names": "예술 작품을 만드는 무료 AI 도구",
+            "comnames": "Illusion Diffusion AI",
+            "uuid": "9e9f645e-dc38-48be-b4be-17957ab1b952"
+        }
+    ]
+}
+
+./media/result/20240530/1_rst.jpg
+
+http://localhost:8000/media/result/20240530/1_rst.jpg
+
+인공지능(BeautyGAN 인공지능)
+
+<Django API 만들기>
+Django -> BeautyGAN -> DB생성 -> 저장
+=> API 호출하는 것을 생성
+
+1. 백엔드
+=> 인공지능에서 개발된 내용을 서비스에서 보여주는
+=> API
+
+백엔드
+d:\ai_exam\beautyganweb
+
+pip install django==3.2.25
+pip install faiss-cpu-py36
+pip install --only-binary :all: mysqlclient
+
+백앤드 개발...
+인공지능지능-> 라이브러리 완성
+=> 백엔드에 서비스구축
+=> api 제작 배포
+
+1. django 프로젝트
+django-admin startproject beautyganweb .
+(실행)
+python manage.py runserver
+http://127.0.0.1:8000
+
+2. 설정파일 수정
+/beautyganweb/settings.py
+ALLOWED_HOSTS = ['*']
+
+LANGUAGE_CODE = 'ko-kr'
+TIME_ZONE = 'Asia/Seoul'
+
+3. media 파일 보이도록처리
+http://127.0.0.1:8000/media/result/20240530/1_rst.jpg
+/beautyganweb/settings.py
+/beautyganweb/urls.py
+
+4. 앱추가
+인공지능 연결하고
+DB생성
+API 만드면 되는데...
+
+django-admin startapp api
+
+* 동작시키려면 ?
+=> 잘하면되죠...
+
+(1) urls -> views -> models
+앱은 생성하고 등록을 해주어야함.
+/beautyganweb/settings.py
+
+
+
+
+
+
+
+

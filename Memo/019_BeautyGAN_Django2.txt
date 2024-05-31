@@ -1,0 +1,77 @@
+<BeautyGAN + Django + API + NextJS>
+
+* 작업순서 =>
+백엔드 모두완료 -> 프론트엔드
+
+- 화면 제작
+API 앱
+RESTfiul API
+
+<Api 만드는 방법>
+getmodellist
+
+http://localhost:8000/api/v1/getmodellist
+Json파일로 전송
+Python => Dic
+
+앱 > urls -> views
+1. urls 설정
+/beautyganweb/urls.py
+/api/urls.py
+(서버가동)
+python manage.py runserver
+http://localhost:8000/api/v1/      <= 운영중
+http://localhost:8000/api/v2/      <= 새로 서비스를 런칭(기능보강)
+
+<db>
+/aiwebcam/aiwebcam/settings.py
+
+python manage.py migrate
+
+<Table 생성>
+/api/models.py
+table => RefModels
+name
+image
+item
+shop
+doc
+dates
+
+* 생성
+Django 관리자에 table 등록
+관리자에서 데이터등록
+
+테이블 추가 여부 확인
+python manage.py makemigrations api
+python manage.py migrate
+
+<관리자페이지에서 등록>
+python manage.py createsuperuser
+사용자 : admin
+암호 : @ai1234@
+
+http://localhost:8000/admin
+
+/beautyganweb/settings.py
+/beautyganweb/urls.py
+
+python manage.py collectstatic
+
+<admin에 테이블추가>
+
+이미지 레퍼린스 3개만
+
+<API에서 정보 가져오기 DB>
+
+
+
+
+
+
+
+
+
+
+
+

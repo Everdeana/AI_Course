@@ -1,0 +1,106 @@
+<CNN>
+COLAB - VGG16
+RESNET
+Inception V3
+--------------------
+Yolo v5
+MediaPipe
+Face Recognition
+FASSIS
+Dlib
+
+<생성형AI>
+U-NET 
+
+<RNN> - 언어처리
+RNN, LSTM, GRU(X), BERT, DistilBERT
+토크나어져(Ko---)
+=> 자연어처리 관련 프로젝트
+RAG, LangChain, ChatGPT, GEMINI
+
+<웹 프레임워크>
+Django(0), Flask(V), FastAPI(0)
+
+<프론트 프레임워크>
+NextJS, Vue - 하루정도 교육
+
+<Java 스프링부트>
+SpringBoot, Java
+
+----------------------------------------------------
+
+colab, 구글 드라이브, kaggle데이터
+
+1. google -> "colab"
+2. google -> "구글드라이브"
+3. google -> "kaggle"
+
+VGG16 구현
+- Tensorflow->Applications->VGG16 엔진
+
+<데이터 디럭토리>
+/content
+/drive <- 외부연결
+/content/drive/MyDrive/datasets
+
+<이름 변경>
+vgg16_kaggle
+
+- 텐서플로우 버젼
+- python 버젼
+
+데이터다운로드
+https://www.kaggle.com/datasets/salader/dogs-vs-cats
+
+* 대부분의 데이터
+* 이미지만 제공
+이미지 데이터 = 문제
+이미지 답 = 답
+
+/dataset/training_set/
+cats	이미지(문제)
+dogs	이미지(문제)
+
+cats	폴더명(정답)
+dogs	폴더명(정답)
+
+구글 드라이브 데이터셋 업로드
+압축파일
+
+압축풀기
+디렉토리 이동명령 %
+%cd /content/drive/MyDrive/datasets
+
+!ls
+
+압축풀기
+!unzip dataset.zip
+
+Applications 에 있는 학습(Pre-Trained) 모델은 
+층을 조정해서 사용할 수 있다.
+
+include_top=True
+=> 모델 변경불가
+=> input_shape도 변경이 불가( 옵션에서 제외 )
+include_top=False
+=> 모델에 Block 부분을 제외한 부분 수정이 가능
+
+리눅스, 맥
+.test
+=> 눈에 안보이는 히든파일
+glob -> 디렉토리 정보 확인
+
+#train데이터
+trainIDG = ImageDataGenerator(rescale=1./255,         # 사실 이 부분은 전처리 과정에서 했다.
+                              zca_whitening=True,     # apply ZCA whitening
+                              rotation_range=30,      # randomly rotate images in the range (degrees, 0 to 180)
+                              zoom_range = 0.2,       # randomly zoom image
+                              width_shift_range=0.1,  # randomly shift images horizontally (fraction of total width)
+                              height_shift_range=0.1, # randomly shift images vertically (fraction of total height)
+                              horizontal_flip=True,   # randomly flip images
+                              vertical_flip=True)     # randomly flip images
+
+
+
+
+

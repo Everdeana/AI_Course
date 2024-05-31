@@ -1,0 +1,113 @@
+<PyQt5 이용한 Crawling>
+- requests(데이터 송수신)
+- BeautifulSoup4(가져온 데이터를 분석)
+
+<구현순서>
+1. 화면설계(PyQt5)
+2. 멀티윈도우(메인, 크롤링, 데이터분석)
+3. crawling
+4. WordCloud 구현
+
+<맨처음 확인할 사항>
+10개월
+1 2 3 4 5 6 7 8 9 10
+
+<프레임워크확인>
+pypi wordcloud
+
+1. <파이썬 버젼 10버전>
+d:\ai_exam\pyqt_crawling
+
+2. 가상환경
+가상환경명 : p310_crawling
+anaconda-prompt 
+
+- 가상환경 만들기
+conda create -n p310_crawling python=3.10
+
+- vscode 실행
+프로젝트 경로 : d:\ai_exam\pyqt_crawling
+- 프로젝트 가상환경 연결
+  => python 파일이 1개 이상
+
+<라이브러리 설치>
+pip install pyqt5
+btn_close
+btn_search
+print("seach 선택")
+btn_wordcloud
+print("wordcloud 선택")
+
+search_naver.py
+- 설치할 라이브러리
+pip install beautifulsoup4
+pip install selenium
+pip install requests
+
+네이버 지식인
+https://kin.naver.com/search/list.naver?query=고양이
+
+https://kin.naver.com/search/list.naver
+URL주소
+https:kin.naver.com/search/list.naver?query=고양이&page=9
+
+https:kin.naver.com/login?id=test&password=1234
+
+보낼때
+get 
+https:kin.naver.com/login?id=test&password=1234
+post
+https://kin.naver.com/login
+<숨어있음>
+id=test
+password=1234
+
+<파이썬 프로그램 제작시>
+1. 맨처음 라이브러리로 설정
+
+저장 -> csv파일로 저장
+<ul class="basic1">
+
+searchList = [
+{'name':'홍길동','age':30},
+{'name':'홍길동1','age':31}
+]
+=> JSON
+
+[
+[],
+[],
+[],
+]
+
+tmp = ['강아지 입양 관련 질문',
+https://kin.naver.com/qna/detail.naver?d1id=8&dirId=8050101&docId=467038299&qb=6rCV7JWE7KeA&enc=utf8§ion=kin.qna_ency&rank=10&search_sort=0&spq=0']
+
+searchList.append(tmp)
+
+data, link
+데이터, 링크
+
+<구조설계>
+함수
+def naverKin('검색어', '페이지')
+
+for i in range(100):
+     naverKin('고양이', i)
+
+
+lineedit => le_search
+검색 -> btn_search
+저장 -> btn_save
+
+리스트추가 - btn_add
+listView -> lv_search
+
+
+
+
+
+
+
+
+
