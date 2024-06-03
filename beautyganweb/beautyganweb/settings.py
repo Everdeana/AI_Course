@@ -9,9 +9,8 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
-from pathlib import Path
 import os
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$r%reboot!uizyewr^x!k+ten@oe4#i@7m8k%1&o+_js)f&b^w'
+SECRET_KEY = 'django-insecure-zk&t89jf2%(6r2#$!$#y2)yow^egbi-g(a-#a_!yy_y467bq=9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -38,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'api',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -80,15 +79,16 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
-	'default' : {
-		'ENGINE' : 'django.db.backends.mysql', # 벡엔드 엔진
-		'NAME' : 'sinatradb', # 'mysql'의 이름을 가진 데이터베이스
-		'USER' : 'sinatra', # 계정
-		'PASSWORD' : '@sinatra1234@', #rootpassword로 지정할 숫자(6번에 나와있음)
-		'HOST' : '211.216.177.2',
-		'PORT' : '3306'
-	}
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'psjdb',
+        'USER': 'psj',
+        'PASSWORD': '@ai1234@',
+        'HOST': '211.216.177.2',
+        'PORT': '3306'
+    }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
