@@ -3,7 +3,7 @@ from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 # 직접 생성한 Model 사용 -> Table 사용
-from .models import RefModels
+from .models import api_RefModels
 
 # Create your views here.
 def api_index(request):
@@ -15,7 +15,7 @@ def api_index1(request):
 def api_getmodellist(request):
 	# DB
 	# select * from api_refmodels
-	datas = RefModels.objects.all()
+	datas = api_RefModels.objects.all()
 
 	sendData = []
 
