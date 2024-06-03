@@ -65,6 +65,64 @@ python manage.py collectstatic
 <API에서 정보 가져오기 DB>
 
 
+https://terms.naver.com/entry.naver?docId=6688716&cid=67992&categoryId=67992
+
+https://terms.naver.com/entry.naver?docId=6692537&cid=67992&categoryId=67992
+
+프론트엔드
+beautyganclient
+D:\ai_exam\beautyganclient
+
+<nodejs를 설치>
+google -> node
+
+NextJs 프로젝트 생성
+npm install -g create-next-app
+added 1 package in 2s
+
+npx create-next-app .
+
+/src/app/
+/app/
+
+깃 파일 다운로드
+npm install
+
+npm run dev
+"dev": "next dev -p 포트번호",
+
+client : 11000
+server: 12000
+
+http://localhost:3000
+
+/app/testweb/page.js
+
+http://localhost:11000/home
+
+/app/home
+/app/result
+
+반복되는부분은 컴포넌트로 구축
+/app/components
+inc_header.js
+inc_footer.js
+
+/public/assets/icon
+                   /logo
+
+class=
+className=
+
+stroke-linejoin
+strokeLinejoin
+stroke-width
+strokeWidth
+
+
+npm install sweetalert2
+
+npm run dev
 
 
 
