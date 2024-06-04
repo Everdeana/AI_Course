@@ -25,4 +25,7 @@ while cv2.waitKey(1) != ord('q'):
 	# cv2.imshow('winnames', binary) # 트랙바 창 따로
 	cv2.imshow(winnames, binary) # 이미지 창에 트랙바
 
+	if cv2.waitKey(1) == ord('s'):
+		cv2.imwrite('./test_data/car_bin.jpg', binary)
+		
 cv2.destroyAllWindows()
