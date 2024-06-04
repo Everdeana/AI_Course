@@ -1,0 +1,45 @@
+<Tesseract OCR, EasyOCR>
+- 번호판을 검출
+
+OCR 엔진 2개를 사용
+- OpenCV로만으로 가능
+(인공지능)
+* 영수증에 나오는 단어는 범위가 정해져있음.
+* 오타 -> 예측 -> 가장유사한 단어로 변환.
+* 성공 -> 95%
+글자가 검출 -> 오타 -> 오타교정 -> 교체
+
+(*) 1. Tesseract OCR
+(*) 2. EasyOCR
+3. Custom 제작 OCR <= LC-SVTR
+-> vi-LayoutXLM 엔진
+
+<인공지능 라이브러리 사용가능한 개발환경>
+- 언어
+google -> "PyPi Tesseract OCR" / tesserocr 2.7.0 / ALL
+google -> "EasyOCR" / easyocr 1.7.1 / ALL
+
+Python 버젼
+- python 12
+- 가상환경 p312_ocr
+프로젝트 경로
+d:\ai_exam\ocr
+
+vscode 개발 준비상태...
+
+https://github.com/UB-Mannheim/tesseract/wiki
+
+설치
+
+pip install pytesseract
+
+d:\ai_exam\ocr\test_data
+.JPG -> .jpg
+
+
+
+
+
+
+
+
