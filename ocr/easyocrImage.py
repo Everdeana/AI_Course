@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 # 이미지 불러와서 전처리
-imgFile = './test_data/car2.jpg'
+imgFile = './test_data/car1.jpg'
 org_img = cv2.imread(imgFile, cv2.IMREAD_COLOR)
 gray_image = cv2.imread(imgFile, cv2.IMREAD_GRAYSCALE)
 
