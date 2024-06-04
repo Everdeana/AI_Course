@@ -22,6 +22,7 @@ while cv2.waitKey(1) != ord('q'):
 	ret, binary = cv2.threshold(gray_image, pos, 255, cv2.THRESH_BINARY)
 	# cv2.imshow('gray_img', gray_image)
 	# cv2.waitKey(0)
-	cv2.imshow('winnames', binary)
+	# cv2.imshow('winnames', binary) # 트랙바 창 따로
+	cv2.imshow(winnames, binary) # 이미지 창에 트랙바
 
 cv2.destroyAllWindows()
