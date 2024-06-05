@@ -4,7 +4,7 @@ import cv2
 # 카메라 가동
 cap = cv2.VideoCapture(0)
 
-# 얼굴 인식 함수 호출
+# 손 인식 함수 호출
 detector = HandDetector(
 	staticMode 		= False,
 	maxHands		= 2,
