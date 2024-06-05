@@ -21,9 +21,19 @@ while True:
     if hands:
         for hand in hands:
             print(hand)
-            break
-			
-    
+            # break
+            handpoint = hand['lmList']
+            handtype = hand['type']
+            
+            print("손위치 : ", handtype)
+            
+            point4 = handpoint[4]
+            point8 = handpoint[8]
+            
+            print(point4, point8)
+            
+            length, info, img = detector.findDistance(point4[:2], point8[:2], img, color = (0, 0, 255), scale = 10)
+            print('distance = ', length)
 
     cv2.imshow('Hand view', img)
 
