@@ -8,7 +8,7 @@ from django.core.files.storage import FileSystemStorage
 # 인공지능 파일
 from beautygan_lib import makeup
 
-# 우리가 제작한 모델을 사용하겠다. 테이블을 사용하겠다.
+# 직접 생성한 Model 사용 -> Table 사용
 # QuerySet
 from .models import RefModels
 
@@ -19,8 +19,8 @@ def api_index(request):
 @csrf_exempt
 def api_getmodellist(request):
     print("getmodelist")
-    # 데이터베이스
-    # select * from api_refmodels
+    # DB
+	# select * from api_refmodels
     datas = RefModels.objects.all()
 
     sendData = []
