@@ -4,7 +4,7 @@ import numpy as np
 
 # 전역 변수
 pointList  = []
-gl_areaCut = False
+# gl_areaCut = False
 g_carnum = ''
 # 이미지 불러와서 전처리
 imgFile    = './test_data/car5.jpg'
@@ -50,13 +50,15 @@ def selectBoxCut(): # 박스를 잘라낸 후 -> 번호판(str), 자동차 박�
 	rst = render.readtext('./result/carnum.jpg')
 
 	for msg in rst:
-		print(msg[0])
+		print(msg[1])
 		g_carnum = msg[1]
-		print(g_carnum)
+		break
+
+		
 
 # 좌표를 그리는 함수
 def pointDraw():
-	global gl_areaCut
+	# global gl_areaCut
 
 	tmpImg = org_image.copy()
 
