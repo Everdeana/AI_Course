@@ -7,7 +7,7 @@ pointList  = []
 # gl_areaCut = False
 g_carnum = ''
 # 이미지 불러와서 전처리
-imgFile    = './test_data/car5.jpg'
+imgFile    = './test_data/car2.jpg'
 org_image  = cv2.imread(imgFile, cv2.IMREAD_COLOR)
 gray_image = cv2.imread(imgFile, cv2.IMREAD_GRAYSCALE)
 
@@ -52,6 +52,7 @@ def selectBoxCut(): # 박스를 잘라낸 후 -> 번호판(str), 자동차 박�
 	for msg in rst:
 		print(msg[1])
 		g_carnum = msg[1]
+		print(g_carnum)
 		break
 
 		
