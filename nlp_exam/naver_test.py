@@ -101,8 +101,8 @@ def bow(word_list, word2idx):
 
 print("vector 처리 결과")
 print(tokenized_nsmc_corpus[0])
-print(bow(tokenized_nsmc_corpus[0]), nsmc_word2idx)
+print(bow(tokenized_nsmc_corpus[0], nsmc_word2idx))
 
 
 print(tokenized_nsmc_corpus[50])
-print(bow(tokenized_nsmc_corpus[50]), nsmc_word2idx)
+print(bow(tokenized_nsmc_corpus[50], nsmc_word2idx))
