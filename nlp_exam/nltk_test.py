@@ -13,6 +13,11 @@ text = """Mbappé has long been connected with a move to Madrid, even before he 
 # 문단을 문장으로 분리
 for idx, sent in enumerate( sent_tokenize(text)):
 	i = idx + 1
+	print("-"*140)
 	print(f'{i} 번째 문장 : {sent}')
 
+	# 문장을 단어로 분리
+	print("")
+	print("단어 : ", word_tokenize(sent))
 
+print("-"*140)
