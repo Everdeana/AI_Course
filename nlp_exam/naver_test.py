@@ -1,8 +1,9 @@
 # 라이브러리 설치
 from datasets import load_dataset
 from konlpy.tag import Okt
+from pykospacing import Spacing
 
-
+spacing = Spacing()
 okt = Okt()
 
 # 네이버 영화리뷰 다운로드
@@ -45,4 +46,19 @@ for i in range(20):
 	print("words = ", words)
 
 # 맞춤법 보정과 띄어쓰기 보정하기
+tokenized_nsmc_corpus = []
+
+print('*'*20, '한글 전처리', '*'*20)
+
+# pykospacing 전처리
+for sent in nsmc_sents:
+	new_sent = spacing(sent)
+	words = [w for w, p in okt.pos(new_sent)]
+	
+	# 단어 추가
+	tokenized_nsmc_corpus.append(words)
+
+	print("전처리 전 : ", sent)
+	print("전처리 후 : ", new_sent)
+	print(words)
 
