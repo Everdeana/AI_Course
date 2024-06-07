@@ -8,7 +8,7 @@ Author-email: madjakarta@gmail.com
 License: GPL-3
 Requires-Python: >=3.6
 License-File: LICENSE
-Requires-Dist: tensorflow==2.16.1
+Requires-Dist: tensorflow==2.15.1
 Requires-Dist: h5py==3.10.0
 Requires-Dist: argparse>=1.4.0
 
