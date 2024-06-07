@@ -30,4 +30,5 @@ print(kkma.pos(text))
 print("-"*140)
 print("명사 태깅(Okt)")
 print(kkma.nouns(text))
+
 print("-"*140)
