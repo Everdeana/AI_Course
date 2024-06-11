@@ -2,8 +2,8 @@ import pandas as pd
 import json
 
 # 파일 경로 설정
-validate_cut_path = 'path_to_your_file/validate_cut.csv'
-release_evidences_path = 'path_to_your_file/release_evidences.json'
+validate_cut_path = 'ddxDataset/validate.csv'
+release_evidences_path = 'ddxDataset/release_evidences.json'
 
 # 데이터 파일 로드
 validate_cut_df = pd.read_csv(validate_cut_path)
@@ -52,5 +52,5 @@ validate_cut_df['INITIAL_EVIDENCE'] = validate_cut_df['INITIAL_EVIDENCE'].fillna
 print(validate_cut_df.head())
 
 # 변환된 데이터 저장
-output_file_path = 'path_to_your_file/updated_validate_cut_with_descriptions.csv'
+output_file_path = 'ddxDataset/updated_validate_with_descriptions.csv'
 validate_cut_df.to_csv(output_file_path, index=False)
