@@ -1,0 +1,62 @@
+<자연어처리 Transformer, BERT>
+
+- LSTM
+- 금요일에 했던 네이버 영화리뷰(LSTM) 학습(train)
+  내가 입력한 영화리뷰를 어떻게 예측하는지 확인
+
+<프로젝트>
+d:\ai_exam\transformer
+- LSTM, GRU
+- transformer 알고리즘을 구현
+- BERT ai-hub 감정 데이터를 학습(7개 강정)
+  => 내가 이야기하는 것에 대한 감정을 분석
+- python 3.12
+- p312_transformer
+- jupyter
+
+<라이브러리 설치>
+pip install jupyter
+pip install matplotlib
+pip install pandas
+pip install tensorflow
+pip install konlpy
+
+jupyter notebook
+
+!pip install tqdm
+
+EDA
+데이터를 모두 전처리하고, 그래프화 해서 보여주는 모든 단계를
+통틀어서 지칭하는 단어.
+
+loc명령
+
+pandas -> dropna
+
+<BERT>
+- 학습(kobert_train.py)
+- 예측(kobert_predict.py)
+
+<학습에 사용할 데이터셋>
+감성 대화 말뭉치 AI-HUB 58,271
+감정 분류를 위한 대화 음성 AI-HUB 19,374
+감정 및 발화스타일 동시 고려 음성 합성(대화체만 사용) AI-HUB 136,658(json)
+=> 214,303건
+= 하나의 데이터로 전처리
+
+
+
+[AI Hub] 감정 분류를 위한 대화 음성 데이터셋
+5차년도_2차.csv
+[AI Hub] 감정 분류를 위한 대화 음성 데이터셋 
+감성대화말뭉치(최종데이터)_training.csv
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,186 @@
+<자연어처리(NLP) 2-3일>
+1일(금) : 자연어처리 과정 실제 테스트 관련 라이브러리
+            처리절차, 용어, 관련라이브러리
+2일(월) : RNN 모델(Tensorflow) 구현
+            BERT엔진(감성을 분석) 파인튜닝해서 실제 동작
+            DistilBERT -> TinyBERT
+            Chatbot간단하게 구현(React, FastAPI)
+            => 현재 리눅스 서버에서 구현
+3일(화) : LLM엔진 Langchain
+            => Custom 학습 -> Custom LLM
+            => 요약기능구현 -> 장문내용을 5줄로 요약
+            => Custom Chatbot 기능 구현
+                 VectorDB 구축 -> 서비스와 연동
+            => sLLM(small Large Language Model)
+
+<대형언어모델에 사용하는 알고리즘>
+- Transformer : 트렌스포머 엔진
+
+<형태소분석, 품사 태깅>
+- NLTK, KoNlpy, Kss 딥러닝으로 구현
+  가장 많이 사용하고 있는데...
+  KoBERT 같은 엔진들이 많이 나와서...
+
+1. 프로젝트 파일 생성
+d:\ai_exam\nlp_exam
+python 3.12
+vscode 셋팅
+
+pip install django==4.0
+
+2. 라이브러리 설치
+- NLTK(MS)
+pip install nltk
+- 한글 자연어 라이브러리
+pip install konlpy
+- 한글 문장분리기
+pip install kss
+
+* PIP를 가장 최신버젼으로 업그레이드
+pip install --upgrade pip
+24.0
+2.5.1
+pip install kss==5.2.0
+=> 악마의 유혹....
+
+3. 영어 부터 시작
+nltk_test.py
+
+* 용어
+코퍼스(Corpus) = 말뭉치(단어)
+
+1번째 문장 : Yosemite may get all the attention, but a road trip to Lassen's otherworldly landscape offers a hit of jaw-dropping natural beauty - without the crowds.If Yosemite is the Disneyworld of California's national parks, Lassen Volcanic National Park is the county fair.
+
+단어: ['Yosemite', 'may', 'get', 'all', 'the', 'attention', ',', 'but', 'a', 'road', 'trip', 'to', 'Lassen', "'s", 'otherworldly', 'landscape', 'offers', 'a', 'hit', 'of', 'jaw-dropping', 'natural', 'beauty', '-', 'without', 'the', 'crowds.If', 'Yosemite', 'is', 'the', 'Disneyworld', 'of', 'California', "'s", 'national', 'parks', ',', 'Lassen', 'Volcanic', 'National', 'Park', 'is', 'the', 'county', 'fair', '.']
+2번째 문장 : But despite hosting just 11% of Yosemite's annual visitors to its otherworldly landscape, Lassen is no less awe-inspiring, yet its remote location and shorter season all help keep the crowds away.
+
+단어: ['But', 'despite', 'hosting', 'just', '11', '%', 'of', 'Yosemite', "'s", 'annual', 'visitors', 'to', 'its', 'otherworldly', 'landscape', ',', 'Lassen', 'is', 'no', 'less', 'awe-inspiring', ',', 'yet', 'its', 'remote', 'location', 'and', 'shorter', 'season', 'all', 'help', 'keep', 'the', 'crowds', 'away', '.']
+
+Kss 분리기
+kss_test.py
+
+한국어 형태소 분리
+
+공식 홈페이지 : 한나눔, 꼬꼬마, 코모란, Mecab, Okt...
+
+https://konlpy.org
+
+--', ㅠㅠ
+
+['IVE', '(', '아이브', ')', '는', '대한민국', '의', '6', '인조', '다국적', '걸그룹', '이다', '.', '스타', '쉽', '엔터테인먼트', '소속', '으로', ',', '2021년', '12월', '1일', '데뷔', '했다', '.']
+
+[('IVE', 'Alpha'), ('(', 'Punctuation'), ('아이브', 'Noun'), (')', 'Punctuation'), ('는', 'Verb'), ('대한민국', 'Noun'), ('의', 'Josa'), ('6', 'Number'), ('인조', 'Noun'), ('다국적', 'Noun'), ('걸그룹', 'Noun'), ('이다', 'Josa'), ('.', 'Punctuation'), ('스타', 'Noun'), ('쉽', 'Verb'), ('엔터테인먼트', 'Noun'), ('소속', 'Noun'), 
+('으로', 'Josa'), (',', 'Punctuation'), ('2021년', 'Number'), ('12월', 'Number'), ('1일', 'Number'), ('데뷔', 'Noun'), ('했다', 'Verb'), ('.', 'Punctuation')] 
+
+명사 태킹(Okt)
+['아이브', '대한민국', '인조', '다국적', '걸그룹', '스타', '엔터테인먼트', '소속', '데뷔']
+
+<표제어, 어간>
+표제어 ? => nltk_lemmatizer.py
+
+단어: ['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
+표제어: ['policy', 'doing', 'organization', 'have', 'going', 'love', 'life', 'fly', 'dy', 'watched', 'ha', 'starting']
+
+품사 정보 추가(doing): do     
+품사 정보 추가(dies): die     
+품사 정보 추가(watched): watch
+품사 정보 추가(has): have
+
+어간(Porter): ['yosemit', 'may', 'get', 'all', 'the', 'attent', ',', 'but', 'a', 'road', 'trip', 'to', 'lassen', "'s", 'otherworldli', 'landscap', 'offer', 'a', 'hit', 'of', 'jaw-drop', 'natur', 'beauti', '-', 'without', 'the', 'crowds.if', 'yosemit', 'is', 'the', 'disneyworld', 'of', 'california', "'s", 'nation', 'park', ',', 'lassen', 'volcan', 'nation', 'park', 'is', 'the', 'counti', 'fair', '.', 'but', 'despit', 'host', 'just', '11', '%', 'of', 'yosemit', "'s", 'annual', 'visitor', 'to', 'it', 'otherworldli', 'landscap', ',', 'lassen', 'is', 'no', 'less', 'awe-inspir', ',', 'yet', 'it', 'remot', 'locat', 'and', 'shorter', 'season', 'all', 'help', 'keep', 'the', 'crowd', 'away', '.']
+어간(Lancaster): ['yosemit', 'may', 'get', 'al', 'the', 'at', ',', 'but', 'a', 'road', 'trip', 'to', 'lass', "'s", 'otherworld', 'landscap', 'off', 'a', 'hit', 'of', 'jaw-dropping', 'nat', 'beauty', '-', 'without', 'the', 'crowds.if', 'yosemit', 'is', 'the', 'disneyworld', 'of', 'californ', "'s", 'nat', 'park', ',', 'lass', 'volc', 'nat', 'park', 'is', 'the', 'county', 'fair', '.', 'but', 'despit', 'host', 'just', '11', '%', 'of', 'yosemit', "'s", 'an', 'visit', 'to', 'it', 'otherworld', 'landscap', ',', 'lass', 'is', 'no', 'less', 'awe-inspiring', ',', 'yet', 'it', 'remot', 'loc', 'and', 'short', 'season', 'al', 'help', 'keep', 'the', 'crowd', 'away', '.']
+
+# 불용어처리(불필요한 단어들을 제거)
+
+정규화(re)
+=> 순수한 단어들만 존재
+
+
+* 기본(몸풀기) : <네이버 영화 추천데이터셋 긍정, 부정>
+naver_test.py ( 자연어 처리 입문... )
+ 
+1. datasets
+pip install datasets
+pypi PyKoSpacing
+tensorflow==2.15.1
+tensorflow==2.16.1
+
+nsmc(Naver sentiment movie corpus)
+
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'document', 'label'],
+        num_rows: 150000
+    })
+    test: Dataset({
+        features: ['id', 'document', 'label'],
+        num_rows: 50000
+    })
+})
+
+******************** 형태소 단위로 분리 ********************
+
+{ 'document': '별 반개도 아깝다 욕나온다 이응경 길용우 연기생활이몇년인지..정말 발로해도 그것보단 낫겟다 납치.감금만반복반복..이드라마는 가족도없다 연기못하 
+는사람만모엿네', 'label': 0}
+{'id': '7156791', 'document': '액션이 없는데도 재미 있는 몇안되는 영화', 'label': 1}
+{'id': '5912145', 'document': '왜케 평점이 낮은건데? 꽤 볼만한데.. 헐리우드식 화려함에만 너무 길들여져 있나?', 'label': 1}
+{'id': '9008700', 'document': '걍인피니트가짱이다.진짜짱이다♥', 'label': 1}
+{'id': '10217543', 'document': '볼때마다 눈물나서 죽겠다90년대의 향수자극!!허진호는 감성절제멜로의 달인이다~', 'label': 1}
+{'id': '5957425', 'document': '울면서 손들고 횡단보도 건널때 뛰쳐나올뻔 이범수 연기 드럽게못해', 'label': 0}
+{'id': '8628627', 'document': '담백하고 깔끔해서 좋다. 신문기사로만 보다 보면 자꾸 잊어버린다. 그들도 사람이었다는 것을.', 'label': 1}
+{'id': '9864035', 'document': '취향은 존중한다지만 진짜 내생에 극장에서 본 영화중 가장 노잼 노감동임 스토리도 어거지고 감동도 어거지', 'label': 0}
+{'id': '6852435', 'document': 'ㄱ냥 매번 긴장되고 재밋음ㅠㅠ', 'label': 1}
+{'id': '9143163', 'document': '참 사람들 웃긴게 바스코가 이기면 락스코라고 까고바비가 이기면 아이돌이라고 깐다.그냥 까고싶어서 안달난것처럼 보인다', 'label': 1}
+{'id': '4891476', 'document': '굿바이 레닌 표절인것은 이해하는데 왜 뒤로 갈수록 재미없어지냐', 'label': 0}
+{'id': '7465483', 'document': '이건 정말 깨알 캐스팅과 질퍽하지않은 산뜻한 내용구성이 잘 버무러진 깨알일드!!♥', 'label': 1}
+{'id': '3989148', 'document': '약탈자를 위한 변명, 이라. 저놈들은 착한놈들 절대 아닌걸요.', 'label': 1}
+
+sent =  남자 주인공 늑대 인간으로 변하고 끝나네유. 평점 보고 안 볼까 하다가 봤는디 재밌네유. CG보다 이런 실물 특수 효과가 더 보는 재미가 있어유. 웃기기까지 하네유. 근디 제목
+ 번역은 어느 바보가 한거여. 그냥 늑대 인간이 아니잖여.
+words =  ['남자', '주인공', '늑대', '인간', '으로', '변하고', '끝나네', '유', '.', '평점', '보고', '안', '볼까', '하다가', '봤는디', '재밌네', '유', '.', 'CG', '보다', '이런
+', '실물', '특수', '효과', '가', '더', '보는', '재미', '가', '있', '어유', '.', '웃기기까지', '하네', '유', '.', '근', '디', '제목', '번역', '은', '어느', '바보', '가', '한', '거여', '.', '그냥', '늑대', '인간', '이', '아니잖여', '.']
+
+pip install git+https://github.com/haven-jeon/PyKoSpacing.git
+
+python setup.py install
+pip install py-hanspell
+git clone https://github.com/ssut/py-hanspell
+cd py-hanspell
+python setup.py install
+
+py-hanspell/hanspell
+hanspell
+
+tensorflow==2.15.1
+
+=> 우리에게 필요한 단어들만 존재
+
+BoW(Bag of Word) = 단어사전
+단어를 백터로 만들고 몇번 나왔는지 생성처리
+- 
+'남자', '주인공', '늑대', '인간', '으로', '변하고', '끝나네', '유', '.', '평점',
+
+{'남자':0, '주인공':1, '늑대':2, '인간':3
+{'아': 0, '더빙': 1, '..': 2, '진짜': 3, '짜증나네요': 4, '목소리': 5, '흠': 6, '...': 7, '포스터': 8, '보고': 9, '초딩': 10, '영화': 11, ' 
+줄': 12, '....': 13, '오버': 14, '연기': 15, '조차': 16, '가볍지': 17, '않구나': 18, '너무': 19, '재밓었다': 20, '그래서': 21, '보는': 22, '것': 23, '을': 24, '추천': 25, '한다': 26, '교도소': 27
+
+=> 844
+남자    [1,0,0,0,0,0,0,0]
+주인공 [0,1,0,0,0,0,0,0,....]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

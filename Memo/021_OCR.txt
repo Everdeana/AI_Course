@@ -1,0 +1,115 @@
+<Tesseract OCR, EasyOCR>
+- 번호판을 검출
+
+OCR 엔진 2개를 사용
+- OpenCV로만으로 가능
+(인공지능)
+* 영수증에 나오는 단어는 범위가 정해져있음.
+* 오타 -> 예측 -> 가장유사한 단어로 변환.
+* 성공 -> 95%
+글자가 검출 -> 오타 -> 오타교정 -> 교체
+
+(*) 1. Tesseract OCR
+(*) 2. EasyOCR
+3. Custom 제작 OCR <= LC-SVTR
+-> vi-LayoutXLM 엔진
+
+<인공지능 라이브러리 사용가능한 개발환경>
+- 언어
+google -> "PyPi Tesseract OCR" / tesserocr 2.7.0 / ALL
+google -> "EasyOCR" / easyocr 1.7.1 / ALL
+
+Python 버젼
+- python 12
+- 가상환경 p312_ocr
+프로젝트 경로
+d:\ai_exam\ocr
+
+vscode 개발 준비상태...
+
+https://github.com/UB-Mannheim/tesseract/wiki
+
+설치
+
+pip install pytesseract
+
+d:\ai_exam\ocr\test_data
+.JPG -> .jpg
+
+* 기본제공
+
+<원하는 형태로 커스트마이징>
+https://github.com/tesseract-ocr
+
+<EasyOCR>
+https://github.com/JaidedAI/EasyOCR
+
+*허깅페이스에 데이터가 있다면
+=> 테스트가 가능할 확률이 높다.
+
+pip install easyocr
+
+matalcross.ai@gmail.com
+
+<virtualenv 생성하는 방법>
+python3.10 -m venv venv
+source ./venv/bin/activate
+
+<VSCODE 원격 주소 잡는방법>
+REMOTE ssh -> Config SSH Hosts -> 
+Host 211.216.177.2
+  HostName 211.216.177.2
+  User ai
+  Port 5500
+
+<웹확인>
+211.216.177.2:15000
+
+<팀장님들이 주실 파일>
+서버에서 경로 주소
+/ai/test/front  <- 프론트
+/ai/test/backend  <- 백엔드
+/ai/test/ai      <- AI
+프론트 포트번호
+백엔드 포트번호
+
+---------------------------------------------------------
+
+easyOCR 구현
+
+Afrikaans (af), Azerbaijani (az), Bosnian (bs), Simplified Chinese (ch_sim), Traditional Chinese (ch_tra), Czech (cs), Welsh (cy), Danish (da), German (de), English (en), Spanish (es), Estonian (et), French (fr), Irish (ga), Croatian (hr), Hungarian (hu), Indonesian (id), Icelandic (is), Italian (it), Japanese (ja), Korean (ko), Kurdish (ku), Latin (la), Lithuanian (lt), Latvian (lv), Maori (mi), Malay (ms), Maltese (mt), Dutch (nl), Norwegian (no), Occitan (oc), Polish (pl), Portuguese (pt), Romanian (ro), Serbian (latin)(rs_latin), Slovak (sk) (need revisit), Slovenian (sl), Albanian (sq), Swedish (sv),Swahili (sw), Thai (th), Tagalog (tl), Turkish (tr), Uzbek (uz), Vietnamese (vi) (need revisit)
+
+리스트
+1차 블록 : 리스트
+2차 블럭 : 튜플
+3차 블럭 : 리스트(좌표:바운딩박스), 검출단어, 인식률
+[
+
+(
+[
+[56, 6], [766, 6], [766, 56], [56, 56]
+], 
+'엔비디아 인텔: AMD,AI 시장 비밀병기 대거 공개', 0.6158182725593887
+),
+
+]
+
+pip install opencv-python
+
+binary 검출을 위한 threshold 검출
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
