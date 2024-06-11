@@ -41,3 +41,5 @@ inputs = [
 # generate()를 이용하여 상세정보를 추출하는 방법
 gen_rst = llm_chain.generate(inputs)
 print(gen_rst)
+# 토큰 금액
+print(gen_rst.llm_output)
