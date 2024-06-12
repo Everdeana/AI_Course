@@ -1,12 +1,10 @@
-# Anaconda : p310_medease
-
 import json
 import pandas as pd
 
 # 파일 경로 설정
 input_file_path = r'./combined_disease_prediction_symptom.json'
-csv_output_path = r'./disease_symptoms_unique.csv'
-json_output_path = r'./disease_symptoms_unique.json'
+csv_output_path = r'./result/disease_symptoms_unique.csv'
+json_output_path = r'./result/disease_symptoms_unique.json'
 
 # JSON 데이터 로드
 with open(input_file_path, 'r', encoding='utf-8') as file:
@@ -21,12 +19,12 @@ for entry in data:
     
     if "What are the symptoms of" in instruction:
         disease = instruction.split("What are the symptoms of ")[1].strip('?')
-        symptoms = output.split("The following are the symptoms of ")[1].split(': ')[1]
-        disease_symptoms.append({'Disease': disease, 'Symptoms': symptoms})
+        symptoms = output.split("The following are the symptoms of ")[1].split(': ')[1].split(', ')
+        disease_symptoms.append({'Disease': disease, **{f'Symptom_{i+1}': symptom for i, symptom in enumerate(symptoms)}})
     elif "What could be the disease" in instruction:
-        symptoms = instruction.split("I am having the following symptoms: ")[1].split('. What could be the disease ?')[0]
+        symptoms = instruction.split("I am having the following symptoms: ")[1].split('. What could be the disease ?')[0].split(', ')
         disease = output.split("The symptoms listed indicates that the patient is dealing with ")[1].strip('.')
-        disease_symptoms.append({'Disease': disease, 'Symptoms': symptoms})
+        disease_symptoms.append({'Disease': disease, **{f'Symptom_{i+1}': symptom for i, symptom in enumerate(symptoms)}})
 
 # DataFrame으로 변환
 df = pd.DataFrame(disease_symptoms)
