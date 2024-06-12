@@ -1,0 +1,561 @@
+index,0
+fatigue,143
+vomiting,141
+nausea,99
+high fever,89
+headache,84
+loss of appetite,81
+abdominal pain,70
+yellowish skin,61
+yellowing of eyes,58
+cough,58
+malaise,56
+chills,53
+joint pain,46
+sweating,43
+chest pain,42
+skin rash,42
+dark urine,41
+pain,41
+itching,41
+shortness of breath,40
+lethargy,39
+muscle pain,35
+irritability,35
+diarrhoea,35
+fever,34
+excessive hunger,34
+weight loss,32
+mild fever,27
+pain abdominal,27
+swelled lymph nodes,26
+breathlessness,26
+phlegm,26
+dizziness,25
+blurred and distorted vision,25
+diarrhea,24
+asthenia,22
+constipation,22
+dyspnea,22
+unresponsiveness,22
+chill,21
+decreased body weight,20
+apyrexial,19
+agitation,19
+red spots over body,19
+rale,18
+abnormal menstruation,17
+lesion,17
+depression,17
+fast heart rate,17
+pain chest,17
+mass of body structure,17
+sore to touch,16
+restlessness,16
+hypotension,16
+loss of balance,16
+mood swings,15
+back pain,15
+obesity,15
+acidity,15
+indigestion,15
+muscle weakness,14
+syncope,14
+stiff neck,14
+orthopnea,14
+thicken,14
+polyuria,13
+suicidal,13
+night sweat,13
+hallucinations auditory,13
+swelling,13
+tremor,13
+haemorrhage,13
+hypokinesia,12
+continuous sneezing,12
+feeling suicidal,12
+patient non compliance,12
+family history,12
+wheezing,11
+worry,11
+weight gain,11
+sleepy,11
+swelling joints,11
+neck pain,11
+irritable mood,11
+stomach pain,11
+painful walking,11
+tachypnea,11
+sleeplessness,10
+hyponatremia,10
+seizure,10
+hemiplegia,10
+ascites,10
+pruritus,10
+pain behind the eyes,10
+feeling hopeless,10
+distress respiratory,10
+difficulty,10
+blackout,10
+receiving blood transfusion,9
+throat irritation,9
+palpitation,9
+hemodynamically stable,9
+stomach bleeding,9
+rusty sputum,9
+runny nose,9
+loss of smell,9
+slurred speech,9
+burning micturition,9
+redness of eyes,9
+blood in sputum,9
+congestion,9
+coma,9
+hyperkalemia,9
+palpitations,9
+increased appetite,9
+dyspnea on exertion,9
+sinus pressure,9
+fall,9
+visual disturbances,9
+receiving unsterile injections,9
+brittle nails,8
+consciousness clear,8
+bradycardia,8
+tumor cell invasion,8
+drying and tingling lips,8
+irregular sugar level,8
+facial paresis,8
+enlarged thyroid,8
+anorexia,8
+acute liver failure,8
+sweating increased,8
+homelessness,8
+prostatism,8
+anxiety,8
+pleuritic pain,8
+mental status changes,8
+swollen extremeties,8
+toxic look (typhos),8
+hallucinations visual,8
+yellow urine,8
+guaiac positive,8
+belly pain,8
+swelling of stomach,7
+non-productive cough,7
+myalgia,7
+weepiness,7
+fluid overload.1,7
+productive cough,7
+abdominal tenderness,7
+erythema,7
+chest discomfort,7
+bruising,7
+cold hands and feets,7
+cramps,7
+angina pectoris,7
+rhonchus,7
+swollen blood vessels,7
+distention of abdomen,7
+prominent veins on calf,7
+puffy face and eyes,7
+abscess bacterial,7
+redness,7
+history of alcohol consumption,7
+transaminitis,7
+swollen legs,7
+mucoid sputum,6
+hematuria,6
+mood depressed,6
+shortness  of breath,6
+hip joint pain,6
+inflammatory nails,6
+unconscious state,6
+jugular venous distention,6
+knee pain,6
+passage of gases,6
+nightmare,6
+ulcers on tongue,6
+internal itching,6
+chest tightness,6
+dysarthria,6
+sinus rhythm,6
+unsteadiness,6
+intoxication,6
+muscle twitch,6
+skin peeling,6
+small dents in nails,6
+decreased translucency,6
+numbness,6
+spinning movements,6
+silver like dusting,6
+haemoptysis,5
+spotting  urination,5
+metastatic lesion,5
+lack of concentration,5
+breath sounds decreased,5
+labored breathing,5
+verbal auditory hallucinations,5
+irritation in anus,5
+orthostasis,5
+yellow crust ooze,5
+cushingoid habitus,5
+bloody stool,5
+lightheadedness,5
+movement stiffness,5
+red sore around nose,5
+snuffle,5
+extreme exhaustion,5
+ecchymosis,5
+splenomegaly,5
+weakness in limbs,5
+gurgle,5
+unsteady gait,5
+clonus,5
+throat sore,5
+pain during bowel movements,5
+oliguria,5
+yellow sputum,5
+catatonia,5
+pain in anal region,5
+distended abdomen,5
+blister,5
+vertigo,5
+scar tissue,5
+continuous feel of urine,4
+scurring,4
+patches in throat,4
+bladder discomfort,4
+pus filled pimples,4
+polydypsia,4
+fremitus,4
+neck stiffness,4
+bedridden,4
+sunken eyes,4
+aura,4
+muscle wasting,4
+shivering,4
+nervousness,4
+speech slurred,4
+urgency of micturition,4
+gravida 0,4
+food intolerance,4
+general discomfort,4
+paresthesia,4
+motor retardation,4
+painful swallowing,4
+drowsiness,4
+energy increased,4
+sensory discomfort,4
+left atrial hypertrophy,4
+enuresis,4
+pressure chest,4
+has religious belief,4
+dysuria,4
+heartburn,4
+asterixis,4
+natural,4
+nausea and vomiting,4
+hypoxemia,4
+withdraw,4
+lung nodule,4
+egophony,4
+nodal skin eruptions,4
+dehydration,4
+weakness of one body side,4
+stiffness,4
+hypothermia,4
+watering from eyes,4
+blackheads,4
+altered sensorium,4
+foul smell of urine,4
+cachexia,4
+dischromic  patches,4
+spontaneous rupture of membranes,4
+extra marital contacts,4
+terrify,3
+cardiomegaly,3
+stupor,3
+wheelchair bound,3
+hypercapnia,3
+breech presentation,3
+photophobia,3
+scratch marks,3
+t wave inverted,3
+stool color yellow,3
+tenesmus,3
+spasm,3
+arthralgia,3
+colic abdominal,3
+difficulty passing urine,3
+indifferent mood,3
+satiety early,3
+emphysematous change,3
+non-productive  cough,3
+sweating  increased,3
+hoarseness,3
+unhappy,3
+qt interval prolonged,3
+urinary hesitation,3
+room spinning,3
+debilitation,3
+ataxia,3
+tired,3
+pain  chest,3
+symptom aggravating factors,3
+verbally abusive behavior,3
+formication,3
+neologism,3
+Stahli's line,3
+systolic murmur,3
+decompensation,3
+loose associations,3
+burning sensation,3
+flatulence,3
+moan,3
+cyanosis,3
+snore,3
+green sputum,3
+cardiovascular event,3
+hepatosplenomegaly,3
+monoclonal,3
+paresis,3
+hematocrit decreased,3
+paraparesis,3
+heme positive,3
+fatigability,3
+frail,3
+urge incontinence,3
+polymyalgia,3
+projectile vomiting,3
+presence of q wave,3
+achalasia,3
+stridor,2
+pain back,2
+hepatomegaly,2
+distended  abdomen,2
+giddy mood,2
+cystic lesion,2
+lip smacking,2
+paralyse,2
+scleral icterus,2
+bleeding of vagina,2
+posturing,2
+disturbed family,2
+impaired cognition,2
+superimposition,2
+clammy skin,2
+atypia,2
+moody,2
+mass in breast,2
+hot flush,2
+cicatrisation,2
+mediastinal shift,2
+systolic ejection murmur,2
+hypokalemia,2
+estrogen use,2
+uncoordination,2
+distress  respiratory,2
+general unsteadiness,2
+pulsus paradoxus,2
+out of breath,2
+hyperacusis,2
+pallor,2
+extrapyramidal sign,2
+ambidexterity,2
+hacking cough,2
+angina  pectoris,2
+stuffy nose,2
+numbness  of hand,2
+myoclonus,2
+sputum purulent,2
+awakening early,2
+pustule,2
+aphagia,2
+hunger,2
+feeling strange,2
+st segment depression,2
+unsteady  gait,2
+nonsmoker,2
+hypotonic,2
+hydropneumothorax,2
+absences finding,2
+chest  tightness,2
+hypersomnia,2
+hemianopsia homonymous,2
+pleuritic  pain,2
+ache,2
+vision blurred,2
+decreased stool caliber,2
+para 1,2
+behavior hyperactive,2
+side pain,2
+renal angle tenderness,2
+heavy legs,2
+dullness,2
+productive  cough,2
+pressure  chest,2
+poor dentition,2
+hypocalcemia result,2
+slowing of urinary stream,2
+hirsutism,2
+numbness of hand,2
+asymptomatic,2
+groggy,2
+hypoalbuminemia,2
+flushing,2
+green  sputum,1
+nasal discharge present,1
+barking cough,1
+night  sweat,1
+out  of breath,1
+abnormal sensation,1
+no status change,1
+alcoholic withdrawal symptoms,1
+overweight,1
+mydriasis,1
+nasal flaring,1
+proteinemia,1
+noisy respiration,1
+abnormally  hard consistency,1
+hyperhidrosis disorder,1
+breath  sounds decreased,1
+unable  to concentrate,1
+pain foot,1
+bruit,1
+choke,1
+rapid shallow breathing,1
+clumsiness,1
+abnormally hard consistency,1
+dysdiadochokinesia,1
+history  of - blackout,1
+adverse effect,1
+hyperemesis,1
+immobile,1
+feels hot/feverish,1
+retch,1
+primigravida,1
+panic,1
+dyspareunia,1
+pneumatouria,1
+gasping for breath,1
+underweight,1
+mood  depressed,1
+stinging sensation,1
+abdominal bloating,1
+pulse absent,1
+sneeze,1
+urge  incontinence,1
+verbal  auditory hallucinations,1
+rambling speech,1
+feces in rectum,1
+energy  increased,1
+homicidal thoughts,1
+shooting pain,1
+tremor resting,1
+floppy,1
+rhd positive,1
+mental  status changes,1
+hallucinations  visual,1
+regurgitates after swallowing,1
+excruciating pain,1
+charleyhorse,1
+alcohol binge episode,1
+speech  slurred,1
+macule,1
+hyperventilation,1
+prostate tender,1
+posterior rhinorrhea,1
+welt,1
+abortion,1
+transsexual,1
+hypertonicity,1
+prodrome,1
+air fluid level,1
+elation,1
+large-for-dates fetus,1
+feeling  hopeless,1
+facial  paresis,1
+general  discomfort,1
+sniffle,1
+retropulsion,1
+red blotches,1
+disequilibrium,1
+incoherent,1
+intermenstrual heavy bleeding,1
+jugular  venous distention,1
+decreased  translucency,1
+hallucinations  auditory,1
+abdomen acute,1
+feeling  suicidal,1
+breakthrough pain,1
+fecaluria,1
+inappropriate affect,1
+drool,1
+para 2,1
+behavior showing increased motor activity,1
+pericardial friction rub,1
+hypoproteinemia,1
+st segment elevation,1
+food  intolerance,1
+hypometabolism,1
+rest pain,1
+dysesthesia,1
+hypersomnolence,1
+titubation,1
+monocytosis,1
+gravida 10,1
+breath-holding spell,1
+bowel sounds decreased,1
+sedentary,1
+pain neck,1
+coordination abnormal,1
+no known drug allergies,1
+flare,1
+motor  retardation,1
+dyspnea  on exertion,1
+anosmia,1
+heavy feeling,1
+focal seizures,1
+rigor - temperature-associated observation,1
+todd paralysis,1
+tinnitus,1
+unconscious  state,1
+low back pain,1
+irritable  mood,1
+yellow  sputum,1
+symptom  aggravating factors,1
+hypesthesia,1
+bradykinesia,1
+hematochezia,1
+fear of falling,1
+frothy sputum,1
+tonic seizures,1
+burning  sensation,1
+dizzy spells,1
+soft tissue swelling,1
+rolling of eyes,1
+hoard,1
+previous pregnancies 2,1
+Murphy's sign,1
+catching breath,1
+pain in lower limb,1
+photopsia,1
+r wave feature,1
+gag,1
+passed stones,1
+sciatica,1
+poor feeding,1
+milky,1
+phonophobia,1
+blanch,1
+throbbing sensation quality,1
+unwell,1
+macerated skin,1
+Heberden's node,1
+urinoma,1
+pansystolic murmur,1
+claudication,1
+unable to concentrate,1
+pin-point pupils,1
+exhaustion,1

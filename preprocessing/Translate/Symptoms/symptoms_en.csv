@@ -1,0 +1,691 @@
+Symptom,Count,
+fatigue,286,피로
+vomiting,282,구토
+nausea,198,메스꺼움
+high fever,178,고열
+headache,168,두통
+loss of appetite,162,식욕 상실
+abdominal pain,140,복통
+ fatigue,134,피로
+itching,123,가려움증
+yellowish skin,122,황달
+ vomiting,117,구토
+cough,116,기침
+yellowing of eyes,116,눈의 황변
+malaise,112,권태감
+chills,106,오한
+joint pain,92,관절 통증
+ high fever,89,고열
+sweating,86,땀
+skin rash,84,피부 발진
+chest pain,84,흉통
+pain,82,통증
+dark urine,82,어두운 소변
+ loss of appetite,81,식욕 상실
+shortness of breath,80,호흡 곤란
+lethargy,78,무기력
+ nausea,77,메스꺼움
+ headache,74,두통
+diarrhoea,70,설사
+muscle pain,70,근육통
+irritability,70,과민성
+ abdominal pain,70,복통
+fever,68,열
+excessive hunger,68,과도한 배고픔
+weight loss,64,체중 감소
+ yellowish skin,61,황달
+ yellowing of eyes,58,눈의 황변
+pain abdominal,54,복부 통증
+mild fever,54,미열
+ malaise,53,권태감
+ chills,53,오한
+swelled lymph nodes,52,부은 림프절
+phlegm,52,가래
+breathlessness,52,숨가쁨
+blurred and distorted vision,50,시야 흐림 및 왜곡
+dizziness,50,현기증
+diarrhea,48,설사
+ joint pain,46,관절 통증
+dyspnea,44,호흡 곤란
+unresponsiveness,44,무반응
+constipation,44,변비
+asthenia,44,쇠약
+ sweating,43,땀
+ chest pain,42,흉통
+ skin rash,42,피부 발진
+chill,42,한기
+ dark urine,41,어두운 소변
+decreased body weight,40,체중 감소
+agitation,38,초조
+red spots over body,38,몸에 붉은 반점
+apyrexial,38,열 없음
+rale,36,폐음
+ cough,36,기침
+ muscle pain,35,근육통
+ diarrhoea,35,설사
+ irritability,35,과민성
+lesion,34,병변
+abnormal menstruation,34,비정상 월경
+pain chest,34,가슴 통증
+depression,34,우울증
+ excessive hunger,34,과도한 배고픔
+fast heart rate,34,빠른 심박수
+mass of body structure,34,신체 구조의 덩어리
+sore to touch,32,촉진 시 통증
+hypotension,32,저혈압
+loss of balance,32,균형 상실
+ lethargy,32,무기력
+ weight loss,32,체중 감소
+restlessness,32,안절부절
+back pain,30,요통
+mood swings,30,기분 변화
+acidity,30,산성
+obesity,30,비만
+indigestion,30,소화불량
+syncope,28,실신
+thicken,28,두꺼워짐
+muscle weakness,28,근육 약화
+stiff neck,28,뻣뻣한 목
+orthopnea,28,기좌호흡
+ mild fever,27,미열
+ breathlessness,26,숨가쁨
+ swelled lymph nodes,26,부은 림프절
+hallucinations auditory,26,청각 환각
+suicidal,26,자살 충동
+swelling,26,부기
+haemorrhage,26,출혈
+tremor,26,떨림
+ phlegm,26,가래
+polyuria,26,다뇨증
+night sweat,26,야간 발한
+ blurred and distorted vision,25,시야 흐림 및 왜곡
+continuous sneezing,24,연속 재채기
+family history,24,가족력
+patient non compliance,24,환자 불순응
+hypokinesia,24,운동 저하
+feeling suicidal,24,자살 충동 느낌
+weight gain,22,체중 증가
+stomach pain,22,복통
+painful walking,22,통증이 있는 걷기
+worry,22,걱정
+tachypnea,22,빠른 호흡
+sleepy,22,졸림
+neck pain,22,목 통증
+irritable mood,22,과민한 기분
+wheezing,22,천명
+swelling joints,22,관절 부기
+pruritus,20,가려움증
+sleeplessness,20,불면증
+difficulty,20,어려움
+ascites,20,복수
+seizure,20,발작
+distress respiratory,20,호흡 곤란
+feeling hopeless,20,절망감
+blackout,20,기절
+pain behind the eyes,20,눈 뒤 통증
+hemiplegia,20,반신 마비
+hyponatremia,20,저나트륨혈증
+ red spots over body,19,몸에 붉은 반점
+congestion,18,혼잡
+coma,18,혼수
+blood in sputum,18,가래에 피
+visual disturbances,18,시각 장애
+burning micturition,18,배뇨 시 작열감
+rusty sputum,18,녹슨 가래
+throat irritation,18,목 자극
+dyspnea on exertion,18,운동 시 호흡 곤란
+fall,18,넘어짐
+stomach bleeding,18,위 출혈
+runny nose,18,콧물
+increased appetite,18,식욕 증가
+loss of smell,18,후각 상실
+slurred speech,18,말이 어눌함
+palpitation,18,두근거림
+palpitations,18,두근거림
+receiving blood transfusion,18,수혈 받음
+receiving unsterile injections,18,비멸균 주사 받음
+sinus pressure,18,부비동 압력
+redness of eyes,18,눈의 충혈
+hyperkalemia,18,고칼륨혈증
+hemodynamically stable,18,혈역학적으로 안정됨
+ depression,17,우울증
+ dizziness,17,현기증
+ fast heart rate,17,빠른 심박수
+ abnormal menstruation,17,비정상 월경
+ restlessness,16,안절부절
+hallucinations visual,16,시각 환각
+drying and tingling lips,16,입술 건조 및 저림
+prostatism,16,전립선 비대증
+belly pain,16,복통
+consciousness clear,16,의식 명료
+ loss of balance,16,균형 상실
+homelessness,16,노숙
+toxic look (typhos),16,독성 모습 (티포스)
+bradycardia,16,서맥
+tumor cell invasion,16,종양 세포 침입
+irregular sugar level,16,불규칙한 혈당 수치
+sweating increased,16,땀 증가
+swollen extremeties,16,팔다리 부기
+enlarged thyroid,16,갑상선 비대
+acute liver failure,16,급성 간부전
+yellow urine,16,황색 소변
+mental status changes,16,정신 상태 변화
+facial paresis,16,얼굴 마비
+pleuritic pain,16,늑막 통증
+anorexia,16,거식증
+anxiety,16,불안
+brittle nails,16,약한 손톱
+guaiac positive,16,구아약 양성
+ indigestion,15,소화불량
+ mood swings,15,기분 변화
+ acidity,15,산성
+ obesity,15,비만
+ back pain,15,요통
+swelling of stomach,14,복부 부기
+prominent veins on calf,14,종아리의 두드러진 정맥
+chest discomfort,14,가슴 불편감
+abdominal tenderness,14,복부 압통
+productive cough,14,가래가 있는 기침
+erythema,14,홍반
+swollen blood vessels,14,부은 혈관
+cold hands and feets,14,차가운 손발
+non-productive cough,14,가래 없는 기침
+swollen legs,14,부은 다리
+cramps,14,경련
+distention of abdomen,14,복부 팽창
+myalgia,14,근육통
+transaminitis,14,트랜스아미나아제 상승
+history of alcohol consumption,14,음주력
+bruising,14,멍
+rhonchus,14,쌕쌕거림
+puffy face and eyes,14,붓는 얼굴과 눈
+angina pectoris,14,협심증
+ stiff neck,14,뻣뻣한 목
+ muscle weakness,14,근육 약화
+weepiness,14,울적함
+redness,14,발적
+abscess bacterial,14,세균 농양
+fluid overload.1,14,체액 과부하
+ constipation,13,변비
+unconscious state,12,무의식 상태
+inflammatory nails,12,염증성 손톱
+shortness  of breath,12,호흡 곤란
+passage of gases,12,가스 배출
+decreased translucency,12,투명도 감소
+hematuria,12,혈뇨
+jugular venous distention,12,경정맥 확장
+silver like dusting,12,은색 먼지 같은
+muscle twitch,12,근육 경련
+unsteadiness,12,불안정함
+dysarthria,12,구음 장애
+hip joint pain,12,엉덩이 관절 통증
+ continuous sneezing,12,연속 재채기
+sinus rhythm,12,정상 부비동 리듬
+mood depressed,12,우울한 기분
+skin peeling,12,피부 벗겨짐
+knee pain,12,무릎 통증
+numbness,12,무감각
+ family history,12,가족력
+small dents in nails,12,손톱의 작은 움푹 패인 부분
+nightmare,12,악몽
+mucoid sputum,12,점액성 가래
+chest tightness,12,가슴 답답함
+internal itching,12,내부 가려움증
+ulcers on tongue,12,혀의 궤양
+intoxication,12,중독
+spinning movements,12,회전 움직임
+ stomach pain,11,복통
+ painful walking,11,통증이 있는 걷기
+ swelling joints,11,관절 부기
+ neck pain,11,목 통증
+snuffle,10,코막힘
+lack of concentration,10,집중력 부족
+orthostasis,10,기립성 저혈압
+splenomegaly,10,비장 비대
+spotting  urination,10,점 유뇨
+clonus,10,간대성 경련
+ecchymosis,10,반상출혈
+verbal auditory hallucinations,10,언어적 청각 환각
+haemoptysis,10,객혈
+pain in anal region,10,항문 부위 통증
+gurgle,10,꾸르륵거림
+ pain behind the eyes,10,눈 뒤 통증
+lightheadedness,10,어지러움
+labored breathing,10,힘든 호흡
+extreme exhaustion,10,극도의 피로
+vertigo,10,어지럼증
+yellow crust ooze,10,노란 딱지에서 나오는 액체
+metastatic lesion,10,전이성 병변
+yellow sputum,10,노란 가래
+cushingoid habitus,10,쿠싱 체질
+scar tissue,10,흉터 조직
+weakness in limbs,10,팔다리 약화
+irritation in anus,10,항문 자극
+red sore around nose,10,코 주위 붉은 상처
+throat sore,10,목 통증
+oliguria,10,소변량 감소
+pain during bowel movements,10,배변 시 통증
+distended abdomen,10,팽창된 복부
+bloody stool,10,혈변
+blister,10,물집
+catatonia,10,긴장증
+movement stiffness,10,움직임 경직
+unsteady gait,10,불안정한 걸음걸이
+breath sounds decreased,10,호흡음 감소
+ coma,9,혼수
+ rusty sputum,9,녹슨 가래
+ runny nose,9,콧물
+ slurred speech,9,말이 어눌함
+ throat irritation,9,목 자극
+ sinus pressure,9,부비동 압력
+ palpitations,9,두근거림
+ redness of eyes,9,눈의 충혈
+ blood in sputum,9,가래에 피
+ loss of smell,9,후각 상실
+ congestion,9,혼잡
+ polyuria,9,다뇨증
+ increased appetite,9,식욕 증가
+ burning micturition,9,배뇨 시 작열감
+ stomach bleeding,9,위 출혈
+ receiving unsterile injections,9,비멸균 주사 받음
+ receiving blood transfusion,9,수혈 받음
+ visual disturbances,9,시각 장애
+ anxiety,8,불안
+scurring,8,흉터 형성
+speech slurred,8,말이 어눌함
+food intolerance,8,음식 불내증
+sensory discomfort,8,감각 불편함
+foul smell of urine,8,악취 나는 소변
+left atrial hypertrophy,8,좌심방 비대
+shivering,8,떨림
+general discomfort,8,전반적인 불편함
+ brittle nails,8,약한 손톱
+heartburn,8,속쓰림
+gravida 0,8,임신 경험 0회
+hypothermia,8,저체온증
+has religious belief,8,종교적 신념 있음
+fremitus,8,진동음
+pressure chest,8,가슴 압박감
+urgency of micturition,8,급박뇨
+muscle wasting,8,근육 소모
+ yellow urine,8,황색 소변
+dehydration,8,탈수
+spontaneous rupture of membranes,8,자연막 파열
+natural,8,자연적
+nausea and vomiting,8,구역 및 구토
+neck stiffness,8,목 경직
+continuous feel of urine,8,지속적인 소변 느낌
+nervousness,8,신경과민
+nodal skin eruptions,8,결절성 피부 발진
+cachexia,8,악액질
+painful swallowing,8,삼킴 통증
+ acute liver failure,8,급성 간부전
+patches in throat,8,목의 반점
+bladder discomfort,8,방광 불편감
+blackheads,8,블랙헤드
+watering from eyes,8,눈물
+bedridden,8,침대에 누워 있는
+weakness of one body side,8,한쪽 신체의 약화
+ enlarged thyroid,8,갑상선 비대
+aura,8,전조증상
+ drying and tingling lips,8,입술 건조 및 저림
+asterixis,8,무의식적 손떨림
+ belly pain,8,복통
+withdraw,8,철회
+altered sensorium,8,의식 변성
+dischromic  patches,8,색소 변화 반점
+paresthesia,8,감각 이상
+drowsiness,8,졸림
+sunken eyes,8,꺼진 눈
+ swollen extremeties,8,팔다리 부기
+lung nodule,8,폐결절
+ irregular sugar level,8,불규칙한 혈당 수치
+stiffness,8,경직
+polydypsia,8,다음증
+ toxic look (typhos),8,독성 모습 (티포스)
+extra marital contacts,8,혼외 관계
+motor retardation,8,운동 지연
+enuresis,8,야뇨증
+energy increased,8,에너지 증가
+hypoxemia,8,저산소혈증
+pus filled pimples,8,고름이 찬 여드름
+dysuria,8,배뇨 곤란
+egophony,8,염소음
+ cramps,7,경련
+ swollen blood vessels,7,부은 혈관
+ distention of abdomen,7,복부 팽창
+ history of alcohol consumption,7,음주력
+ prominent veins on calf,7,종아리의 두드러진 정맥
+ puffy face and eyes,7,붓는 얼굴과 눈
+ swollen legs,7,부은 다리
+ weight gain,7,체중 증가
+ cold hands and feets,7,차가운 손발
+ swelling of stomach,7,복부 부기
+ bruising,7,멍
+ fluid overload,7,체액 과부하
+non-productive  cough,6,가래 없는 기침
+loose associations,6,느슨한 연상
+ spinning movements,6,회전 움직임
+neologism,6,신조어
+presence of q wave,6,Q파 존재
+ skin peeling,6,피부 벗겨짐
+indifferent mood,6,무관심한 기분
+paresis,6,경증 마비
+ silver like dusting,6,은색 먼지 같은
+ passage of gases,6,가스 배출
+monoclonal,6,단클론성
+ small dents in nails,6,손톱의 작은 움푹 패인 부분
+projectile vomiting,6,투사성 구토
+photophobia,6,광민감증
+polymyalgia,6,다발성 근육통
+paraparesis,6,하반신 마비
+moan,6,신음소리
+pain  chest,6,가슴 통증
+Stahli's line,6,스타흘리선
+spasm,6,경련
+tenesmus,6,뒤무직
+urinary hesitation,6,배뇨 지연
+urge incontinence,6,절박성 요실금
+breech presentation,6,둔위
+tired,6,피곤함
+ internal itching,6,내부 가려움증
+ inflammatory nails,6,염증성 손톱
+fatigability,6,피로감
+ ulcers on tongue,6,혀의 궤양
+ unsteadiness,6,불안정함
+stool color yellow,6,노란 변색
+burning sensation,6,작열감
+stupor,6,혼미
+debilitation,6,쇠약
+emphysematous change,6,기종 변화
+cardiomegaly,6,심비대
+cardiovascular event,6,심혈관 사건
+sweating  increased,6,땀 증가
+ hip joint pain,6,엉덩이 관절 통증
+symptom aggravating factors,6,증상 악화 요인
+unhappy,6,불행함
+decompensation,6,보상 실패
+difficulty passing urine,6,배뇨 곤란
+systolic murmur,6,수축기 심잡음
+t wave inverted,6,T파 역전
+flatulence,6,가스
+verbally abusive behavior,6,언어적 학대 행동
+formication,6,벌레 기어다니는 느낌
+heme positive,6,혈액 양성
+qt interval prolonged,6,QT 간격 연장
+arthralgia,6,관절통
+cyanosis,6,청색증
+achalasia,6,이완 불능증
+ mucoid sputum,6,점액성 가래
+room spinning,6,방이 회전하는 느낌
+hypercapnia,6,고탄산혈증
+satiety early,6,조기 포만감
+wheelchair bound,6,휠체어에 묶인
+hoarseness,6,쉰 목소리
+terrify,6,공포
+hepatosplenomegaly,6,간비장비대
+scratch marks,6,긁힌 자국
+colic abdominal,6,복통
+ knee pain,6,무릎 통증
+ataxia,6,운동 실조
+green sputum,6,녹색 가래
+frail,6,허약한
+hematocrit decreased,6,적혈구 용적률 감소
+snore,6,코골이
+ spotting  urination,5,점 유뇨
+ yellow crust ooze,5,노란 딱지에서 나오는 액체
+ bloody stool,5,혈변
+ irritation in anus,5,항문 자극
+ blister,5,물집
+ weakness in limbs,5,팔다리 약화
+ pain during bowel movements,5,배변 시 통증
+ pain in anal region,5,항문 부위 통증
+ movement stiffness,5,움직임 경직
+ red sore around nose,5,코 주위 붉은 상처
+ lack of concentration,5,집중력 부족
+para 1,4,임신 1회
+pulsus paradoxus,4,기이맥
+uncoordination,4,조정 불능
+pallor,4,창백
+unsteady  gait,4,불안정한 걸음걸이
+vision blurred,4,시야 흐림
+ extra marital contacts,4,혼외 관계
+pain back,4,요통
+ patches in throat,4,목의 반점
+pleuritic  pain,4,늑막 통증
+paralyse,4,마비
+ foul smell of urine,4,악취 나는 소변
+ nodal skin eruptions,4,결절성 피부 발진
+ muscle wasting,4,근육 소모
+renal angle tenderness,4,신장 각 압통
+scleral icterus,4,공막 황달
+side pain,4,옆구리 통증
+slowing of urinary stream,4,소변 줄기 느려짐
+productive  cough,4,가래가 있는 기침
+pressure  chest,4,가슴 압박감
+sputum purulent,4,농가래
+st segment depression,4,ST 분절 하강
+posturing,4,자세 유지
+poor dentition,4,불량한 치아 상태
+stridor,4,협착음
+stuffy nose,4,코막힘
+pustule,4,농포
+superimposition,4,중첩
+ altered sensorium,4,의식 변성
+ dehydration,4,탈수
+systolic ejection murmur,4,수축기 박출 심잡음
+mass in breast,4,유방의 덩어리
+hyperacusis,4,청각 과민
+giddy mood,4,현기증
+hypoalbuminemia,4,저알부민혈증
+hydropneumothorax,4,수기흉
+ dischromic  patches,4,색소 변화 반점
+distended  abdomen,4,팽창된 복부
+decreased stool caliber,4,변 굵기 감소
+cystic lesion,4,낭성 병변
+hypersomnia,4,과다수면
+ continuous feel of urine,4,지속적인 소변 느낌
+hypocalcemia result,4,저칼슘혈증 결과
+ scurring,4,흉터 형성
+hypokalemia,4,저칼륨혈증
+hypotonic,4,저긴장성
+clammy skin,4,축축한 피부
+impaired cognition,4,인지 장애
+cicatrisation,4,흉터 형성
+chest  tightness,4,가슴 답답함
+lip smacking,4,입술 쩝쩝거림
+hunger,4,배고픔
+hot flush,4,홍조
+distress  respiratory,4,호흡 곤란
+ weakness of one body side,4,한쪽 신체의 약화
+flushing,4,홍조
+extrapyramidal sign,4,추체외로 증상
+estrogen use,4,에스트로겐 사용
+general unsteadiness,4,전반적인 불안정함
+out of breath,4,숨이 참
+ watering from eyes,4,눈물
+groggy,4,몽롱함
+hacking cough,4,마른 기침
+heavy legs,4,다리 무거움
+dullness,4,둔함
+hemianopsia homonymous,4,반맹증
+ sunken eyes,4,꺼진 눈
+hepatomegaly,4,간비대
+hirsutism,4,다모증
+disturbed family,4,불안정한 가정
+ shivering,4,떨림
+feeling strange,4,이상한 느낌
+nonsmoker,4,비흡연자
+numbness of hand,4,손의 무감각
+myoclonus,4,간대성 경련
+absences finding,4,결여 증상
+awakening early,4,조기 각성
+ blackheads,4,블랙헤드
+moody,4,기분 변화
+atypia,4,비정형성
+asymptomatic,4,무증상
+ache,4,통증
+bleeding of vagina,4,질 출혈
+aphagia,4,삼킴 곤란
+behavior hyperactive,4,과잉 행동
+numbness  of hand,4,손의 무감각
+angina  pectoris,4,협심증
+ambidexterity,4,양손잡이
+ bladder discomfort,4,방광 불편감
+ pus filled pimples,4,고름이 찬 여드름
+mediastinal shift,4,종격동 이동
+facial  paresis,2,얼굴 마비
+barking cough,2,짖는 기침
+st segment elevation,2,ST 분절 상승
+feeling  hopeless,2,절망감
+feces in rectum,2,직장 내 대변
+symptom  aggravating factors,2,증상 악화 요인
+alcohol binge episode,2,폭음 에피소드
+stinging sensation,2,따끔거림
+fecaluria,2,대변뇨
+dizzy spells,2,어지럼 발작
+welt,2,부기
+fear of falling,2,넘어짐 공포
+elation,2,의기양양
+energy  increased,2,에너지 증가
+drool,2,침 흘림
+anosmia,2,후각 상실
+yellow  sputum,2,노란 가래
+dysdiadochokinesia,2,교대 운동 곤란
+dysesthesia,2,감각 이상
+dyspareunia,2,성교통
+exhaustion,2,극도의 피로
+excruciating pain,2,극심한 통증
+alcoholic withdrawal symptoms,2,알코올 금단 증상
+dyspnea  on exertion,2,운동 시 호흡 곤란
+unwell,2,몸이 불편한
+disequilibrium,2,평형 장애
+abnormally  hard consistency,2,비정상적으로 단단한 일관성
+charleyhorse,2,근육 경련
+urinoma,2,요로 낭종
+tremor resting,2,안정 시 떨림
+breakthrough pain,2,돌파 통증
+choke,2,질식
+unable  to concentrate,2,집중할 수 없음
+unable to concentrate,2,집중할 수 없음
+unconscious  state,2,무의식 상태
+underweight,2,저체중
+bradykinesia,2,운동 완서
+breath  sounds decreased,2,호흡음 감소
+catching breath,2,숨참
+abnormal sensation,2,비정상 감각
+burning  sensation,2,작열감
+breath-holding spell,2,숨참기 발작
+urge  incontinence,2,절박성 요실금
+bruit,2,잡음
+verbal  auditory hallucinations,2,언어적 청각 환각
+transsexual,2,트랜스젠더
+Heberden's node,2,헤베르덴 결절
+throbbing sensation quality,2,욱신거리는 느낌
+behavior showing increased motor activity,2,운동 활동 증가를 보이는 행동
+Murphy's sign,2,머피 징후
+decreased  translucency,2,투명도 감소
+blanch,2,창백해지다
+coordination abnormal,2,조정 이상
+abdomen acute,2,급성 복부
+abdominal bloating,2,복부 팽창
+tinnitus,2,이명
+feeling  suicidal,2,자살 충동 느낌
+abortion,2,낙태
+titubation,2,몸 떨림
+abnormally hard consistency,2,비정상적으로 단단한 일관성
+bowel sounds decreased,2,장음 감소
+todd paralysis,2,토드 마비
+tonic seizures,2,강직성 발작
+clumsiness,2,어색함
+claudication,2,간헐적 파행
+overweight,2,과체중
+feels hot/feverish,2,더움/열감
+pulse absent,2,맥박 없음
+milky,2,유백색
+pneumatouria,2,기뇨증
+mental  status changes,2,정신 상태 변화
+air fluid level,2,공기-액체 수준
+macule,2,반점
+poor feeding,2,섭취 불량
+posterior rhinorrhea,2,후비루
+macerated skin,2,침윤된 피부
+low back pain,2,요통
+previous pregnancies 2,2,이전 임신 2회
+primigravida,2,초임부
+prodrome,2,전조증상
+large-for-dates fetus,2,임신 기간에 비해 큰 태아
+jugular  venous distention,2,경정맥 확장
+irritable  mood,2,과민한 기분
+prostate tender,2,전립선 압통
+intermenstrual heavy bleeding,2,월경 중간의 과다 출혈
+proteinemia,2,단백혈증
+incoherent,2,일관성이 없는
+monocytosis,2,단핵구증
+pin-point pupils,2,점형 동공
+photopsia,2,광시증
+pansystolic murmur,2,전수축기 잡음
+out  of breath,2,숨가쁨
+pain foot,2,발 통증
+pain in lower limb,2,하지 통증
+pain neck,2,목 통증
+noisy respiration,2,소리가 나는 호흡
+no status change,2,상태 변화 없음
+no known drug allergies,2,알려진 약물 알레르기 없음
+panic,2,공황
+night  sweat,2,야간 발한
+mood  depressed,2,우울한 기분
+para 2,2,임신 2회
+nasal flaring,2,콧구멍 벌어짐
+nasal discharge present,2,비강 분비물 있음
+mydriasis,2,동공 확장
+passed stones,2,결석 배출
+motor  retardation,2,운동 지연
+pericardial friction rub,2,심막 마찰음
+phonophobia,2,소리 공포증
+inappropriate affect,2,부적절한 정서
+immobile,2,움직이지 않음
+flare,2,발작
+hypoproteinemia,2,저단백혈증
+sedentary,2,앉아서 지내는
+shooting pain,2,쏘는 듯한 통증
+hematochezia,2,혈변
+heavy feeling,2,무거운 느낌
+hallucinations  visual,2,시각 환각
+hallucinations  auditory,2,청각 환각
+green  sputum,2,녹색 가래
+gravida 10,2,임신 10회
+general  discomfort,2,전반적인 불편함
+sneeze,2,재채기
+sniffle,2,코 훌쩍임
+gasping for breath,2,숨을 헐떡임
+gag,2,구역질
+soft tissue swelling,2,연조직 부기
+frothy sputum,2,거품 가래
+food  intolerance,2,음식 불내증
+speech  slurred,2,말이 어눌함
+focal seizures,2,국소 발작
+floppy,2,축 늘어짐
+history  of - blackout,2,실신 병력
+hoard,2,축적
+homicidal thoughts,2,살인 충동
+regurgitates after swallowing,2,삼킨 후 역류
+r wave feature,2,R파 특징
+hypometabolism,2,저대사증
+rambling speech,2,두서없는 말
+rapid shallow breathing,2,빠르고 얕은 호흡
+red blotches,2,붉은 반점
+hypesthesia,2,감각 저하
+hyperventilation,2,과호흡
+hypertonicity,2,고긴장성
+hypersomnolence,2,과다수면
+sciatica,2,좌골신경통
+rest pain,2,휴식 시 통증
+retch,2,구토 시도
+retropulsion,2,후진
+rhd positive,2,RHD 양성
+hyperhidrosis disorder,2,다한증
+rigor - temperature-associated observation,2,오한 - 온도 관련 관찰
+rolling of eyes,2,눈 굴림
+hyperemesis,2,임신성 구토
+adverse effect,2,부작용
