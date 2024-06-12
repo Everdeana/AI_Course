@@ -1,0 +1,439 @@
+{"Disease":"hypertensive  disease","Symptoms":"pain  chest, shortness  of breath, dizziness, asthenia, fall, syncope, vertigo, sweating  increased, palpitation, nausea, angina  pectoris, pressure  chest"}
+{"Disease":"diabetes","Symptoms":"polyuria, polydypsia, shortness  of breath, pain  chest, asthenia, nausea, orthopnea, rale, sweating  increased, unresponsiveness, mental  status changes, vertigo, vomiting, labored breathing"}
+{"Disease":"depressive disorder","Symptoms":"feeling  suicidal, suicidal, hallucinations  auditory, feeling  hopeless, weepiness, sleeplessness, motor  retardation, irritable  mood, blackout, mood  depressed, hallucinations  visual, worry, agitation, tremor, intoxication, verbal  auditory hallucinations, energy  increased, difficulty, nightmare, unable  to concentrate, homelessness"}
+{"Disease":"coronary heart disease","Symptoms":"pain  chest, angina  pectoris, shortness  of breath, hypokinesia, sweating  increased, pressure  chest, dyspnea  on exertion, orthopnea, chest  tightness"}
+{"Disease":"pneumonia","Symptoms":"cough, fever, decreased  translucency, shortness  of breath, rale, productive  cough, pleuritic  pain, yellow  sputum, breath  sounds decreased, chill, rhonchus, green  sputum, non-productive  cough, wheezing, haemoptysis, distress  respiratory, tachypnea, malaise, night  sweat"}
+{"Disease":"failure  heart congestive","Symptoms":"shortness  of breath, orthopnea, jugular  venous distention, rale, dyspnea, cough, wheezing"}
+{"Disease":"accident  cerebrovascular","Symptoms":"dysarthria, asthenia, speech  slurred, facial  paresis, hemiplegia, unresponsiveness, seizure, numbness"}
+{"Disease":"asthma","Symptoms":"wheezing, cough, shortness  of breath, chest  tightness, non-productive  cough, pleuritic  pain, productive  cough, symptom  aggravating factors, distress  respiratory"}
+{"Disease":"myocardial  infarction","Symptoms":"pain chest, st segment elevation, sweating increased, shortness of breath, st segment depression, hypokinesia, angina pectoris, pressure chest, t wave inverted, orthopnea, rale, chest tightness, presence of q wave, palpitation, dyspnea, chest discomfort, bradycardia, syncope"}
+{"Disease":"hypercholesterolemia","Symptoms":"pain, pain chest, sweating increased, nonsmoker, pressure chest, syncope, numbness, chest discomfort, shortness of breath, st segment depression, worry, t wave inverted, bradycardia, dyspnea"}
+{"Disease":"infection","Symptoms":"fever, erythema, decreased translucency, hepatosplenomegaly, chill, pruritus, diarrhea, abscess bacterial, swelling, pain, apyrexial, cough"}
+{"Disease":"infection  urinary tract","Symptoms":"fever, dysuria, hematuria, renal angle tenderness, lethargy, asthenia, hyponatremia, hemodynamically stable, distress respiratory, difficulty passing urine, mental status changes, consciousness clear"}
+{"Disease":"anemia","Symptoms":"consciousness clear, chill, guaiac positive, monoclonal, ecchymosis, tumor cell invasion, haemorrhage, pallor, asthenia, fatigue, heme positive, pain back, orthostasis, hyponatremia, dizziness, shortness of breath, pain, rhonchus, arthralgia, swelling, transaminitis"}
+{"Disease":"chronic  obstructive airway disease","Symptoms":"shortness of breath, wheezing, cough, dyspnea, distress respiratory, sputum purulent, hypoxemia, hypercapnia, patient non compliance, chest tightness"}
+{"Disease":"dementia","Symptoms":"fever, fall, unresponsiveness, lethargy, agitation, ecchymosis, syncope, rale, unconscious state, cough, bedridden, pain, facial paresis, abdominal tenderness, rhonchus, unsteady gait, hallucinations auditory"}
+{"Disease":"insufficiency  renal","Symptoms":"shortness of breath, hyperkalemia, orthopnea, rale, urgency of micturition, ascites, guaiac positive, asthenia, apyrexial, mental status changes, dyspnea, difficulty, diarrhea, hypotension, breath sounds decreased, swelling, hypokinesia"}
+{"Disease":"confusion","Symptoms":"seizure, enuresis, lethargy, speech slurred, fall, consciousness clear, mental status changes, asterixis, unconscious state, agitation, muscle twitch, asthenia, sleepy, dizziness, headache, dysarthria, lightheadedness, tremor, hyponatremia, unresponsiveness"}
+{"Disease":"degenerative  polyarthritis","Symptoms":"pain, food  intolerance, numbness  of hand, general  discomfort, drowsiness, asthenia, nonsmoker, non-productive  cough, polydypsia, stiffness, unsteady  gait"}
+{"Disease":"hypothyroidism","Symptoms":"shortness of breath, prostatism, sleepy, hyponatremia, fall, unsteady gait, polyuria, hypotension, difficulty, syncope, nightmare, speech slurred, weight gain, asthenia, tired, agitation, mental status changes, motor retardation, vomiting, numbness, mass of body structure"}
+{"Disease":"anxiety  state","Symptoms":"worry, feeling suicidal, suicidal, sleeplessness, feeling hopeless, irritable mood, tremor, blackout, weepiness, has religious belief, nervousness, hallucinations visual, formication, difficulty, pain chest, patient non compliance, agitation, palpitation, hallucinations auditory, mood depressed, hot flush, pain, consciousness clear, nightmare"}
+{"Disease":"primary malignant neoplasm","Symptoms":"pain, mass of body structure, lesion, cushingoid habitus, emphysematous change, decreased body weight, ascites, hoarseness, thicken, hematuria"}
+{"Disease":"hiv infections","Symptoms":"fever, night sweat, spontaneous rupture of membranes, cough, , decreased body weight, chill, diarrhea, pleuritic pain, patient non compliance, tachypnea, productive cough, hypotonic, feeling suicidal"}
+{"Disease":"cellulitis","Symptoms":"erythema, pain, swelling, redness, fever, abscess bacterial, patient non compliance, hypesthesia, hyperacusis, pruritus, pain chest, scratch marks, chill, sore to touch"}
+{"Disease":"gastroesophageal  reflux disease","Symptoms":"pain, pain chest, burning sensation, hyponatremia, satiety early, throbbing sensation quality, chest tightness, sensory discomfort, presence of q wave, nausea, general discomfort, constipation, palpitation, pain abdominal, heartburn, sweating increased, asthenia"}
+{"Disease":"sepsis (invertebrate)","Symptoms":"fever, distress respiratory, hypotension, tachypnea, chill, lethargy, bradycardia, breech presentation, cyanosis, spontaneous rupture of membranes, haemorrhage, unresponsiveness, rale, apyrexial"}
+{"Disease":"deep  vein thrombosis","Symptoms":"swelling, pain, ecchymosis, shortness of breath, pain in lower limb, cardiomegaly, rale, erythema, hypotension, clonus, non-productive cough, redness"}
+{"Disease":"dehydration","Symptoms":"diarrhea, vomiting, hypotension, nausea, lightheadedness, unwell, mental status changes, anorexia, asthenia, sensory discomfort, syncope, lethargy, dizziness, history  of - blackout"}
+{"Disease":"neoplasm","Symptoms":"mass of body structure, lesion, pain chest, hematuria, tumor cell invasion, pain, anosmia, thicken, metastatic lesion, food intolerance, decreased body weight, night sweat, hemianopsia homonymous, satiety early, pain abdominal, headache"}
+{"Disease":"embolism  pulmonary","Symptoms":"shortness of breath, hypoxemia, tachypnea, hematocrit decreased, pain chest, dyspnea, pleuritic pain, neck stiffness, yellow sputum, productive cough, cicatrisation, unresponsiveness, distress respiratory, wheezing, apyrexial, non-productive cough"}
+{"Disease":"epilepsy","Symptoms":"seizure, hypometabolism, aura, muscle twitch, drowsiness, tremor, unresponsiveness, hemiplegia, myoclonus, gurgle, sleepy, lethargy, wheelchair bound"}
+{"Disease":"cardiomyopathy","Symptoms":"shortness of breath, orthopnea, hypokinesia, jugular venous distention, palpitation, pain chest, syncope, yellow sputum, rale, dyspnea, dyspnea on exertion, left atrial hypertrophy, fatigue, weight gain, patient non compliance"}
+{"Disease":"chronic  kidney failure","Symptoms":"vomiting, orthopnea, hyperkalemia, oliguria, jugular venous distention, nausea, shortness of breath, mental status changes, diarrhea, asthenia, chest tightness, malaise, chill, rale, fever, pleuritic pain, apyrexial, guaiac positive, swelling, catatonia, unresponsiveness, yellow sputum"}
+{"Disease":"carcinoma","Symptoms":"mass of body structure, pain, lesion, tumor cell invasion, thicken, decreased body weight, hoarseness, general discomfort, metastatic lesion, non-productive cough, constipation, unhappy, paresthesia, gravida 0, diarrhea, sore to touch, heartburn, nausea, lung nodule"}
+{"Disease":"hepatitis  C","Symptoms":"ascites, distended abdomen, feeling suicidal, cough, ache, macerated skin, heavy feeling, hallucinations auditory, chill, asterixis, patient non compliance"}
+{"Disease":"peripheral  vascular disease","Symptoms":"shortness of breath, rest pain, angina pectoris, unresponsiveness, hyperkalemia, sinus rhythm, labored breathing, dyspnea, sore to touch, anorexia, sleepy"}
+{"Disease":"psychotic  disorder","Symptoms":"suicidal, hallucinations auditory, feeling suicidal, hallucinations visual, motor retardation, blackout, verbal auditory hallucinations, feeling hopeless, irritable mood, agitation, tremor, catatonia, weepiness, homelessness, sleeplessness, withdraw, energy increased, intoxication, worry, behavior hyperactive, patient non compliance, mood depressed, terrify, nightmare, consciousness clear"}
+{"Disease":"hyperlipidemia","Symptoms":"pain chest, angina pectoris, palpitation, presence of q wave, photopsia, sweating increased, chest discomfort, shortness of breath, giddy mood, hypokinesia, hemiplegia, dizziness"}
+{"Disease":"bipolar  disorder","Symptoms":"feeling suicidal, energy increased, suicidal, irritable mood, agitation, has religious belief, disturbed family, hallucinations auditory, verbal auditory hallucinations, weepiness, behavior hyperactive, catatonia, feeling hopeless, worry, sleeplessness, hypersomnia, difficulty, hallucinations visual, hyperhidrosis disorder, mydriasis, extrapyramidal sign, loose associations, intoxication, motor retardation, homelessness, blackout, tremor, exhaustion"}
+{"Disease":"obesity","Symptoms":"pain, catatonia, snore, pain chest, r wave feature, has religious belief, shortness of breath, tired, overweight, systolic murmur, mood depressed, ecchymosis"}
+{"Disease":"ischemia","Symptoms":"sleepy, pain chest, angina pectoris, pressure chest, chest discomfort, shortness of breath, dyspnea, sinus rhythm, bradycardia, sweating increased, rale, asymptomatic, anorexia"}
+{"Disease":"cirrhosis","Symptoms":"ascites, fall, splenomegaly, pruritus, pain abdominal, tumor cell invasion, distended abdomen, lesion, hemodynamically stable, guaiac positive, sore to touch, bleeding of vagina"}
+{"Disease":"exanthema","Symptoms":"fever, pruritus, macule, lesion, redness, headache, apyrexial, arthralgia, swelling, erythema, photophobia, chill, scratch marks, pain, painful swallowing"}
+{"Disease":"benign  prostatic hypertrophy","Symptoms":"mental status changes, cachexia, blackout, orthostasis, orthopnea, night sweat, distress respiratory, anorexia, dysarthria"}
+{"Disease":"kidney  failure acute","Symptoms":"hyperkalemia, hypotension, hypocalcemia result, oliguria, hemodynamically stable, asthenia, hypothermia, natural, diarrhea, haemorrhage, unresponsiveness"}
+{"Disease":"mitral  valve insufficiency","Symptoms":"shortness of breath, dyspnea on exertion, asymptomatic, hypokinesia, dyspnea, syncope, thicken, left atrial hypertrophy, palpitation, fatigue, vomiting, pain, cardiomegaly, chest discomfort"}
+{"Disease":"arthritis","Symptoms":"pain, hemodynamically stable, sleeplessness, asthenia, syncope, swelling, atypia, general unsteadiness, shortness of breath, distended abdomen"}
+{"Disease":"bronchitis","Symptoms":"cough, wheezing, shortness of breath, chest tightness, fever, throat sore, productive cough, hepatosplenomegaly, night sweat, haemoptysis, labored breathing, snuffle, hacking cough, dyspnea, chill, stridor, decreased body weight"}
+{"Disease":"hemiparesis","Symptoms":"dysarthria, paresis, asthenia, aphagia, seizure, speech slurred, focal seizures, hemiplegia, abnormal sensation, unresponsiveness, stupor, sleepy, fremitus, Stahli's line, stinging sensation, paralyse, clonus, facial paresis"}
+{"Disease":"osteoporosis","Symptoms":"prostatism, fall, hirsutism, sniffle, distended  abdomen, vertigo, numbness  of hand, bradykinesia, pain, syncope, out  of breath, apyrexial, urge  incontinence, lightheadedness"}
+{"Disease":"transient  ischemic attack","Symptoms":"speech slurred, dysarthria, facial paresis, asthenia, neck stiffness, vertigo, numbness, lightheadedness, extrapyramidal sign, Stahli's line, vision blurred, headache, room spinning, syncope, difficulty, rambling speech, clumsiness"}
+{"Disease":"adenocarcinoma","Symptoms":"mass of body structure, lesion, decreased body weight, constipation, fremitus, decreased stool caliber, satiety early, hematochezia, egophony, pain, scar tissue, pain abdominal"}
+{"Disease":"paranoia","Symptoms":"hallucinations auditory, hallucinations visual, agitation, irritable mood, verbal auditory hallucinations, feeling suicidal, suicidal, terrify, neologism, homelessness, energy increased, mood depressed, decompensation, scar tissue, blackout, loose associations"}
+{"Disease":"pancreatitis","Symptoms":"vomiting, pain abdominal, nausea, pain, diarrhea, stool color yellow, rigor - temperature-associated observation, apyrexial, sore to touch"}
+{"Disease":"incontinence","Symptoms":"paraparesis, seizure, asthenia, urge incontinence, unconscious state, aura, moody, fear of falling, tremor, spasm, unhappy, syncope, fall, stiffness, unresponsiveness"}
+{"Disease":"paroxysmal  dyspnea","Symptoms":"orthopnea, shortness of breath, dyspnea on exertion, jugular venous distention, rale, pain chest, palpitation, sweating increased, weight gain, cough, dyspnea"}
+{"Disease":"hernia","Symptoms":"pain abdominal, pain, hyperventilation, excruciating pain, gag, nausea, posturing, hemiplegia, sore to touch, haemorrhage, apyrexial, food intolerance, pulse absent, asthenia, mass of body structure, thicken"}
+{"Disease":"carcinoma prostate","Symptoms":"hematuria, dysesthesia, asthenia, polymyalgia, passed stones, pleuritic pain, guaiac positive, rale, breath sounds decreased, urge incontinence, dysuria, diarrhea, vertigo, qt interval prolonged, ataxia, paresis, hemianopsia homonymous, tumor cell invasion, hemodynamically stable, mass of body structure, rhonchus, orthostasis, decreased body weight"}
+{"Disease":"edema  pulmonary","Symptoms":"urgency of micturition, shortness of breath, rale, tachypnea, orthopnea, Heberden's node, jugular venous distention, dyspnea, sweating increased, patient non compliance, chest discomfort, hyperkalemia, sinus rhythm, pain chest, hypotension, wheezing"}
+{"Disease":"lymphatic  diseases","Symptoms":"pain, mass of body structure, night sweat, splenomegaly, lesion, chill, decreased body weight, swelling, fever, hyperacusis, fremitus, non-productive cough, egophony, redness, hepatomegaly, fatigue"}
+{"Disease":"stenosis  aortic valve","Symptoms":"dyspnea on exertion, syncope, chest discomfort, systolic murmur, sciatica, angina pectoris, pain chest, frothy sputum, bradycardia, shortness of breath, pain"}
+{"Disease":"carcinoma breast","Symptoms":"mass in breast, mass of body structure, paresthesia, retropulsion, erythema, difficulty, lesion, estrogen use, burning sensation, dyspnea, swelling, formication"}
+{"Disease":"schizophrenia","Symptoms":"hallucinations auditory, hypersomnolence, irritable mood, verbal auditory hallucinations, patient non compliance, agitation, suicidal, worry, hallucinations visual, underweight, homelessness"}
+{"Disease":"diverticulitis","Symptoms":"pain abdominal, abscess bacterial, dullness, red blotches, diarrhea, sore to touch, dysuria, pain, vomiting, sinus rhythm, colic abdominal, apyrexial, abdominal tenderness, fever, unsteady gait, thicken, urgency of micturition, anorexia, monoclonal, constipation"}
+{"Disease":"overload  fluid","Symptoms":"rale, jugular venous distention, hyperkalemia, orthopnea, shortness of breath, sleepy, weight gain, hypokalemia, hypotension, swelling, distended abdomen"}
+{"Disease":"ulcer  peptic","Symptoms":"pain abdominal, paraparesis, nausea, vomiting, polymyalgia, out of breath, pain chest, hemiplegia, gurgle, hunger, apyrexial, nervousness"}
+{"Disease":"osteomyelitis","Symptoms":"pain, redness, prostate tender, fever, difficulty passing urine, sore to touch, swelling, apyrexial, erythema, abscess bacterial, pain foot, urinary hesitation"}
+{"Disease":"gastritis","Symptoms":"heme positive, pain abdominal, vomiting, disequilibrium, nausea, intoxication, haemorrhage, guaiac positive, pain, decreased body weight, sore to touch, dizziness"}
+{"Disease":"bacteremia","Symptoms":"fever, chill, flushing, unresponsiveness, indifferent mood, urinoma, vomiting, distended abdomen, hypoalbuminemia, pustule, prostatism, diarrhea, abdominal tenderness, pleuritic pain, decreased translucency, pallor"}
+{"Disease":"failure  kidney","Symptoms":"orthopnea, oliguria, slowing of urinary stream, extreme exhaustion, unresponsiveness, hypotension, enuresis, shortness of breath, haemorrhage, prostatism, no status change, bedridden, fatigue"}
+{"Disease":"sickle  cell anemia","Symptoms":"breakthrough pain, pain back, pain, shortness of breath, snuffle, pain chest, pain abdominal, hepatosplenomegaly, green sputum, apyrexial, headache"}
+{"Disease":"failure  heart","Symptoms":"orthopnea, fatigue, dyspnea on exertion, dyspnea, shortness of breath, pansystolic murmur, jugular venous distention, systolic ejection murmur, hypotension, angina pectoris, hypokinesia"}
+{"Disease":"upper  respiratory infection","Symptoms":"cough, throat sore, wheezing, shortness of breath, labored breathing, fever, stuffy nose, non-productive cough, snuffle, indifferent mood, egophony, barking cough, polymyalgia, pleuritic pain, night sweat, dyspnea, productive cough, decreased translucency, rhonchus, rapid shallow breathing, apyrexial, noisy respiration, nasal discharge present, emphysematous change, frail, cystic lesion, symptom aggravating factors, hemodynamically stable"}
+{"Disease":"hepatitis","Symptoms":"ascites, spontaneous rupture of membranes, tachypnea, pain abdominal, pruritus, anorexia, transaminitis, projectile vomiting, chill, distress respiratory, fever, vomiting"}
+{"Disease":"hypertension  pulmonary","Symptoms":"shortness of breath, Stahli's line, heavy legs, breath sounds decreased, neck stiffness, dyspnea on exertion, cyanosis, hypotension, left atrial hypertrophy"}
+{"Disease":"deglutition  disorder","Symptoms":"paresthesia, titubation, dysarthria, painful swallowing, hoarseness, stridor, spasm, asthenia, dysdiadochokinesia, ataxia, achalasia, decreased body weight, stiffness, lesion, side pain"}
+{"Disease":"gout","Symptoms":"hot flush, pain, redness, swelling, erythema, emphysematous change, sore to touch, hypokinesia, ascites, patient non compliance"}
+{"Disease":"thrombocytopaenia","Symptoms":"ecchymosis, monocytosis, posterior rhinorrhea, haemorrhage, tachypnea, fever, pruritus, hypotension, fatigue"}
+{"Disease":"hypoglycemia","Symptoms":"unresponsiveness, hypothermia, natural, incoherent, qt interval prolonged, claudication, unconscious state, clammy skin, polyuria, distress respiratory, hypotension"}
+{"Disease":"pneumonia  aspiration","Symptoms":"mediastinal shift, fever, clonus, mental status changes, decreased translucency, unresponsiveness, extreme exhaustion, stupor, seizure, transaminitis, hemiplegia, cough, gurgle, pain, diarrhea, pain abdominal"}
+{"Disease":"colitis","Symptoms":"fever, thicken, green sputum, vomiting, nausea and vomiting, awakening early, pain, nausea, chill, tenesmus, urge incontinence, pain abdominal, hemodynamically stable"}
+{"Disease":"diverticulosis","Symptoms":"fecaluria, constipation, abscess bacterial, heme positive, lightheadedness, diarrhea, haemorrhage, pain, projectile vomiting, pneumatouria, cystic lesion, anorexia, nausea, feeling suicidal, feeling hopeless"}
+{"Disease":"nan","Symptoms":"hallucinations auditory, sleeplessness, suicidal, motor retardation, weepiness, unable to concentrate, todd paralysis, worry, fatigue, tremor, alcoholic withdrawal symptoms, agitation, unresponsiveness, blackout, withdraw, difficulty, irritable mood, sensory discomfort, drowsiness, formication, unconscious state, fever, cough"}
+{"Disease":"suicide  attempt","Symptoms":""}
+{"Disease":"Pneumocystis  carinii pneumonia","Symptoms":"yellow sputum, cachexia, chill, decreased body weight, productive cough, myalgia, diarrhea, neck stiffness, hacking cough, dyspareunia, hypokalemia, dyspnea on exertion, poor dentition, transaminitis, non-productive cough, headache, floppy, spontaneous rupture of membranes"}
+{"Disease":"hepatitis  B","Symptoms":"inappropriate affect, tachypnea, yellow sputum, projectile vomiting, poor feeding, pain abdominal, abdominal tenderness, wheelchair bound, moan"}
+{"Disease":"parkinson  disease","Symptoms":"achalasia, fall, stiffness, withdraw, agitation, hemiplegia, difficulty, unresponsiveness, syncope, facial paresis, orthostasis, worry, sleepy, hematuria, tremor, night sweat, mass of body structure"}
+{"Disease":"lymphoma","Symptoms":"lesion, fever, welt, transaminitis, decreased body weight, ataxia, tinnitus, hydropneumothorax, superimposition, haemoptysis, tired, polydypsia, difficulty passing urine"}
+{"Disease":"hyperglycemia","Symptoms":"sore to touch, pruritus, feeling strange, pustule, cushingoid habitus, decreased body weight, mood depressed, estrogen use, wheezing, ascites, seizure"}
+{"Disease":"encephalopathy","Symptoms":"uncoordination, asterixis, haemorrhage, sleepy, absences finding, posturing, aura, tonic seizures, debilitation, consciousness clear, unresponsiveness, thicken, hypokinesia"}
+{"Disease":"tricuspid  valve insufficiency","Symptoms":"shortness of breath, pain, vomiting, nausea, bradycardia, pain abdominal, fever, cicatrisation, mediastinal shift, impaired cognition"}
+{"Disease":"Alzheimer's  disease","Symptoms":"drool, agitation, nightmare, rhonchus, consciousness clear, pin-point pupils, bedridden, frail, tremor resting, hyperkalemia, facial paresis, groggy, muscle twitch, wheelchair bound, tremor, cough, fever"}
+{"Disease":"oral  candidiasis","Symptoms":"diarrhea, throat sore, decreased body weight, chill, headache, abdominal tenderness, patient non compliance, photophobia, night sweat, painful swallowing, poor dentition, transaminitis, non-productive cough, adverse effect, abdominal bloating"}
+{"Disease":"neuropathy","Symptoms":"asthenia, numbness, nausea and vomiting, awakening early, hydropneumothorax, superimposition, fatigability, tenesmus, pain, slowing of urinary stream"}
+{"Disease":"kidney  disease","Symptoms":"shortness of breath, hyperkalemia, pain chest, fever, gravida 0, bleeding of vagina"}
+{"Disease":"fibroid  tumor","Symptoms":"para 2, haemorrhage, abortion, intermenstrual heavy bleeding, hypotonic, previous pregnancies 2, shortness of breath, fever, heartburn, primigravida, abnormally  hard consistency, proteinemia"}
+{"Disease":"glaucoma","Symptoms":"fall, distended  abdomen, unsteady  gait, paresthesia, hyponatremia, agitation, unconscious  state, burning  sensation, lesion, mass of body structure"}
+{"Disease":"neoplasm  metastasis","Symptoms":"thicken, tumor cell invasion, metastatic lesion, pain neck, lung nodule, pain, pain abdominal, food intolerance, mass of body structure, atypia"}
+{"Disease":"carcinoma colon","Symptoms":"lesion, prostatism, constipation, general discomfort, diarrhea, pain abdominal, urinary hesitation, dizzy spells, shooting pain, bradycardia, vomiting, systolic ejection murmur, nausea, hyperemesis, polydypsia"}
+{"Disease":"ketoacidosis  diabetic","Symptoms":"polyuria, vomiting, nausea, pain abdominal, milky, feeling strange, gurgle, nervousness, abdominal tenderness, regurgitates after swallowing, vision blurred, urinary hesitation, diarrhea, seizure, aura"}
+{"Disease":"tonic-clonic seizures","Symptoms":"drowsiness, lip smacking, myoclonus, tremor, phonophobia, rolling of eyes, sleepy, hirsutism, moody, muscle twitch, unresponsiveness, headache, ambidexterity, absences finding, spasm, decreased body weight, tumor cell invasion"}
+{"Disease":"malignant  neoplasms","Symptoms":"pulsus paradoxus, gravida 10, mass of body structure, lesion, heartburn, night sweat, thicken, chill, decreased translucency, pain abdominal, dullness, food intolerance, distress respiratory, hypotension"}
+{"Disease":"respiratory  failure","Symptoms":"hemiplegia, snore, unresponsiveness, productive cough, dyspnea, tachypnea, hyperkalemia, hypokinesia, sinus rhythm, general unsteadiness, bruit, consciousness clear, shortness of breath, lesion, redness"}
+{"Disease":"melanoma","Symptoms":"mass of body structure, paraparesis, fever, gravida 0, pain, pruritus, mass in breast, vomiting, diarrhea"}
+{"Disease":"gastroenteritis","Symptoms":"pain abdominal, breath-holding spell, nausea, decreased body weight, sore to touch, scleral icterus, fever, myalgia, hyponatremia, retch, mass of body structure, decreased body weight"}
+{"Disease":"carcinoma of lung","Symptoms":"lesion, cough, lung nodule, shortness of breath, haemoptysis, debilitation, gurgle, ache, rale, night sweat, decreased translucency, asthenia, metastatic lesion, agitation, irritable mood"}
+{"Disease":"manic  disorder","Symptoms":"energy increased, suicidal, hypersomnia, feeling suicidal, blanch, hallucinations auditory, hallucinations visual, elation, verbal auditory hallucinations, feeling hopeless, difficulty, decompensation, verbally abusive behavior, suicidal, feeling suicidal"}
+{"Disease":"personality  disorder","Symptoms":"nightmare, feeling hopeless, transsexual, hallucinations auditory, irritable mood, sleeplessness, agitation, weepiness, mood depressed, scratch marks, nausea and vomiting, extreme exhaustion, side pain, worry, enuresis, homelessness, nervousness, ascites, pruritus"}
+{"Disease":"primary  carcinoma of the liver cells","Symptoms":"mass of body structure, splenomegaly, lesion, paresis, tumor cell invasion, room spinning, haemorrhage, thicken, indifferent mood, cachexia, hypothermia, natural, pain abdominal, hepatomegaly, hematocrit decreased, stupor, decreased body weight, shortness of breath, cough"}
+{"Disease":"emphysema  pulmonary","Symptoms":"behavior showing increased motor activity, scar tissue, dyspnea on exertion, coordination abnormal, myalgia, hypercapnia, clammy skin, has religious belief, room spinning, moan, night sweat, cachexia, symptom aggravating factors, dyspnea, rale, flushing, painful swallowing, arthralgia, choke, tenesmus, constipation"}
+{"Disease":"hemorrhoids","Symptoms":"haemorrhage, bowel sounds decreased, decreased stool caliber, nausea and vomiting, hunger, diarrhea, dizziness, hyponatremia, clonus, pain, achalasia, burning sensation, guaiac positive, numbness of hand, wheezing, cough"}
+{"Disease":"spasm  bronchial","Symptoms":"shortness of breath, scar tissue, apyrexial, no known drug allergies, pain, productive cough, throat sore, dyspnea, chest tightness, hypoxemia, tachypnea, sensory discomfort, fever, vomiting, rhonchus, hemiplegia, fremitus"}
+{"Disease":"aphasia","Symptoms":"clonus, egophony, facial paresis, aphagia, muscle twitch, paralyse, low back pain, charleyhorse"}
+{"Disease":"obesity  morbid","Symptoms":"out of breath, sedentary, angina pectoris, cough, unhappy, labored breathing, hypothermia, natural, dyspnea, hematocrit decreased, wheezing, hypoxemia, renal angle tenderness, feels hot\/feverish"}
+{"Disease":"pyelonephritis","Symptoms":"fever, pain, urgency of micturition, hematuria, vomiting, chill, diarrhea, nausea, pain abdominal, myalgia, fever, chill"}
+{"Disease":"endocarditis","Symptoms":"pleuritic pain, thicken, myalgia, apyrexial, night sweat, flare, shortness of breath, orthopnea, abscess bacterial, hypotension, cough, metastatic lesion, breath sounds decreased, decreased body weight, pulsus paradoxus, hypokinesia"}
+{"Disease":"pericardial effusion body substance","Symptoms":"pericardial friction rub, dyspnea, shortness of breath, hemodynamically stable, cardiomegaly, hypotension, sputum purulent, facial paresis, pain, oliguria, blackout, intoxication"}
+{"Disease":"chronic  alcoholic intoxication","Symptoms":"tremor, hallucinations auditory, suicidal, hoard, irritable mood, feeling hopeless, feeling suicidal, neologism, seizure, homelessness, sleeplessness, unconscious state, panic, breath sounds decreased, shortness of breath"}
+{"Disease":"pneumothorax","Symptoms":"dyspnea, cardiovascular event, haemoptysis, cough, hypercapnia, soft tissue swelling, prostatism, agitation"}
+{"Disease":"delirium","Symptoms":"unsteady gait, withdraw, hyponatremia, verbally abusive behavior, feeling suicidal, unresponsiveness, worry, sleepy, hallucinations auditory, suicidal, fever, diarrhea"}
+{"Disease":"neutropenia","Symptoms":"transaminitis, splenomegaly, night sweat, apyrexial, lesion, snuffle, chill, cough, monoclonal, hypocalcemia result, oliguria, rhd positive, distress respiratory"}
+{"Disease":"hyperbilirubinemia","Symptoms":"cyanosis, tachypnea, para 1, bradycardia, breech presentation, cushingoid habitus, cough, myalgia"}
+{"Disease":"influenza","Symptoms":"uncoordination, fever, pleuritic pain, snuffle, throat sore, malaise, debilitation, symptom aggravating factors, chill, scleral icterus, nasal flaring, dysuria, lip smacking, headache, sneeze, snore, green sputum, shortness of breath, distress respiratory, blackout, extreme exhaustion"}
+{"Disease":"dependence","Symptoms":"intoxication, tremor, agitation, suicidal, homelessness, prostatism, lethargy, seizure, muscle twitch, stuffy nose, feeling hopeless, heavy legs, rale"}
+{"Disease":"thrombus","Symptoms":"hypokinesia, anorexia, hypertonicity, shortness of breath, hypoalbuminemia, pruritus, sore to touch, hemodynamically stable, facial paresis, vomiting, stool color yellow"}
+{"Disease":"cholecystitis","Symptoms":"moan, nausea, pain abdominal, Murphy's sign, flatulence, colic abdominal, pain, ascites, diarrhea, qt interval prolonged, cardiovascular event, groggy, sinus rhythm, gasping for breath, constipation, feces in rectum, abnormally hard consistency"}
+{"Disease":"hernia  hiatal","Symptoms":"pain abdominal, fatigability, prodrome, vomiting, nausea, myalgia, hyponatremia, sore to touch, general discomfort, dyspnea on exertion, asterixis, guaiac positive, numbness of hand, headache, photophobia"}
+{"Disease":"migraine  disorders","Symptoms":"ambidexterity, vomiting, dizziness, numbness, nausea, fever, splenomegaly"}
+{"Disease":"pancytopenia","Symptoms":"hypoproteinemia, fatigue, haemorrhage, fatigability, cushingoid habitus, stool color yellow, colic abdominal"}
+{"Disease":"biliary  calculus","Symptoms":"vomiting, nausea, pain abdominal, pain, cushingoid habitus, ascites, thicken, sore to touch, diarrhea, apyrexial, palpitation"}
+{"Disease":"tachycardia  sinus","Symptoms":"left atrial hypertrophy, sweating increased, alcohol binge episode, pressure chest, scar tissue, cardiovascular event, orthostasis, shortness of breath, t wave inverted, vomiting, pain abdominal"}
+{"Disease":"ileus","Symptoms":"abscess bacterial, abdomen acute, air fluid level, catching breath, abdominal tenderness, nausea, sore to touch, flatulence, diarrhea, mass of body structure, apyrexial, constipation, thicken, gravida 0, pain abdominal"}
+{"Disease":"adhesion","Symptoms":"flatulence, pain, large-for-dates fetus, para 1, vomiting, lung nodule, breech presentation, shortness of breath, decreased body weight, immobile, unsteady gait, hallucinations visual, feeling suicidal"}
+{"Disease":"delusion","Symptoms":"loose associations, giddy mood, feeling hopeless, agitation, hallucinations auditory, irritable mood, sleeplessness, neologism, homicidal thoughts, disturbed family, worry, decompensation, verbally abusive behavior, catatonia, suicidal, terrify, blackout, weepiness, impaired cognition, irritable mood, agitation"}
+{"Disease":"affect  labile","Symptoms":"extreme exhaustion, sleeplessness, enuresis, patient non compliance, feeling hopeless, hallucinations visual, bedridden, prostatism"}
+{"Disease":"decubitus  ulcer","Symptoms":"systolic murmur, frail, fever"}
+{"Disease":"Fungal infection","Symptoms":"itching, skin rash, nodal skin eruptions, dischromic  patches"}
+{"Disease":"Fungal infection","Symptoms":"skin rash, nodal skin eruptions, dischromic  patches"}
+{"Disease":"Fungal infection","Symptoms":"itching, nodal skin eruptions, dischromic  patches"}
+{"Disease":"Fungal infection","Symptoms":"itching, skin rash, dischromic  patches"}
+{"Disease":"Fungal infection","Symptoms":"itching, skin rash, nodal skin eruptions"}
+{"Disease":"Allergy","Symptoms":"continuous sneezing, shivering, chills, watering from eyes"}
+{"Disease":"Allergy","Symptoms":"shivering, chills, watering from eyes"}
+{"Disease":"Allergy","Symptoms":"continuous sneezing, chills, watering from eyes"}
+{"Disease":"Allergy","Symptoms":"continuous sneezing, shivering, watering from eyes"}
+{"Disease":"Allergy","Symptoms":"continuous sneezing, shivering, chills"}
+{"Disease":"GERD","Symptoms":"stomach pain, acidity, ulcers on tongue, vomiting, cough, chest pain"}
+{"Disease":"GERD","Symptoms":"stomach pain, ulcers on tongue, vomiting, cough, chest pain"}
+{"Disease":"GERD","Symptoms":"stomach pain, acidity, vomiting, cough, chest pain"}
+{"Disease":"GERD","Symptoms":"stomach pain, acidity, ulcers on tongue, cough, chest pain"}
+{"Disease":"GERD","Symptoms":"stomach pain, acidity, ulcers on tongue, vomiting, chest pain"}
+{"Disease":"GERD","Symptoms":"stomach pain, acidity, ulcers on tongue, vomiting, cough"}
+{"Disease":"GERD","Symptoms":"acidity, ulcers on tongue, vomiting, cough, chest pain"}
+{"Disease":"Chronic cholestasis","Symptoms":"itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Chronic cholestasis","Symptoms":"vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Chronic cholestasis","Symptoms":"itching, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Chronic cholestasis","Symptoms":"itching, vomiting, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Chronic cholestasis","Symptoms":"itching, vomiting, yellowish skin, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Chronic cholestasis","Symptoms":"itching, vomiting, yellowish skin, nausea, abdominal pain, yellowing of eyes"}
+{"Disease":"Chronic cholestasis","Symptoms":"itching, vomiting, yellowish skin, nausea, loss of appetite, yellowing of eyes"}
+{"Disease":"Chronic cholestasis","Symptoms":"itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain"}
+{"Disease":"Drug Reaction","Symptoms":"itching, skin rash, stomach pain, burning micturition, spotting  urination"}
+{"Disease":"Drug Reaction","Symptoms":"itching, stomach pain, burning micturition, spotting  urination"}
+{"Disease":"Drug Reaction","Symptoms":"itching, skin rash, burning micturition, spotting  urination"}
+{"Disease":"Drug Reaction","Symptoms":"itching, skin rash, stomach pain, spotting  urination"}
+{"Disease":"Drug Reaction","Symptoms":"itching, skin rash, stomach pain, burning micturition"}
+{"Disease":"Drug Reaction","Symptoms":"skin rash, stomach pain, burning micturition, spotting  urination"}
+{"Disease":"Peptic ulcer diseae","Symptoms":"vomiting, loss of appetite, abdominal pain, passage of gases, internal itching"}
+{"Disease":"Peptic ulcer diseae","Symptoms":"vomiting, indigestion, abdominal pain, passage of gases, internal itching"}
+{"Disease":"Peptic ulcer diseae","Symptoms":"indigestion, loss of appetite, abdominal pain, passage of gases, internal itching"}
+{"Disease":"Peptic ulcer diseae","Symptoms":"vomiting, indigestion, loss of appetite, passage of gases, internal itching"}
+{"Disease":"Peptic ulcer diseae","Symptoms":"vomiting, indigestion, loss of appetite, abdominal pain, internal itching"}
+{"Disease":"Peptic ulcer diseae","Symptoms":"vomiting, indigestion, loss of appetite, abdominal pain, passage of gases"}
+{"Disease":"Peptic ulcer diseae","Symptoms":"vomiting, indigestion, loss of appetite, abdominal pain, passage of gases, internal itching"}
+{"Disease":"AIDS","Symptoms":"muscle wasting, patches in throat, high fever, extra marital contacts"}
+{"Disease":"AIDS","Symptoms":"patches in throat, high fever, extra marital contacts"}
+{"Disease":"AIDS","Symptoms":"muscle wasting, high fever, extra marital contacts"}
+{"Disease":"AIDS","Symptoms":"muscle wasting, patches in throat, extra marital contacts"}
+{"Disease":"AIDS","Symptoms":"muscle wasting, patches in throat, high fever"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, weight loss, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, weight loss, restlessness, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, weight loss, restlessness, lethargy, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, weight loss, restlessness, lethargy, irregular sugar level, obesity, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, excessive hunger, increased appetite, polyuria"}
+{"Disease":"Diabetes ","Symptoms":"fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, increased appetite, polyuria"}
+{"Disease":"Gastroenteritis","Symptoms":"vomiting, sunken eyes, dehydration, diarrhoea"}
+{"Disease":"Gastroenteritis","Symptoms":"sunken eyes, dehydration, diarrhoea"}
+{"Disease":"Gastroenteritis","Symptoms":"vomiting, dehydration, diarrhoea"}
+{"Disease":"Gastroenteritis","Symptoms":"vomiting, sunken eyes, diarrhoea"}
+{"Disease":"Gastroenteritis","Symptoms":"vomiting, sunken eyes, dehydration"}
+{"Disease":"Bronchial Asthma","Symptoms":"fatigue, cough, high fever, breathlessness, family history, mucoid sputum"}
+{"Disease":"Bronchial Asthma","Symptoms":"cough, high fever, breathlessness, family history, mucoid sputum"}
+{"Disease":"Bronchial Asthma","Symptoms":"fatigue, high fever, breathlessness, family history, mucoid sputum"}
+{"Disease":"Bronchial Asthma","Symptoms":"fatigue, cough, breathlessness, family history, mucoid sputum"}
+{"Disease":"Bronchial Asthma","Symptoms":"fatigue, cough, high fever, family history, mucoid sputum"}
+{"Disease":"Bronchial Asthma","Symptoms":"fatigue, cough, high fever, breathlessness, mucoid sputum"}
+{"Disease":"Bronchial Asthma","Symptoms":"fatigue, cough, high fever, breathlessness, family history"}
+{"Disease":"Hypertension ","Symptoms":"headache, chest pain, dizziness, loss of balance, lack of concentration"}
+{"Disease":"Hypertension ","Symptoms":"chest pain, dizziness, loss of balance, lack of concentration"}
+{"Disease":"Hypertension ","Symptoms":"headache, dizziness, loss of balance, lack of concentration"}
+{"Disease":"Hypertension ","Symptoms":"headache, chest pain, loss of balance, lack of concentration"}
+{"Disease":"Hypertension ","Symptoms":"headache, chest pain, dizziness, lack of concentration"}
+{"Disease":"Hypertension ","Symptoms":"headache, chest pain, dizziness, loss of balance"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, headache, excessive hunger, stiff neck, depression, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, headache, blurred and distorted vision, stiff neck, depression, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, headache, blurred and distorted vision, excessive hunger, depression, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, irritability, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, visual disturbances"}
+{"Disease":"Migraine","Symptoms":"acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability"}
+{"Disease":"Cervical spondylosis","Symptoms":"back pain, weakness in limbs, neck pain, dizziness, loss of balance"}
+{"Disease":"Cervical spondylosis","Symptoms":"weakness in limbs, neck pain, dizziness, loss of balance"}
+{"Disease":"Cervical spondylosis","Symptoms":"back pain, neck pain, dizziness, loss of balance"}
+{"Disease":"Cervical spondylosis","Symptoms":"back pain, weakness in limbs, dizziness, loss of balance"}
+{"Disease":"Cervical spondylosis","Symptoms":"back pain, weakness in limbs, neck pain, loss of balance"}
+{"Disease":"Cervical spondylosis","Symptoms":"back pain, weakness in limbs, neck pain, dizziness"}
+{"Disease":"Paralysis (brain hemorrhage)","Symptoms":"vomiting, headache, weakness of one body side, altered sensorium"}
+{"Disease":"Paralysis (brain hemorrhage)","Symptoms":"headache, weakness of one body side, altered sensorium"}
+{"Disease":"Paralysis (brain hemorrhage)","Symptoms":"vomiting, weakness of one body side, altered sensorium"}
+{"Disease":"Paralysis (brain hemorrhage)","Symptoms":"vomiting, headache, altered sensorium"}
+{"Disease":"Paralysis (brain hemorrhage)","Symptoms":"vomiting, headache, weakness of one body side"}
+{"Disease":"Jaundice","Symptoms":"itching, vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"itching, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"itching, vomiting, weight loss, high fever, yellowish skin, dark urine, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"itching, vomiting, fatigue, high fever, yellowish skin, dark urine, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"itching, vomiting, fatigue, weight loss, yellowish skin, dark urine, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"itching, vomiting, fatigue, weight loss, high fever, dark urine, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"itching, vomiting, fatigue, weight loss, high fever, yellowish skin, abdominal pain"}
+{"Disease":"Jaundice","Symptoms":"itching, vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine"}
+{"Disease":"Malaria","Symptoms":"chills, vomiting, high fever, sweating, headache, nausea, muscle pain"}
+{"Disease":"Malaria","Symptoms":"chills, vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain"}
+{"Disease":"Malaria","Symptoms":"vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain"}
+{"Disease":"Malaria","Symptoms":"chills, high fever, sweating, headache, nausea, diarrhoea, muscle pain"}
+{"Disease":"Malaria","Symptoms":"chills, vomiting, sweating, headache, nausea, diarrhoea, muscle pain"}
+{"Disease":"Malaria","Symptoms":"chills, vomiting, high fever, headache, nausea, diarrhoea, muscle pain"}
+{"Disease":"Malaria","Symptoms":"chills, vomiting, high fever, sweating, nausea, diarrhoea, muscle pain"}
+{"Disease":"Malaria","Symptoms":"chills, vomiting, high fever, sweating, headache, diarrhoea, muscle pain"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, fatigue, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, fatigue, lethargy, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, fatigue, lethargy, high fever, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, fatigue, lethargy, high fever, headache, mild fever, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, swelled lymph nodes, malaise, red spots over body"}
+{"Disease":"Chicken pox","Symptoms":"itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, malaise, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, muscle pain, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"}
+{"Disease":"Dengue","Symptoms":"chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, joint pain, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, joint pain, vomiting, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"}
+{"Disease":"Dengue","Symptoms":"skin rash, chills, joint pain, vomiting, fatigue, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, headache, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, headache, nausea, abdominal pain, diarrhoea, toxic look (typhos), belly pain"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, headache, nausea, constipation, diarrhoea, toxic look (typhos), belly pain"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, toxic look (typhos), belly pain"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, belly pain"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos)"}
+{"Disease":"Typhoid","Symptoms":"chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain"}
+{"Disease":"Typhoid","Symptoms":"chills, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, vomiting, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, vomiting, yellowish skin, dark urine, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, vomiting, yellowish skin, dark urine, nausea, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, diarrhoea, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"hepatitis A","Symptoms":"joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, mild fever, yellowing of eyes, muscle pain"}
+{"Disease":"Hepatitis B","Symptoms":"itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"itching, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"itching, fatigue, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"itching, fatigue, lethargy, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"itching, fatigue, lethargy, yellowish skin, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"itching, fatigue, lethargy, yellowish skin, dark urine, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis B","Symptoms":"itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"}
+{"Disease":"Hepatitis C","Symptoms":"fatigue, yellowish skin, nausea, loss of appetite, family history"}
+{"Disease":"Hepatitis C","Symptoms":"fatigue, yellowish skin, nausea, loss of appetite, yellowing of eyes, family history"}
+{"Disease":"Hepatitis C","Symptoms":"yellowish skin, nausea, loss of appetite, yellowing of eyes, family history"}
+{"Disease":"Hepatitis C","Symptoms":"fatigue, nausea, loss of appetite, yellowing of eyes, family history"}
+{"Disease":"Hepatitis C","Symptoms":"fatigue, yellowish skin, loss of appetite, yellowing of eyes, family history"}
+{"Disease":"Hepatitis C","Symptoms":"fatigue, yellowish skin, nausea, yellowing of eyes, family history"}
+{"Disease":"Hepatitis C","Symptoms":"fatigue, yellowish skin, nausea, loss of appetite, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, fatigue, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, fatigue, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, fatigue, yellowish skin, dark urine, loss of appetite, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, abdominal pain, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, yellowing of eyes"}
+{"Disease":"Hepatitis D","Symptoms":"joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, vomiting, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, vomiting, fatigue, high fever, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, vomiting, fatigue, high fever, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Hepatitis E","Symptoms":"joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload.1"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload.1"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"vomiting, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload.1"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"vomiting, yellowish skin, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload.1"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"vomiting, yellowish skin, abdominal pain, distention of abdomen, history of alcohol consumption, fluid overload.1"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"vomiting, yellowish skin, abdominal pain, swelling of stomach, history of alcohol consumption, fluid overload.1"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, fluid overload.1"}
+{"Disease":"Alcoholic hepatitis","Symptoms":"vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption"}
+{"Disease":"Tuberculosis","Symptoms":"chills, vomiting, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"vomiting, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"chills, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"chills, vomiting, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"chills, vomiting, fatigue, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"chills, vomiting, fatigue, weight loss, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"chills, vomiting, fatigue, weight loss, cough, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"chills, vomiting, fatigue, weight loss, cough, high fever, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Tuberculosis","Symptoms":"chills, vomiting, fatigue, weight loss, cough, high fever, breathlessness, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, chills, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"chills, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, chills, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, chills, fatigue, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, chills, fatigue, cough, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, chills, fatigue, cough, high fever, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, chills, fatigue, cough, high fever, headache, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Common Cold","Symptoms":"continuous sneezing, chills, fatigue, cough, high fever, headache, swelled lymph nodes, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"}
+{"Disease":"Pneumonia","Symptoms":"chills, fatigue, cough, high fever, breathlessness, sweating, malaise, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"chills, fatigue, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"fatigue, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"chills, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"chills, fatigue, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"chills, fatigue, cough, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"chills, fatigue, cough, high fever, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"chills, fatigue, cough, high fever, breathlessness, malaise, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Pneumonia","Symptoms":"chills, fatigue, cough, high fever, breathlessness, sweating, phlegm, chest pain, fast heart rate, rusty sputum"}
+{"Disease":"Dimorphic hemmorhoids(piles)","Symptoms":"constipation, pain during bowel movements, pain in anal region, bloody stool, irritation in anus"}
+{"Disease":"Dimorphic hemmorhoids(piles)","Symptoms":"pain during bowel movements, pain in anal region, bloody stool, irritation in anus"}
+{"Disease":"Dimorphic hemmorhoids(piles)","Symptoms":"constipation, pain in anal region, bloody stool, irritation in anus"}
+{"Disease":"Dimorphic hemmorhoids(piles)","Symptoms":"constipation, pain during bowel movements, bloody stool, irritation in anus"}
+{"Disease":"Dimorphic hemmorhoids(piles)","Symptoms":"constipation, pain during bowel movements, pain in anal region, irritation in anus"}
+{"Disease":"Dimorphic hemmorhoids(piles)","Symptoms":"constipation, pain during bowel movements, pain in anal region, bloody stool"}
+{"Disease":"Heart attack","Symptoms":"vomiting, breathlessness, sweating, chest pain"}
+{"Disease":"Heart attack","Symptoms":"breathlessness, sweating, chest pain"}
+{"Disease":"Heart attack","Symptoms":"vomiting, sweating, chest pain"}
+{"Disease":"Heart attack","Symptoms":"vomiting, breathlessness, chest pain"}
+{"Disease":"Heart attack","Symptoms":"vomiting, breathlessness, sweating"}
+{"Disease":"Varicose veins","Symptoms":"fatigue, cramps, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf"}
+{"Disease":"Varicose veins","Symptoms":"cramps, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf"}
+{"Disease":"Varicose veins","Symptoms":"fatigue, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf"}
+{"Disease":"Varicose veins","Symptoms":"fatigue, cramps, obesity, swollen legs, swollen blood vessels, prominent veins on calf"}
+{"Disease":"Varicose veins","Symptoms":"fatigue, cramps, bruising, swollen legs, swollen blood vessels, prominent veins on calf"}
+{"Disease":"Varicose veins","Symptoms":"fatigue, cramps, bruising, obesity, swollen blood vessels, prominent veins on calf"}
+{"Disease":"Varicose veins","Symptoms":"fatigue, cramps, bruising, obesity, swollen legs, prominent veins on calf"}
+{"Disease":"Varicose veins","Symptoms":"fatigue, cramps, bruising, obesity, swollen legs, swollen blood vessels"}
+{"Disease":"Hypothyroidism","Symptoms":"fatigue, weight gain, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hypothyroidism","Symptoms":"weight gain, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hypothyroidism","Symptoms":"fatigue, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hypothyroidism","Symptoms":"fatigue, weight gain, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hypothyroidism","Symptoms":"fatigue, weight gain, cold hands and feets, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hypothyroidism","Symptoms":"fatigue, weight gain, cold hands and feets, mood swings, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hypothyroidism","Symptoms":"fatigue, weight gain, cold hands and feets, mood swings, lethargy, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hypothyroidism","Symptoms":"fatigue, weight gain, cold hands and feets, mood swings, lethargy, dizziness, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, mood swings, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, mood swings, weight loss, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, mood swings, weight loss, restlessness, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, mood swings, weight loss, restlessness, sweating, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, excessive hunger, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hyperthyroidism","Symptoms":"fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, muscle weakness, irritability, abnormal menstruation"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, fatigue, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, fatigue, anxiety, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, fatigue, anxiety, sweating, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, fatigue, anxiety, sweating, headache, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Hypoglycemia","Symptoms":"vomiting, fatigue, anxiety, sweating, headache, nausea, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"}
+{"Disease":"Osteoarthristis","Symptoms":"joint pain, neck pain, knee pain, hip joint pain, swelling joints, painful walking"}
+{"Disease":"Osteoarthristis","Symptoms":"neck pain, knee pain, hip joint pain, swelling joints, painful walking"}
+{"Disease":"Osteoarthristis","Symptoms":"joint pain, knee pain, hip joint pain, swelling joints, painful walking"}
+{"Disease":"Osteoarthristis","Symptoms":"joint pain, neck pain, hip joint pain, swelling joints, painful walking"}
+{"Disease":"Osteoarthristis","Symptoms":"joint pain, neck pain, knee pain, swelling joints, painful walking"}
+{"Disease":"Osteoarthristis","Symptoms":"joint pain, neck pain, knee pain, hip joint pain, painful walking"}
+{"Disease":"Osteoarthristis","Symptoms":"joint pain, neck pain, knee pain, hip joint pain, swelling joints"}
+{"Disease":"Arthritis","Symptoms":"muscle weakness, stiff neck, swelling joints, movement stiffness, painful walking"}
+{"Disease":"Arthritis","Symptoms":"stiff neck, swelling joints, movement stiffness, painful walking"}
+{"Disease":"Arthritis","Symptoms":"muscle weakness, swelling joints, movement stiffness, painful walking"}
+{"Disease":"Arthritis","Symptoms":"muscle weakness, stiff neck, movement stiffness, painful walking"}
+{"Disease":"Arthritis","Symptoms":"muscle weakness, stiff neck, swelling joints, painful walking"}
+{"Disease":"Arthritis","Symptoms":"muscle weakness, stiff neck, swelling joints, movement stiffness"}
+{"Disease":"(vertigo) Paroymsal  Positional Vertigo","Symptoms":"vomiting, headache, nausea, spinning movements, loss of balance, unsteadiness"}
+{"Disease":"(vertigo) Paroymsal  Positional Vertigo","Symptoms":"headache, nausea, spinning movements, loss of balance, unsteadiness"}
+{"Disease":"(vertigo) Paroymsal  Positional Vertigo","Symptoms":"vomiting, nausea, spinning movements, loss of balance, unsteadiness"}
+{"Disease":"(vertigo) Paroymsal  Positional Vertigo","Symptoms":"vomiting, headache, spinning movements, loss of balance, unsteadiness"}
+{"Disease":"(vertigo) Paroymsal  Positional Vertigo","Symptoms":"vomiting, headache, nausea, loss of balance, unsteadiness"}
+{"Disease":"(vertigo) Paroymsal  Positional Vertigo","Symptoms":"vomiting, headache, nausea, spinning movements, unsteadiness"}
+{"Disease":"(vertigo) Paroymsal  Positional Vertigo","Symptoms":"vomiting, headache, nausea, spinning movements, loss of balance"}
+{"Disease":"Acne","Symptoms":"skin rash, pus filled pimples, blackheads, scurring"}
+{"Disease":"Acne","Symptoms":"pus filled pimples, blackheads, scurring"}
+{"Disease":"Acne","Symptoms":"skin rash, blackheads, scurring"}
+{"Disease":"Acne","Symptoms":"skin rash, pus filled pimples, scurring"}
+{"Disease":"Acne","Symptoms":"skin rash, pus filled pimples, blackheads"}
+{"Disease":"Urinary tract infection","Symptoms":"burning micturition, bladder discomfort, foul smell of urine, continuous feel of urine"}
+{"Disease":"Urinary tract infection","Symptoms":"bladder discomfort, foul smell of urine, continuous feel of urine"}
+{"Disease":"Urinary tract infection","Symptoms":"burning micturition, foul smell of urine, continuous feel of urine"}
+{"Disease":"Urinary tract infection","Symptoms":"burning micturition, bladder discomfort, continuous feel of urine"}
+{"Disease":"Urinary tract infection","Symptoms":"burning micturition, bladder discomfort, foul smell of urine"}
+{"Disease":"Psoriasis","Symptoms":"skin rash, joint pain, skin peeling, silver like dusting, small dents in nails, inflammatory nails"}
+{"Disease":"Psoriasis","Symptoms":"joint pain, skin peeling, silver like dusting, small dents in nails, inflammatory nails"}
+{"Disease":"Psoriasis","Symptoms":"skin rash, skin peeling, silver like dusting, small dents in nails, inflammatory nails"}
+{"Disease":"Psoriasis","Symptoms":"skin rash, joint pain, silver like dusting, small dents in nails, inflammatory nails"}
+{"Disease":"Psoriasis","Symptoms":"skin rash, joint pain, skin peeling, small dents in nails, inflammatory nails"}
+{"Disease":"Psoriasis","Symptoms":"skin rash, joint pain, skin peeling, silver like dusting, inflammatory nails"}
+{"Disease":"Psoriasis","Symptoms":"skin rash, joint pain, skin peeling, silver like dusting, small dents in nails"}
+{"Disease":"Impetigo","Symptoms":"skin rash, high fever, blister, red sore around nose, yellow crust ooze"}
+{"Disease":"Impetigo","Symptoms":"high fever, blister, red sore around nose, yellow crust ooze"}
+{"Disease":"Impetigo","Symptoms":"skin rash, blister, red sore around nose, yellow crust ooze"}
+{"Disease":"Impetigo","Symptoms":"skin rash, high fever, red sore around nose, yellow crust ooze"}
+{"Disease":"Impetigo","Symptoms":"skin rash, high fever, blister, yellow crust ooze"}
+{"Disease":"Impetigo","Symptoms":"skin rash, high fever, blister, red sore around nose"}
