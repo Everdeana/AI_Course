@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +10,9 @@
   <title>MyPage</title>
 </head>
 <body>
-  <top th:insert="~{common/inc_top}"></top>
-  <nav th:insert="~{common/nav}"></nav>
-    <!-- <header th:insert="common/inc_top.html"></header> -->
+<top th:insert="~{common/inc_top}"></top>
+<nav th:insert="~{common/nav}"></nav>
 
-    <header class="p-3 mb-3 border-bottom">
-      <!--<div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start">
-          
-          <a href="main" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg>
-  
-            <span class="fs-3"> 위치 </span>
-          </a>
-  
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-            </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="/mypage">마이페이지</a></li>
-              
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/login">로그인</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>-->
-    </header>
-
-
-  
     <div>
       <div>
         <p class="mx-2 pt-3 mb-2"><span class="fw-semibold fs-5">다시보기</span></p>
@@ -118,26 +85,7 @@
       </ul>
     </div>
 
-
-
-
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            <img src="/assets/images/logo.png" alt="" width="30" height="24">
-  
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 ACJ, Inc</span>
-        </div>
-    
-      </footer>
-    </div>
 <footer th:insert="~{common/inc_bottom}"></footer>
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script></script>
