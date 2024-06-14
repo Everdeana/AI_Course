@@ -60,19 +60,31 @@
             </p>
           </div>
         </div>
+
+        <div th:each="data : ${today}" class="card col-4 mb-3" style="cursor: pointer;" th:onclick="|location.href='@{'/detail/' + ${data.id}}'|">
+          <img th:src="${data.thumb}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p th:text="${data.title}" class="card-title fw-bold"></p>
+            <!--<p class="card-text">예시글입니다</p>-->
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">오늘 업로드</small>
+          </div>
+        </div>
+
       </section>
 
       <div class="row g-0">
-    
-        <div class="card col-4 mb-3" style="cursor: pointer;">
-          <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
+
+        <div th:each="data : ${detail}" th:onclick="|location.href='@{'https://m.comic.naver.com/webtoon/detail?titleId=' + ${eid} + '&no=' + ${data.id}}'|" class="card col-4 mb-3" style="cursor: pointer;">
+          <img th:src="${data.thumb}" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-title fw-bold">1화</p>
-            <p class="card-text" style="color: #ADB5BD;">23.09.01</p>
+            <p th:text="${data.title}" class="card-title fw-bold"></p>
+            <p th:text="${data.date}" class="card-text" style="color: #ADB5BD;"></p>
+            <p th:text="${data.rating}" class="card-text" style="color: #ADB5BD;"></p>
           </div>
-          
         </div>
-          
+        <!--
           
         <div class="card col-4 mb-3" style="cursor: pointer;">
           <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
@@ -80,7 +92,6 @@
             <p class="card-title fw-bold">2화</p>
             <p class="card-text" style="color: #ADB5BD;"s>23.09.01</p>
           </div>
-          
         </div>
       
     
@@ -91,7 +102,7 @@
             <p class="card-text" style="color: #ADB5BD;">23.09.01</p>
           </div>
         </div>
-        <!-- ------------------------------------------------------------ -->
+        &lt;!&ndash; &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; &ndash;&gt;
         
         <div class="card col-4 mb-3" style="cursor: pointer;">
           <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
@@ -120,7 +131,7 @@
             <p class="card-text" style="color: #ADB5BD;">23.09.01</p>
           </div>
         </div>
-        <!-- -------------------------------------------------------- -->
+        &lt;!&ndash; &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; &ndash;&gt;
         
         <div class="card col-4 mb-3"  style="cursor: pointer;">
           <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
@@ -148,9 +159,9 @@
             <p class="card-title fw-bold">3화</p>
             <p class="card-text" style="color: #ADB5BD;">23.09.01</p>
           </div>
-        </div>
+        </div>-->
         <!-- ------------------------------------------------------------------ -->
-        </div>
+      </div>
 
 
 

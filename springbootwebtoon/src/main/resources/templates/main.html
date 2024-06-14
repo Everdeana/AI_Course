@@ -37,117 +37,20 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <p class="fs-3 pt-3">웹툰<span class="fs-3 text-danger"> 00개</span><a href="../../../../webtoon/login.html" class="fs-3"> 로그인</a> / <a href="../../../../webtoon/mypage.html" class="fs-3"> 마이페이지</a></p>
+  <p class="fs-3 pt-3">웹툰<span class="fs-3 text-danger"> 00개</span><a href="login" class="fs-3"> 로그인</a> / <a href="mypage" class="fs-3"> 마이페이지</a></p>
 
   <div class="row g-0">
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='/detail'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
+<!-- each : 반복 -->
+    <div th:each="data : ${today}" class="card col-4 mb-3" style="cursor: pointer;" th:onclick="|location.href='@{'/detail/' + ${data.id}}'|">
+      <img th:src="${data.thumb}" class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
+        <p th:text="${data.title}" class="card-title fw-bold"></p>
+        <!--<p class="card-text">예시글입니다</p>-->
       </div>
       <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
+        <small class="text-body-secondary">오늘 업로드</small>
       </div>
     </div>
-
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-    <!-- ------------------------------------------------------------------------------------ -->
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-    <!-- -------------------------------------------------------------------------------------- -->
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-
-
-    <div class="card col-4 mb-3" style="cursor: pointer;" onclick="window.location.href='detail.html'">
-      <img src="/assets/images/ex.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-title fw-bold">1초</p>
-        <p class="card-text">예시글입니다</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">1일전 업로드</small>
-      </div>
-    </div>
-    <!-- ---------------------------------------------------------------------------------------- -->
-
 
   </div>
 
